@@ -336,10 +336,20 @@ svg {
 
 @media (max-width: 576px) {
 
-  .btn-font-size{
-    font-size: 10px !important;
+  .btn-font-size1{
+    font-size: 7px !important;
     padding: unset !important;
     padding: 5px 0 !important;
+  }
+
+  .arrows-img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .my-header{
+    padding: unset;
+    position: fixed;
   }
 
 
