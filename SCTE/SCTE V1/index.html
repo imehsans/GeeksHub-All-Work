@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SCTE.ISBE V1</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <header class="my-header container-fluid position-lg-static">
+      <div class="outer-cont">
+        <nav class="d-xxl-block d-none">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="navbar-brand logo">
+              <a href="">
+                <img
+                  class="opacity-100"
+                  src="./assets/images/LOGO.png"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="d-flex flex-row mx-auto text-uppercase fs-5">
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> What we do </span>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> Standards </span>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> Education </span>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> Certification </span>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> Events </span>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> membership </span>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link text-white" href="#">
+                  <span> Chapters </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex mx-auto align-self-center">
+              <div class="">
+                <button
+                  class="header-btn btn btn-outline-light btn-lg px-4 me-4 text-uppercase"
+                  type="button"
+                >
+                  Join us
+                </button>
+              </div>
+              <div class="">
+                <button
+                  class="me-4 btn header-btn btn-outline-light btn-lg px-4 text-uppercase"
+                  type="button"
+                >
+                  Log in
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex align-self-center">
+              <img class="me-4" src="./assets/images/Page 1.svg" alt="" />
+              <img class="" src="./assets/images/Page 1_2.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+
+        <nav
+          class="navbar navbar-expand-xxl navbar-dark d-block d-xxl-none bg-none"
+        >
+          <div
+            class="container-fluid gap-0 g-0 d-flex align-items-center justify-content-between"
+          >
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="white"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">
+                    <span> What we do </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">
+                    <span> Standards </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">
+                    <span> Education </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">
+                    <span> Certification </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">
+                    <span> Events </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">
+                    <span> membership </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="#">
+                    <span> Chapters </span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="d-flex mx-auto align-self-center">
+                <div class="">
+                  <button
+                    class="header-btn btn btn-outline-light btn-lg px-4 me-4 text-uppercase"
+                    type="button"
+                  >
+                    Join us
+                  </button>
+                </div>
+                <div class="">
+                  <button
+                    class="me-4 btn header-btn btn-outline-light btn-lg px-4 text-uppercase"
+                    type="button"
+                  >
+                    Log in
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="navbar-brand text-center align-items-center justify-content-center mx-auto logo"
+            >
+              <a href="">
+                <img
+                  class="opacity-100"
+                  src="./assets/images/LOGO.png"
+                  width="60%"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="d-flex align-self-center">
+              <img class="me-2" src="./assets/images/Page 1.svg" alt="" />
+              <img class="" src="./assets/images/Page 1_2.svg" alt="" />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero vh-100">
+        <div
+          class="container text-center vh-100 text-white w-100 d-flex align-items-center flex-column justify-content-center"
+        >
+          <div class="fs-6 lh-lg py-5 hero-heading">
+            What can we connect you with today?
+          </div>
+          <div class="lh-lg text-center w-100 mt-lg-5">
+            <input
+              class="form-control-plaintext mx-auto hero-input text-white opacity-50 text-opacity-100 text-center fs-5 fw-light"
+              placeholder="TYPE YOUR SEARCH HERE"
+              type="text"
+            />
+          </div>
+          <div class="lh-lg fs-6 mt-lg-5 my-5 hero-text">
+            SCTE•ISBE connects the entire cable industry through standards,
+            education, certification, volunteerism.
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center mt-lg-5 pt-lg-5 text-center"
+          >
+            <a href="#ratting"><img src="./assets/images/scroll-down.png" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ratting" class="container-fluid company-ratting">
+        <div class="container h-100">
+          <div
+            class="row h-100 opacity-75 text-white fw-lighter align-items-center justify-content-between"
+          >
+            <div class="col-lg-auto col-sm-6 col-6 text-center">
+              <div class="display-1">50</div>
+              <div class="text-uppercase fs-4">years</div>
+            </div>
+            <div class="col-lg-auto col-6 col-sm-6 text-center">
+              <div class="display-1">22K</div>
+              <div class="text-uppercase fs-4 text-center">Members</div>
+            </div>
+            <div class="col-lg-auto col-6 col-sm-6 text-center">
+              <div class="display-1">67</div>
+              <div class="text-uppercase fs-4">Chapters</div>
+            </div>
+            <div class="col-lg-auto col-6 col-sm-6 text-center">
+              <div class="display-1">42</div>
+              <div class="text-uppercase fs-4">companies</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid members-main">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div
+            class="container h-100 text-capitalize opacity-75 d-flex justify-content-between text-capitalize fs-3 lh-lg"
+          >
+            <a
+              href="#"
+              class="navbar-brand text-decoration-none d-flex justify-content-between text-capitalize fs-4 lh-lg"
+            >
+              <span class="certif-heading"> members </span>
+            </a>
+
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="white"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div
+                class="navbar-nav g-0 w-100 row d-flex justify-content-between text-capitalize fs-4 lh-lg"
+              >
+                <div class="col-auto">
+                  <a href="#" class="nav-link text-decoration-none">
+                    <span class="guest-visit"> Guest visitors </span>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="#" class="nav-link text-decoration-none">
+                    <span class="corporative-alience-text">
+                      corporate alliance partners
+                    </span>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="#" class="nav-link text-decoration-none">
+                    <span class="stand-heading"> vendors & Exhibitors </span>
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="#" class="nav-link text-white text-decoration-none">
+                    Evennt Attendees
+                  </a>
+                </div>
+                <div class="col-auto">
+                  <a href="#" class="nav-link text-decoration-none">
+                    <span class="half-orange"> Advertiesers </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <section class="container-fluid my-lg-5">
+        <div class="container my-lg-5 mt-sm-3 text-center">
+          <div class="fs-5 lh-sm headings text-uppercase my-2">
+            67 chapters. one world.
+          </div>
+          <div class="fs-6 defination-text w-100 mx-auto char-text-color mb-5">
+            SCTE•ISBE Chapters provide local networking, professional
+            development, and SCTE•ISBE certification opportunities to current
+            and prospective members in 70 locations accross the globe.
+          </div>
+
+          <div class="card border-0 h-100 text-white">
+            <img
+              src="./assets/images/oneworld.png"
+              class="img-fluid"
+              alt="..."
+            />
+            <div class="card-img-overlay w-100 h-100">
+              <div class="row h-100 cont-width">
+                <div class="col-lg-3 col-6 d-grid">
+                  <button
+                    type="button"
+                    class="px-lg-4 px-4 rounded-0 align-self-center btn-find-char bg-sick-green fs-6 lh-sm button-btn btn-sm text-uppercase btn-font-size btn-height"
+                  >
+                    Find Chapter
+                  </button>
+                </div>
+                <div class="col-lg-3 col-6 d-grid">
+                  <button
+                    type="button"
+                    class="px-lg-4 px-4 rounded-0 btn-take-test align-self-center bg-sick-green lh-sm fs-6 button-btn btn-sm text-uppercase btn-font-size btn-height"
+                  >
+                    Find My Company
+                  </button>
+                </div>
+                <div class="col-lg-3 col-6 d-grid">
+                  <button
+                    type="button"
+                    class="px-lg-4 px-4 rounded-0 btn-joinscte bg-sick-green align-self-center fs-6 lh-sm button-btn btn-sm text-uppercase btn-font-size btn-height"
+                  >
+                    join SCTE•ISBE
+                  </button>
+                </div>
+                <div class="col-lg-3 col-6 d-grid">
+                  <button
+                    type="button"
+                    class="px-lg-auto btn-membership rounded-0 align-self-center bg-sick-green fs-6 button-btn btn-sm text-uppercase lh-sm btn-font-size btn-height"
+                  >
+                    membership benifefits
+                  </button>
+                </div>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-center text-center align-self-md-end"
+                >
+                  <a href="#"
+                    ><img src="./assets/images/download-arrow.png"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="outer-cont mt-5" id="fds">
+        <div
+          class="display-6 headings mt-lg-3 text-center text-uppercase fw-light card-text"
+        >
+          What's news
+        </div>
+        <div class="row g-0 mb-4">
+          <div class="col-md-6 col-12 text-md-start px-md-5">
+            <div class="fs-6 fw-bold certif-heading heading3">
+              SCTE•ISBE Member Transcript
+            </div>
+            <div class="fs-6 fw-light stand-text btn-font-size">
+              Get instant access to your coursework and cetifications.
+            </div>
+          </div>
+          <div class="col-md-6 col-12 text-lg-end px-md-5">
+            <div class="fs-6 fw-bold stand-heading heading3">
+              SCTE•ISBE Member Dashboard
+            </div>
+            <div class="fs-6 fw-light stand-text btn-font-size">
+              Measure and optimize your career path performance.
+            </div>
+          </div>
+        </div>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./assets/images/slider1.png"
+                class="d-block mx-auto w-75 h-75"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-6 text-start">
+                    <a href="#">
+                      <img
+                        src="./assets/images/app store logo.png"
+                        class="w-25"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-6 text-end">
+                    <a href="#">
+                      <img
+                        src="./assets/images/play-store.png"
+                        class="w-25"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./assets/images/slider2.png"
+                class="d-block mx-auto w-75 h-75"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-6 text-start">
+                    <a href="#">
+                      <img
+                        src="./assets/images/app store logo.png"
+                        class="w-25"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-6 text-end">
+                    <a href="#">
+                      <img
+                        src="./assets/images/play-store.png"
+                        class="w-25"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider3.png"
+                class="d-block mx-auto w-75 h-75"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-6 text-start">
+                    <a href="#">
+                      <img
+                        src="./assets/images/app store logo.png"
+                        class="w-25"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-6 text-end">
+                    <a href="#">
+                      <img
+                        src="./assets/images/play-store.png"
+                        class="w-25"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container-fluid py-5 members-main">
+        <div class="container text-center text-white">
+          <div class="pt-lg-5 headings g-0 fs-5 text-uppercase">
+            get connected. join us
+          </div>
+          <div
+            class="text defination-text mt-3 mb-5 mx-auto fs-4 opacity-75 fw-lighter"
+          >
+            Members get exclusive access to apps, tools, and content resources
+            unavailable anywhere else. Automatically receive the benefits of
+            SCTE•ISBE membership when you join.
+          </div>
+
+          <form class="row g-0 border-1 cont-width">
+            <div class="col-lg-4 col-12 d-grid">
+              <input
+                class="rounded-0 lh-lg border-1 border-bottom-0 text-white fs-4 px-3 input-background border-light"
+                type="text"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-lg-4 col-12 d-grid">
+              <input
+                class="rounded-0 lh-lg border-1 border-bottom-0 border-start-lg-0 border-end-lg-0 text-white fs-4 px-3 input-background border-light"
+                type="text"
+                placeholder="Contact Number"
+              />
+            </div>
+            <div class="col-lg-4 col-sm-12 d-grid">
+              <input
+                class="rounded-0 lh-lg py-lg-2 border-1 border-bottom-0 text-white fs-4 px-3 input-background border-light"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-5">
+              <textarea
+                class="input-text-area w-100 border-1 rounded-0 fs-4 text-white px-3 input-background border-light"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div class="col-lg-2 col-8 mb-5 d-grid mx-auto">
+              <button
+                type="submit"
+                class="btn-membership py-lg-3 fs-5 button-btn btn-sm py-lg-2 text-uppercase"
+              >
+                Start me up!
+              </button>
+            </div>
+          </form>
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="#card-section">
+              <img src="./assets/images/download-arrow.png" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid h-100 scte-standards-main">
+        <div class="row bg-light g-0 h-100">
+          <div class="col-lg-4 col-12 order-lg-1 order-1 my-auto h-50">
+            <div class="h-50 text-center d-grid gap-5 py-5">
+              <div class="">
+                <div class="fs-2 fw-normal stand-heading heading2">
+                  SCTE•ISBE Standards
+                </div>
+                <div class="fs-6 stand-text1 fw-light text-uppercase">
+                  DOCUMENTATION, FORMS, BULLETINS, AND MORE
+                </div>
+              </div>
+              <div
+                class="fs-6 fw-light stand-text stand-text1 mx-auto px-lg-5 py-3 w-75"
+              >
+                The industry's only ANSI-accredited forum for the development of
+                technical specifications supporting cable telecommunications.
+              </div>
+              <div class="col-lg-5 col-8 d-grid mx-auto">
+                <button
+                  type="button"
+                  class="py-lg-2 btn-take-test fs-6 bg-sick-green button-btn btn-sm text-uppercase fw-light"
+                >
+                  <span class="btn-font-size"> Visit standarts </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 order-lg-4 order-2 h-50">
+            <div class="position-relative h-50 p-0 m-0">
+              <a class="p-0 m-0" href="">
+                <img
+                  src="./assets/images/scte-img1.png"
+                  class="w-100 h-100"
+                  alt=""
+                />
+                <div
+                  class="h-0 position-absolute top-0 triangle-down mx-auto"
+                ></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 order-lg-3 order-3 my-auto h-50">
+            <div class="h-50 text-center d-grid gap-5 py-5">
+              <div class="">
+                <div class="fs-2 fw-normal certif-heading heading2">
+                  SCTE•ISBE Certification
+                </div>
+                <div class="fs-6 stand-text1 fw-light text-uppercase">
+                  prepare, Take Exams, and stay certified
+                </div>
+              </div>
+              <div
+                class="fs-6 fw-light stand-text stand-text1 mx-auto px-lg-5 py-3 w-75"
+              >
+                The cable industry’s premier endorsement for professionals in
+                various levels of expertise – across all areas of the cable
+                network.
+              </div>
+              <div class="col-lg-5 col-8 d-grid mx-auto">
+                <button
+                  type="button"
+                  class="py-lg-2 btn-find-char fs-6 bg-sick-green button-btn btn-sm text-uppercase"
+                >
+                  <span class="btn-font-size"> get certified </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 order-lg-2 order-4 h-50">
+            <div class="position-relative h-50 p-0 m-0">
+              <a class="p-0 m-0" href="">
+                <img
+                  src="./assets/images/scte-img 3.png"
+                  class="w-100 h-100"
+                  alt=""
+                />
+                <div
+                  class="h-0 d-lg-none position-absolute top-0 triangle-down mx-auto"
+                ></div>
+                <div
+                  class="h-0 d-lg-block d-none position-absolute triangle-up max-auto"
+                ></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 order-lg-5 order-5 my-auto h-50">
+            <div class="h-50 text-center d-grid gap-5 py-5">
+              <div class="">
+                <div class="fs-2 fw-normal half-orange heading2">
+                  SCTE•ISBE Education
+                </div>
+                <div class="fs-6 stand-text1 fw-light text-uppercase">
+                  Training, coursework, and Resources
+                </div>
+              </div>
+              <div
+                class="fs-6 fw-light stand-text stand-text1 mx-auto px-lg-5 py-3 w-75"
+              >
+                The knowledge, tools and resources necessary for organizations
+                to develop their technical workforce, and for professionals to
+                advance their careers.
+              </div>
+              <div class="col-lg-5 col-8 d-grid mx-auto">
+                <button
+                  type="button"
+                  class="py-lg-2 btn-take-test fs-6 bg-sick-green button-btn btn-sm text-uppercase fw-light"
+                >
+                  <span class="btn-font-size"> Access Learning </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 order-lg-5 order-5 h-50">
+            <div class="position-relative h-50 p-0 m-0">
+              <a class="p-0 m-0" href="">
+                <img
+                  src="./assets/images/scte img2.png"
+                  class="w-100 h-100"
+                  alt=""
+                />
+                <div
+                  class="h-0 position-absolute top-0 triangle-down mx-auto"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div
+          class="headings fs-2 mt-5 justify-content-center text-uppercase fw-lignter text-center"
+        >
+          Member spotlight
+        </div>
+        <div
+          class="fs-6 defination-text1 px-lg-5 fw-lg-lighter fw-normal my-4 form-text w-lg-75 text-center mx-auto"
+        >
+          Meet a few of our active SCTE•ISBE members. SCTE•ISBE has over 22,000
+          members across the globe and many of them actively volunteer within
+          the society. Chapter leaders, standards committee members, speakers
+          and certification proctors are just a few of the opportunities. Get
+          Involved.
+        </div>
+
+        <!-- ///////////////////////////////// -->
+        <div class="row d-flex g-lg-4 g-0 justify-content-between">
+          <div class="col-md-3 col-sm-12">
+            <img
+              class="rounded card-img-top mx-lg-0 my-lg-0 my-4"
+              src="./assets/images/john-doe.png"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <div class="fs-5 fw-bold card-title text-uppercase">John doe</div>
+              <div class="card-text fs-6 opacity-75">Liberty Global</div>
+              <div class="fw-bold card-text-color">Member Scince 2009</div>
+              <div>
+                <span class="fw-bold card-text-color">Chapter:</span> Alaska
+                Chapter
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img
+              class="rounded card-img-top mx-lg-0 my-lg-0 my-4"
+              src="./assets/images/Anna-doe.png"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <div class="fs-5 fw-bold card-title text-uppercase">Anna Doe</div>
+              <div class="card-text fs-6 opacity-75">
+                Character Communications
+              </div>
+              <div class="fw-bold card-text-color">Member Scince 2011</div>
+              <div>
+                <span class="fw-bold card-text-color">Chapter:</span> Gateway
+                Chapter
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img
+              class="rounded card-img-top mx-lg-0 my-lg-0 my-4"
+              src="./assets/images/nicole.png"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <div class="fs-5 fw-bold card-title text-uppercase">Nicole</div>
+              <div class="card-text fs-6 opacity-75">Arcom</div>
+              <div class="fw-bold card-text-color">Member Scince 2014</div>
+              <div>
+                <span class="fw-bold card-text-color">Chapter:</span> Bonneville
+                Chapter
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img
+              class="rounded card-img-top mx-lg-0 my-lg-0 my-4"
+              src="./assets/images/smith.png"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <div class="fs-5 fw-bold card-title text-uppercase">Smith</div>
+              <div class="card-text fs-6 opacity-75">Alpha Technologies</div>
+              <div class="fw-bold card-text-color">Member Scince 2005</div>
+              <div>
+                <span class="fw-bold card-text-color">Chapter:</span> Centeral
+                Europe Chapter
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="members-main h-100 container-fluid text-white">
+        <div class="container py-1 py-lg-5 h-100">
+          <div
+            class="serving-text my-4 row h-75 g-0 fs-6 justify-content-between text-lg-start text-center"
+          >
+            <div class="col-md-5 col-12 pe-lg-5 py-5 py-lg-0">
+              <div class="pb-4 surving-h text-white text-uppercase">
+                surving the cable Indusry Since 1969
+              </div>
+              <div class="text-wrap surving-h opacity-75">
+                SCTE•ISBE is proud to serve as the technical and applied science
+                leader for the cable telecommunications industry, providing
+                meaningful resources and programs for members and the industry.
+                <div class="surving-copyright fs-6 mt-2">
+                  © 2019 SCTE-ISBE. ALL RIGHTS RESERVED.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <div class="text-white pb-4 text-uppercase surving-h">
+                QUICKLINKS
+              </div>
+              <div class="opacity-75">
+                <div class="row-cols-1 g-0 surving-h">Standards</div>
+                <div class="row-cols-1 g-0 surving-h">Education</div>
+                <div class="row-cols-1 g-0 surving-h">Certification</div>
+                <div class="row-cols-1 g-0 surving-h">Terms of Use</div>
+                <div class="row-cols-1 g-0 surving-h">GDPR / Privacy</div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12 py-5 py-lg-0">
+              <div class="text-white g-0 pb-4 text-uppercase surving-h">
+                GET STARTED
+              </div>
+              <div class="opacity-75 pe-lg-5 surving-h">
+                Get started on your membership journey today for FREE. Access
+                exclusive content and member benefits right away.
+
+                <div class="row g-0 w-100 mt-lg-4 mt-5">
+                  <div class="col-lg-6 d-lg-grid col-12 mb-4">
+                    <button
+                      type="button"
+                      class="button-btn btn-take-test fs-5 px-lg-4 px-3 btn-sm text-uppercase"
+                    >
+                      <span class="btn-font-size lh-lg">
+                        Take a test drive
+                      </span>
+                    </button>
+                  </div>
+                  <div class="col-lg-5 col-12 d-lg-grid mb-4">
+                    <button
+                      type="button"
+                      class="button-btn btn-contact-us mx-lg-3 px-lg-1 px-5 fs-5 btn-sm text-uppercase"
+                    >
+                      <span class="btn-font-size lh-lg"> contact us </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="company-ratting container-fluid text-white">
+        <div class="container h-100">
+          <div
+            class="h-100 w-100 row g-0 align-items-center justify-content-lg-between justify-content-center"
+          >
+            <div
+              class="col-lg-10 col-12 headings display-6 fw-light text-center text-lg-start"
+            >
+              Question? Comment? Something to say?
+            </div>
+            <div
+              class="col-lg-2 col-8 d-flex justify-content-center align-items-center"
+            >
+              <button
+                type="button"
+                class="question-btn fs-6 w-100 button-btn btn-lg py-lg-3 py-2 text-uppercase"
+              >
+                <span class="btn-font-size"> let us know </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid footer-main w-100">
+      <div class="container h-100">
+        <div
+          class="d-flex h-75 align-items-center justify-self-center justify-content-around flex-column flex-lg-row"
+        >
+          <div class="order-lg-1 order-2">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  class="bi bi-facebook"
+                  viewBox="0 0 48 48"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.5,46c-1.378,0-2.5-1.121-2.5-2.5V26l-4.45,0.003c-1.367,0-2.489-1.11-2.501-2.476l-0.029-3.003 c-0.006-0.673,0.25-1.306,0.724-1.783C12.216,18.263,12.847,18,13.52,18H18v-4.5c0-6.746,3.442-10.462,9.691-10.462 c2.472,0,4.63,0.175,4.65,0.177c0.965,0.086,1.691,0.88,1.691,1.847v4.57c0,1.022-0.832,1.854-1.854,1.854h-2.908 c-1.217,0-2.208,0.99-2.208,2.208L27.006,18h4.438c0.713,0,1.393,0.306,1.867,0.838s0.699,1.243,0.616,1.951l-0.349,3 C33.432,25.05,32.364,26,31.096,26H27v17.5c0,1.379-1.122,2.5-2.5,2.5H20.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </div>
+              <div class="col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </div>
+              <div class="col-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-lg-2 order-3">
+            <div class="mt-lg-5 opacity-75">
+              <div class="justify-content-center footer-text fw-lighter">
+                You are welcome to call upon any staff member for support and
+                assistance.
+              </div>
+              <div class="row justify-content-center footer-text fw-lighter">
+                <div class="col-md-auto col-sm-12 text-md-end">
+                  Email: info@scte.org.
+                </div>
+                <div class="col-md-auto col-sm-12 text-md-center">
+                  Phone: 800.542.5040 or 610.363.6888
+                </div>
+                <div class="col-md-auto col-sm-12 text-md-start w-30">
+                  Fax: 610.884.7237
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-lg-3 order-1">
+            <div class="d-flex justify-content-center">
+              <div class="me-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+              <div class="text-start text-uppercase">Search</div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="row fw-bolder footer-text-1 mx-auto justify-content-center align-items-center h-50"
+          >
+            <div class="col-md-6 col-sm-12 text-md-end">
+              140 Philips Rd, Exton, PA 19341
+            </div>
+            <div class="col-md-6 col-sm-12 text-md-start">
+              Local Phone: 610.363.6888
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

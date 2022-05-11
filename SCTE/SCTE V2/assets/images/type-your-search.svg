@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="831" height="80" viewBox="0 0 831 80">
+    <defs>
+        <filter id="7f7k6cal9a" width="420" height="80" x="210" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="8"/>
+            <feFlood/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g transform="translate(-162 -101) translate(163 105)" style="mix-blend-mode:multiply;isolation:isolate" fill="#54585a" stroke="#fff" stroke-miterlimit="10" opacity="0.818">
+            <rect width="829" height="73" stroke="none" rx="2"/>
+            <rect width="830" height="74" x="-.5" y="-.5" fill="none" rx="2.5"/>
+        </g>
+        <g filter="url(#7f7k6cal9a)" transform="translate(-162 -101) translate(162 101)">
+            <text fill="#fff" font-family="Montserrat-Regular, Montserrat" font-size="26px" letter-spacing="0.043em" opacity="0.359" transform="translate(420 49)">
+                <tspan x="-185.833" y="0">TYPE YOUR SEARCH HERE</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

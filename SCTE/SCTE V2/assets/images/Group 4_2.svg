@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99" height="34" viewBox="0 0 99 34">
+    <g fill="none" stroke="#fff" stroke-miterlimit="10">
+        <rect width="99" height="34" stroke="none" rx="3"/>
+        <rect width="98" height="33" x=".5" y=".5" rx="2.5"/>
+    </g>
+    <text fill="#fff" font-family="Montserrat-Regular, Montserrat" font-size="14px" letter-spacing="0.033em" transform="translate(19 22)">
+        <tspan x="0" y="0">JOIN US</tspan>
+    </text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="50" viewBox="0 0 214 50">
+    <g transform="translate(0 -124)">
+        <rect width="214" height="50" fill="#f17a28" rx="3" transform="translate(0 124)"/>
+        <text fill="#fff" font-family="Avenir-Book, Avenir" font-size="16px" letter-spacing="0.031em" transform="translate(30 154)">
+            <tspan x="0" y="0">TAKE A TEST DRIVE</tspan>
+        </text>
+    </g>
+</svg>

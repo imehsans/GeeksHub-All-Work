@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.7;
+  color: #516171;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  color: #092032;
+}
+
+a {
+  color: #092032;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+img {
+  width: 100%;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important; 
+}
+
+/* NAV BAR */
+
+.top-nav {
+  background-color: #ff4d29;
+}
+
+.top-nav p {
+  margin-right: 16px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-links a:hover {
+  background-color: white;
+  color: #ff4d29;
+}
+
+.social-links a:hover i {
+  color: #ff4d29;
+}
+
+/* _______________________ */
+.navbar-brand span {
+  color: #ff4d29;
+}
+
+/* Button */
+
+.btn-brand {
+  background-color: #ff4d29;
+  color: #ffffff;
+  border-color: #ff4d29;
+}
+
+.btn-brand:hover {
+  background-color: #ffffff;
+  color: #ff4d29;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active {
+  color: #ff4d29;
+}
+
+/* SLider */
+
+.slide-1{
+    background: linear-gradient( rgba(9,32,50,0.4), rgba(9,32,50,0.4)) ,url("../images/bg_banner1.jpg");
+
+}
