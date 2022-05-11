@@ -335,22 +335,19 @@ svg {
 }
 
 @media (max-width: 576px) {
-
-  .btn-font-size1{
+  .btn-font-size1 {
     font-size: 7px !important;
     padding: unset !important;
     padding: 5px 0 !important;
   }
 
-  .arrows-img{
+  .arrows-img {
     width: 30px;
     height: 30px;
   }
 
-  .my-header{
+  .my-header {
     padding: unset;
     position: fixed;
   }
-
-
 }
