@@ -124,7 +124,7 @@ svg {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1700px;
+    max-width: 1650px;
   }
 }
 
@@ -150,18 +150,27 @@ svg {
   max-height: 54px;
 }
 
+.footer-text {
+  font-size: 16px !important;
+  font-family: Avenir !important;
+  line-height: 2.33;
+  letter-spacing: 1px;
+  font-weight: lighter !important;
+}
+
 /* Background-Color */
 
 .company-ratting {
   background-color: #00aeef;
-  height: 300px;
+  height: 250px;
 }
 
 .input-text-area {
   background-color: #2b3143;
   outline: none;
-  height: 400px;
+  height: 200px;
   resize: none;
+  font-size: 20px  !important;
 }
 
 .input-background {
@@ -195,6 +204,12 @@ svg {
 
 .btn-contact-us {
   background-color: #788c96;
+}
+
+.btn-contact-us:hover{
+  background-color: #f17a28;
+  border-color: none;
+  opacity: 1;
 }
 
 .btn-take-test {
@@ -266,6 +281,13 @@ svg {
   color: #f17a28;
 }
 
+.surving-h a:hover  {
+  color: #f17a28 !important;
+  opacity: 1 !important;
+}
+
+
+
 .header-btn:hover {
   background-color: #f17a28;
   color: white;
@@ -275,10 +297,26 @@ svg {
   .hero{
     height: 100vh !important;
   }
-  .headings,
+
+  .btn-fs-large{
+    font-size: 20px !important;
+    padding: 10px 0 !important;
+    font-weight: 400 !important;
+  }
+
   .hero-heading {
-    font-size: 64px !important;
+    font-size: 62px !important;
     font-weight: normal;
+  }
+
+  .headings {
+    font-size: 55px !important;
+    font-weight: 300;
+  }
+
+  .headings1 {
+    font-size: 68px !important;
+    font-weight: 300;
   }
 
 
@@ -293,20 +331,20 @@ svg {
   }
 
   .defination-text1 {
-    width: 68% !important;
+    width: 67% !important;
     font-size: 20px !important;
   }
 
   .surving-h {
     font-size: 20px;
-    width: 90%;
   }
 
   .footer-text {
-    font-size: 16px;
-    font-family: Avenir;
+    font-size: 16px !important;
+    font-family: Avenir !important;
     line-height: 2.33;
     letter-spacing: 1px;
+    font-weight: 100 !important;
   }
 
   .footer-text-1 {
@@ -316,7 +354,7 @@ svg {
   }
 
   .btn-font-size {
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
 
   .btn-height {
@@ -334,11 +372,23 @@ svg {
   }
 
   .heading3 {
-    font-size: 30px !important;
+    font-size: 26px !important;
+    font-weight: 500;
+  }
+
+  .wh-arrow{
+    width: 45px;
+    height: 45px;
   }
 
   .cont-width {
-    width: 75% !important;
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  
+  .cont-width1 {
+    width: 80% !important;
     margin: 0 auto;
   }
 
@@ -355,13 +405,7 @@ svg {
   .arrows-img {
     width: 30px;
     height: 30px;
-  }
-
-  .input-text-area {
-    height: 250px;
-  }
-  
-  
+  }  
 }
 
 @media (max-width: 1399px) {
@@ -378,9 +422,9 @@ svg {
 
 @media (min-width: 992px){
   .hero-input {
-    width: 70% !important;
+    width: 75% !important;
     line-height: 1.5em;
-    font-size: 36px !important;
+    font-size: 30px !important;
   }
 }
 
