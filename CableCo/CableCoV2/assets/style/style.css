@@ -224,7 +224,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: start;
-margin-top: 196px;
+  margin-top: 196px;
 }
 
 .fs-12 {
@@ -599,7 +599,7 @@ margin-top: 196px;
   border: 1px solid rgba(0, 0, 0, 0);
   margin: 3px 8px;
   color: #fff;
-    cursor: pointer;
+  cursor: pointer;
 }
 .date.out-of-scope {
   color: rgba(green, red, blue, 1);
@@ -609,17 +609,95 @@ margin-top: 196px;
   border: 1px solid #fff;
 }
 
-
-.f-box{
-    min-width: 416px;
-    font-size: 17px;
-    color: #8D9781;
+.chat-section-main {
+  background-color: #323b52;
+  padding-bottom: 60px;
 }
 
-.f-box p{
-    min-width: 272px;
+.chat-section-main .chat-heading h1 {
+    margin-left: 65px;
+    color: #444e68;
+    font-size: 62px;
+    font-family: "Old Standard TT", serif;
+}
+.chat-section-main .chat-cont{
+    padding: 40px 0px 0px 17px;
+    width: 610px;
+    height: 1306px;
 }
 
-.f-box p span{
-    color:#c3cad8;
+
+.chat-box {
+  max-width: 415px;
+  min-height: 167px;
+  font-size: 17px;
+  color: #8d97b1;
+  cursor: pointer;
+  background-color: #444e68;
+  padding: 29px 88px 41px 56px;
+  margin-top: 33px;
+  position: relative;
+
+}
+
+.left-triangle{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-right: 33px solid #444e68;
+	border-bottom: 25px solid transparent;
+    top: 100%;
+    left: 33px;
+}
+
+.right-triangle{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-left: 33px solid #444e68;
+	border-bottom: 25px solid transparent;
+    top: 100%;
+    right: 33px;
+}
+
+.left-box{
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.right-box{
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+.chat-section-main .chat-bo:hover {
+  box-shadow: 2px 2px 6px 30px black;
+}
+
+.chat-box p {
+  max-width: 270px;
+}
+
+.chat-box p span {
+  color: #c3cad8;
+}
+
+.chat-bottm-img{
+    width: 240px;
+    height: 139px;
+    margin: auto auto;
+}
+
+.line-chart-sec{
+    color: #fff;
+    text-align: right;
+}
+
+.line-chart-sec h3{
+    color: #C1C4CB;
+    font-size: 20px;
+    margin: 10px 0px;
+    font-weight: lighter;
 }
