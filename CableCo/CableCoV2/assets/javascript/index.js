@@ -241,5 +241,107 @@ $(".click-right").on("click", function (e) {
   loadCalendar(new Date(currentYear, currentMonth));
 });
 
-
 AOS.init();
+
+let chartConfig = {
+  graphset: [
+    {
+      type: "ring",
+      backgroundColor: "none",
+      legend: {
+        item: {
+          cursor: "pointer",
+        },
+        mediaRules: [
+          {
+            visible: false,
+          },
+        ],
+      },
+      plot: {
+        tooltip: {
+          sticky: true,
+          thousandsSeparator: ",",
+          x: "50%",
+          y: "50%",
+        },
+        valueBox: [
+          {
+            type: "all",
+            text: "%t",
+            placement: "out",
+          },
+          {
+            visible: false,
+          },
+        ],
+        animation: {
+          effect: "ANIMATION_EXPAND_VERTICAL",
+          sequence: "ANIMATION_BY_PLOT_AND_NODE",
+        },
+        borderWidth: "0px",
+        slice: "50%",
+      },
+      plotarea: {
+        margin: "70px 0px 10px 0px",
+        backgroundColor: "transparent",
+        borderRadius: "10px",
+        borderWidth: "0px",
+      },
+      scaleR: {
+        refAngle: 300,
+      },
+      series: [
+        {
+          text: "0.0%",
+          values: [0],
+          backgroundColor: "#079FCE",
+        },
+        {
+          text: "7.1%",
+          values: [1306],
+          backgroundColor: "#079FCE",
+        },
+        {
+          text: "1.0%",
+          values: [189],
+          backgroundColor: "#4EE2C0",
+        },
+        {
+          text: "9.6%",
+          values: [1763],
+          backgroundColor: "#EF32FF",
+        },
+        {
+          text: "0.4%",
+          values: [75],
+          backgroundColor: "#DCB337",
+        },
+        {
+          text: "57.1%",
+          values: [10497],
+          backgroundColor: "#FF325E",
+        },
+        {
+          text: "24.8%",
+          values: [4554],
+          backgroundColor: "#7FC2F9",
+        },
+      ],
+    },
+  ],
+};
+
+zingchart.render({
+  id: "myChart",
+  data: chartConfig,
+  height: "350px",
+  width: "350px",
+});
+
+function rotateArrow(myid) {
+  if (myid == "#arr1") {
+    document.querySelector(".arrow-r1").style.transform = "rotateX(180deg)";
+    document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
+  }
+}

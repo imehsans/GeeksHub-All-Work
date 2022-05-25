@@ -615,17 +615,16 @@ main {
 }
 
 .chat-section-main .chat-heading h1 {
-    margin-left: 65px;
-    color: #444e68;
-    font-size: 62px;
-    font-family: "Old Standard TT", serif;
+  margin-left: 65px;
+  color: #444e68;
+  font-size: 62px;
+  font-family: "Old Standard TT", serif;
 }
-.chat-section-main .chat-cont{
-    padding: 40px 0px 0px 17px;
-    width: 610px;
-    height: 1306px;
+.chat-section-main .chat-cont {
+  padding: 40px 0px 0px 17px;
+  width: 610px;
+  height: 1306px;
 }
-
 
 .chat-box {
   max-width: 415px;
@@ -637,39 +636,38 @@ main {
   padding: 29px 88px 41px 56px;
   margin-top: 33px;
   position: relative;
-
 }
 
-.left-triangle{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-top: 0px solid transparent;
-	border-right: 33px solid #444e68;
-	border-bottom: 25px solid transparent;
-    top: 100%;
-    left: 33px;
+.left-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-right: 33px solid #444e68;
+  border-bottom: 25px solid transparent;
+  top: 100%;
+  left: 33px;
 }
 
-.right-triangle{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-top: 0px solid transparent;
-	border-left: 33px solid #444e68;
-	border-bottom: 25px solid transparent;
-    top: 100%;
-    right: 33px;
+.right-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 33px solid #444e68;
+  border-bottom: 25px solid transparent;
+  top: 100%;
+  right: 33px;
 }
 
-.left-box{
-    margin-left: 30px;
-    margin-right: auto;
+.left-box {
+  margin-left: 30px;
+  margin-right: auto;
 }
 
-.right-box{
-    margin-right: 30px;
-    margin-left: auto;
+.right-box {
+  margin-right: 30px;
+  margin-left: auto;
 }
 
 .chat-section-main .chat-bo:hover {
@@ -684,20 +682,119 @@ main {
   color: #c3cad8;
 }
 
-.chat-bottm-img{
-    width: 240px;
-    height: 139px;
-    margin: auto auto;
+.chat-bottm-img {
+  width: 240px;
+  height: 139px;
+  margin: auto auto;
 }
 
-.line-chart-sec{
-    color: #fff;
-    text-align: right;
+.line-chart-sec {
+  color: #fff;
+  text-align: right;
 }
 
-.line-chart-sec h3{
-    color: #C1C4CB;
-    font-size: 20px;
-    margin: 10px 0px;
-    font-weight: lighter;
+.line-chart-sec h3 {
+  color: #c1c4cb;
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight: lighter;
+}
+
+.months ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_svg {
+  min-height: 400px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* .yellow-svg{ */
+/* margin: 0 10px 0 0; */
+/* width: 60%; */
+/* position: absolute; */
+
+/* } */
+
+.blue-svg {
+  margin-top: -170px;
+}
+
+.linechart-details {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.linechart-details ul {
+  display: flex;
+  max-width: 289px;
+  font-size: 11px;
+  justify-content: flex-start;
+}
+
+.linechart-details ul li {
+  /* margin-left: 30px; */
+  /* text-align: left; */
+  padding-left: 10px;
+  min-width: 33%;
+}
+
+/* @import 'https://fonts.googleapis.com/css?family=Montserrat'; */
+/* @import 'https://fonts.googleapis.com/css?family=Lato:400'; */
+
+.chart--container {
+  height: 100%;
+  width: 100%;
+  min-height: 530px;
+  z-index: -10;
+}
+
+.zc-ref {
+  display: none;
+  z-index: -10;
+}
+
+.line-chart-main {
+  margin-right: 40px;
+  line-height: 1;
+}
+
+.text-deco {
+  color: #adb0b9;
+  font-size: 20px;
+  margin-top: 25px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-up-down {
+  display: grid;
+  cursor: pointer;
+}
+
+
+.datalines h4{
+    color: #8D9096;
+    font-size: 18px;
+}
+
+.arrheading {
+  display: flex;
+  align-items: center;
+}
+.arrheading p {
+  margin: 8px 10px;
+  cursor: pointer;
+}
+
+.text-deco span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.datalines {
+  padding: 0px 15px;
 }

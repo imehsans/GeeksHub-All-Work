@@ -13,6 +13,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../CableCoV2/assets/style/style.css" />
@@ -1596,17 +1600,45 @@
               <p>&#9679;&#9679;&#9679;</p>
               <p>Utillization</p>
             </div>
+            <div id="myChart" class="chart--container"></div>
           </div>
           <div class="w-60 res_area_prp">
             <div class="line-chart-sec">
-              <p>&#9679;&#9679;&#9679;</p>
-              <h3>Professional Development Index</h3>
-              <div>
-                <ul>
-                  <li><span>Average</span></li>
-                  <li><span>Your Company 2018</span></li>
-                  <li><span>Your Company 2017</span></li>
-                </ul>
+              <div class="line-chart-main">
+                <p>&#9679;&#9679;&#9679;</p>
+                <h3>Professional Development Index</h3>
+                <div class="linechart-details">
+                  <ul>
+                    <li><span>Average</span></li>
+                    <li><span>Your Company 2018</span></li>
+                    <li><span>Your Company 2017</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="container_svg">
+                <div class="yellow-svg">
+                  <svg height="200" width="100%">
+                    <polyline
+                      width="100%"
+                      points="0,90 40,25 60,40 120,80 160,60 180,10 220,60 240,40
+          295,120 340,60 380,40 400,130 500,20 500,20 600,40 700,90 720,40 729,50 770,50 800,90 850,100 900,30 950,60 1000,70 1050,60 1100,20 1150,90 1200,40 1250,80 1300,10 1400,76 1450,88 1500,68 1550,45 1600,89 1650,34 1650,67 1700,23 1770,34 1880,67 1950,23 2000,78 2050,26 2100,94 2150,88 2200,88 2300,23
+          "
+                      style="fill: none; stroke: #ec982c; stroke-width: 2"
+                    ></polyline>
+                  </svg>
+                </div>
+                <div class="blue-svg">
+                  <svg height="200" width="100%" class="second_svg">
+                    <polyline
+                      width="100%"
+                      points="0,60 20,50 40,90 40,23 90,80 90,50 123,60 123,40
+          140,50 180,80 300,40 400,100 450,20 500,90 600,40 700,90 720,40 729,50 770,50 800,40 850,100 900,50 950,60 1000,20 1050,80 1100,40 1150,90 1200,20 1250,50 1300,40 1400,36 1450,68 1500,48 1550,25 1600,69 1650,34 1650,67 1700,23 1770,34 1880,67 1950,23 2000,78 2050,26 2100,94 2150,88 2200,88 2300,23
+          "
+                      style="fill: none; stroke: #107ec9; stroke-width: 2"
+                    ></polyline>
+                  </svg>
+                </div>
               </div>
               <div class="months">
                 <ul>
@@ -1624,28 +1656,6 @@
                   <li>DEC</li>
                 </ul>
               </div>
-            </div>
-
-            <div id="container_svg">
-              <svg height="200" width="100%">
-                <polyline
-                  width="100%"
-                  points="0,90 40,25 60,40 120,80 160,60 180,10 220,60 240,40
-        295,120 340,60 380,40 400,130 500,20 500,20 600,40 700,90 720,40 729,50 770,50 800,90 850,100 900,30 950,60 1000,70 1050,60 1100,20 1150,90 1200,40 1250,80 1300,10 1400,76 1450,88 1500,68 1550,45 1600,89 1650,34 1650,67 1700,23 1770,34 1880,67 1950,23 2000,78 2050,26 2100,94 2150,88 2200,88 2300,23
-        "
-                  style="fill: none; stroke: #ec982c; stroke-width: 2"
-                ></polyline>
-              </svg>
-
-              <svg height="200" width="100%" class="second_svg">
-                <polyline
-                  width="100%"
-                  points="0,60 20,50 40,90 40,23 90,80 90,50 123,60 123,40
-        140,50 180,80 300,40 400,100 450,20 500,90 600,40 700,90 720,40 729,50 770,50 800,40 850,100 900,50 950,60 1000,20 1050,80 1100,40 1150,90 1200,20 1250,50 1300,40 1400,36 1450,68 1500,48 1550,25 1600,69 1650,34 1650,67 1700,23 1770,34 1880,67 1950,23 2000,78 2050,26 2100,94 2150,88 2200,88 2300,23
-        "
-                  style="fill: none; stroke: #107ec9; stroke-width: 2"
-                ></polyline>
-              </svg>
             </div>
           </div>
         </div>
@@ -1715,7 +1725,53 @@
             <img src="./assets/images/chat2.png" alt="" />
           </div>
         </div>
-        <div class="w-60"></div>
+        <div class="w-60 datalines">
+          <div class="text-deco">
+            <div class="arrheading">
+              <div class="arrow-up-down" onclick="rotateArrow('#arr1')">
+                <i id="arr1" class="arrow-r1 fa fa-angle-up"></i>
+                <i class="arrow-r2 fa fa-angle-down"></i>
+              </div>
+              <div>
+                <p>Wifi</p>
+              </div>
+            </div>
+            <div>
+              <span>&#x22EE;</span>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div>
+                <div>
+                  <h4>Primer Wifi</h4>
+                </div>
+                <div class="">
+                  <span>&#9679;</span>
+                  <span>&#9679;</span>
+                  <pre> Your Company</pre>
+                </div>
+                <div>
+                  <span>&#9679;</span>
+                  <pre> Similar Companies</pre>
+                </div>
+                <div>
+                  <p>Suggestions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <div>
+              <p data-bs-toggle="collapse" data-bs-target="#wifi">Wifi</p>
+              <p data-bs-toggle="collapse" data-bs-target="#wifi">&#x22EE;</p>
+            </div>
+            <div class="collapse" id="wifi">pakistan</div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -2099,6 +2155,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../CableCoV2/assets/javascript/index.js"></script>
   </body>
