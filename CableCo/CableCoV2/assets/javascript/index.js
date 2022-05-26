@@ -116,10 +116,11 @@ function ShowData(myid) {
 }
 
 function showInnerData(myid) {
-  if (document.querySelector(myid).style.display === "block") {
-    document.querySelector(myid).style.display = "none";
+    var showInner = document.querySelector(myid);
+  if (showInner.style.display === "block") {
+    showInner.style.display = "none";
   } else {
-    document.querySelector(myid).style.display = "block";
+    showInner.style.display = "block";
   }
 }
 function listChart(myid) {
@@ -340,8 +341,17 @@ zingchart.render({
 });
 
 function rotateArrow(myid) {
-  if (myid == "#arr1") {
-    document.querySelector(".arrow-r1").style.transform = "rotateX(180deg)";
+//   if () {
+    document.querySelector("<i>").style.transform = "rotateX(180deg)";
     document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
+//   }
+}
+
+function showProg(myid) {
+    var showInner = document.querySelector(myid);
+  if (showInner.style.display === "block") {
+    showInner.style.display = "none";
+  } else {
+    showInner.style.display = "block";
   }
 }
