@@ -672,7 +672,7 @@ main {
 }
 
 .chat-section-main .chat-box:hover {
-  box-shadow: 0px 5px 20px 5px  rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.6);
 }
 
 .chat-box p {
@@ -739,7 +739,6 @@ main {
   padding-left: 10px;
   min-width: 33%;
 }
-
 
 .zc-ref {
   display: none;
@@ -969,287 +968,285 @@ main {
 /* } */
 /* } */
 
-.compHead h1{
-    color: #444E68;
-    font-size: 62px !important;
-    font-family: 'Old Standard TT', serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.compHead h1 {
+  color: #444e68;
+  font-size: 62px !important;
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.addMore{
-    margin-left: 40px;
+.addMore {
+  margin-left: 40px;
 }
-.addMore span{
-    padding-left: 10px;
+.addMore span {
+  padding-left: 10px;
 }
-
 
 /* ????????????????????????/////////////////////// */
 .progress_image .image_container {
-    display: flex;
-  }
-  
- .progress_image .image_container .background > div {
-    width: 175px;
-    height: 175px;
-    background: -moz-linear-gradient(top, #252c3e 0%, #4b5771 100%);
-    background: -webkit-linear-gradient(top, #252c3e 0%, #4b5771 100%);
-    background: linear-gradient(to bottom, #252c3e 0%, #4b5771 100%);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-    margin-bottom: 24px;
-  }
-  .progress_image .image_container .background h1 {
-    margin: 0;
-    font-size: 92px;
-    font-weight: bold;
-    background: -moz-linear-gradient(top, #4b5771 0%, #252c3e 100%);
-    background: -webkit-linear-gradient(top, #4b5771 0%, #252c3e 100%);
-    background: linear-gradient(to bottom, #4b5771 0%, #252c3e 100%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  
-   .number_circle {
-    border: none;
-    background-image: linear-gradient(#242d42, #3e475f);
-  } 
-  .number_circle h1 {
-    font-size: 79px;
-    color: #fff;
-    opacity: 0.2;
-    font-family: "Roboto", sans-serif;
-  }
-  .number_circle img {
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    margin-left: 0px !important;
-    margin-top: 0px !important;
-  }
-  .top_space {
-    margin-top: 32px;
-  }
-  
-  /*  Circle animation --- START  */
-  .circle-block,
-  .first-circle-block {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-left: 6px;
-  }
-  .first-circle-block > .primary_container_img {
-    padding-top: 15px;
-  }
-  .first-circle-block > .primary_container_img ul {
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-  }
-  .first-circle-block > .primary_container_img ul li {
-    width: auto;
-    padding-right: 5px;
-  }
-  .first-circle-block > .primary_container_img ul li p {
-    padding-left: 3px;
-  }
-  .circle-block2 > div h1,
-  .circle-block2 > div p {
-    color: #31d6c4;
-  }
-  .circle-block svg {
-    width: 180px;
-  }
-  .percentage {
-    position: absolute;
-    color: #f70065;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .percentage h1 {
-    font-size: 55px;
-    line-height: 41px;
-  }
-  .percentage p {
-    font-size: 11px;
-  }
-  .percentage-area h1 {
-    padding-top: 21px;
-    margin-bottom: 0;
-    padding-bottom: 38px;
-    margin-top: 0;
-    font-size: 34px;
-    line-height: 41px;
-  }
-  .animation-area {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 37px;
-  }
-  .animation-area .extra-bc {
-    position: absolute;
-    top: 36px;
-    left: 36px;
-    bottom: 40px;
-    right: 34px;
-    background: #2c4361;
-    border-radius: 50%;
-  }
-  .percentage-area h1 sup {
-    font-size: 17px;
-    position: relative;
-    bottom: 10px;
-  }
-  .first-circle-block svg {
-    width: 187px;
-  }
-  .circle-inner {
-    fill: none;
-    stroke-width: 0.5px;
-    stroke: #4ee2c0;
-  }
-  .second-circle .circle-inner {
-    fill: none;
-    stroke-width: 0px;
-    stroke: #31d6c4;
-  }
-  .third-circle .circle-inner {
-    fill: none;
-    stroke-width: 1px;
-    stroke: #ef32ff;
-  }
-  .percentage2 {
-    color: #31d6c4;
-  }
-  
-  .circle_2 {
-    margin-left: 27px;
-    margino-top: 3;
-  }
-  .circle-inner2 {
-    fill: none;
-    stroke-width: 8px;
-    stroke: #31d6c4;
-  }
-  .circle1,
-  .circle11,
-  .circle111,
-  .circle2 {
-    fill: none;
-    stroke: #9c34fd;
-    transition: all 1.5s ease-in-out;
-    stroke-dasharray: 283.2865905761719;
-    stroke-dashoffset: 282.2865905761719;
-  }
-  .circleres1,
-  .circleres11,
-  .circleres111,
-  .circleres2 {
-    fill: none;
-    stroke: #9c34fd;
-    transition: all 1.5s ease-in-out;
-    stroke-dasharray: 283.2865905761719;
-    stroke-dashoffset: 282.2865905761719;
-  }
-  .circle1,
-  .circle11,
-  .circle111 {
-    stroke-width: 6px;
-  }
-  .circleres1,
-  .circleres11,
-  .circleres111 {
-    stroke-width: 6px;
-  }
-  .circle11 {
-    stroke: #2da1ec;
-  }
-  .circleres11 {
-    stroke: #2da1ec;
-  }
-  .circle111 {
-    stroke: #ef32ff;
-  }
-  .circleres111 {
-    stroke: #ef32ff;
-  }
-  .circle2 {
-    stroke: #31d6c4;
-    stroke-width: 10px;
-  }
-  .circleres2 {
-    stroke: #31d6c4;
-    stroke-width: 10px;
-  }
-  .second-circle {
-    position: absolute;
-    top: 0;
-    padding-top: 29px;
-  }
-  .third-circle {
-    position: absolute;
-    top: 0;
-    padding-top: 30px;
-  }
-  .percentagearea {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .percentagearea > div {
-    text-align: center;
-  }
-  .percentagearea > div.pink {
-    color: #9c34fd;
-  }
-  .pink p {
-    padding-top: 5px;
-  }
-  .percentagearea > div.green {
-    color: #2da1ec;
-    padding-top: 34px;
-  }
-  .percentagearea h1 {
-    margin: 0;
-    font-size: 48px;
-    letter-spacing: -1px;
-    font-weight: 100;
-    padding-top: 14px;
-  }
-  .percentagearea h1 span:last-child {
-    font-size: 33px;
-  }
-   .second-circle svg {
-    width: 130px;
-  }
-  
+  display: flex;
+}
+
+.progress_image .image_container .background > div {
+  width: 175px;
+  height: 175px;
+  background: -moz-linear-gradient(top, #252c3e 0%, #4b5771 100%);
+  background: -webkit-linear-gradient(top, #252c3e 0%, #4b5771 100%);
+  background: linear-gradient(to bottom, #252c3e 0%, #4b5771 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 24px;
+}
+.progress_image .image_container .background h1 {
+  margin: 0;
+  font-size: 92px;
+  font-weight: bold;
+  background: -moz-linear-gradient(top, #4b5771 0%, #252c3e 100%);
+  background: -webkit-linear-gradient(top, #4b5771 0%, #252c3e 100%);
+  background: linear-gradient(to bottom, #4b5771 0%, #252c3e 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.number_circle {
+  border: none;
+  background-image: linear-gradient(#242d42, #3e475f);
+}
+.number_circle h1 {
+  font-size: 79px;
+  color: #fff;
+  opacity: 0.2;
+  font-family: "Roboto", sans-serif;
+}
+.number_circle img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+}
+.top_space {
+  margin-top: 32px;
+}
+
+/*  Circle animation --- START  */
+.circle-block,
+.first-circle-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 6px;
+}
+.first-circle-block > .primary_container_img {
+  padding-top: 15px;
+}
+.first-circle-block > .primary_container_img ul {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+}
+.first-circle-block > .primary_container_img ul li {
+  width: auto;
+  padding-right: 5px;
+}
+.first-circle-block > .primary_container_img ul li p {
+  padding-left: 3px;
+}
+.circle-block2 > div h1,
+.circle-block2 > div p {
+  color: #31d6c4;
+}
+.circle-block svg {
+  width: 180px;
+}
+.percentage {
+  position: absolute;
+  color: #f70065;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.percentage h1 {
+  font-size: 55px;
+  line-height: 41px;
+}
+.percentage p {
+  font-size: 11px;
+}
+.percentage-area h1 {
+  padding-top: 21px;
+  margin-bottom: 0;
+  padding-bottom: 38px;
+  margin-top: 0;
+  font-size: 34px;
+  line-height: 41px;
+}
+.animation-area {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+}
+.animation-area .extra-bc {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  bottom: 40px;
+  right: 34px;
+  background: #2c4361;
+  border-radius: 50%;
+}
+.percentage-area h1 sup {
+  font-size: 17px;
+  position: relative;
+  bottom: 10px;
+}
+.first-circle-block svg {
+  width: 187px;
+}
+.circle-inner {
+  fill: none;
+  stroke-width: 0.5px;
+  stroke: #4ee2c0;
+}
+.second-circle .circle-inner {
+  fill: none;
+  stroke-width: 0px;
+  stroke: #31d6c4;
+}
+.third-circle .circle-inner {
+  fill: none;
+  stroke-width: 1px;
+  stroke: #ef32ff;
+}
+.percentage2 {
+  color: #31d6c4;
+}
+
+.circle_2 {
+  margin-left: 27px;
+  margino-top: 3;
+}
+.circle-inner2 {
+  fill: none;
+  stroke-width: 8px;
+  stroke: #31d6c4;
+}
+.circle1,
+.circle11,
+.circle111,
+.circle2 {
+  fill: none;
+  stroke: #9c34fd;
+  transition: all 1.5s ease-in-out;
+  stroke-dasharray: 283.2865905761719;
+  stroke-dashoffset: 282.2865905761719;
+}
+.circleres1,
+.circleres11,
+.circleres111,
+.circleres2 {
+  fill: none;
+  stroke: #9c34fd;
+  transition: all 1.5s ease-in-out;
+  stroke-dasharray: 283.2865905761719;
+  stroke-dashoffset: 282.2865905761719;
+}
+.circle1,
+.circle11,
+.circle111 {
+  stroke-width: 6px;
+}
+.circleres1,
+.circleres11,
+.circleres111 {
+  stroke-width: 6px;
+}
+.circle11 {
+  stroke: #2da1ec;
+}
+.circleres11 {
+  stroke: #2da1ec;
+}
+.circle111 {
+  stroke: #ef32ff;
+}
+.circleres111 {
+  stroke: #ef32ff;
+}
+.circle2 {
+  stroke: #31d6c4;
+  stroke-width: 10px;
+}
+.circleres2 {
+  stroke: #31d6c4;
+  stroke-width: 10px;
+}
+.second-circle {
+  position: absolute;
+  top: 0;
+  padding-top: 29px;
+}
+.third-circle {
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+}
+.percentagearea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.percentagearea > div {
+  text-align: center;
+}
+.percentagearea > div.pink {
+  color: #9c34fd;
+}
+.pink p {
+  padding-top: 5px;
+}
+.percentagearea > div.green {
+  color: #2da1ec;
+  padding-top: 34px;
+}
+.percentagearea h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: -1px;
+  font-weight: 100;
+  padding-top: 14px;
+}
+.percentagearea h1 span:last-child {
+  font-size: 33px;
+}
+.second-circle svg {
+  width: 130px;
+}
