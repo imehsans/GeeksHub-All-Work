@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/style/charts.css"> -->
 
     <link rel="stylesheet" href="../CableCoV2/assets/style/style.css" />
   </head>
@@ -1600,7 +1601,124 @@
               <p>&#9679;&#9679;&#9679;</p>
               <p>Utillization</p>
             </div>
-            <div id="myChart" class="chart--container"></div>
+
+              <div>
+
+              <div id="myChart" class="chart--container"></div>
+              
+              <div class="progress_image">
+                <div class="image_container comcast_section_u">
+                  <div class="first-circle-block">
+                    <div class="animation-area">
+                      <div class="extra-bc"></div>
+                      <div
+                        class="first-circle percentage__num1"
+                        data-percentage="73"
+                      >
+                        <svg viewBox="0 0 100 100">
+                          <circle
+                            class="circle-inner"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                            fill="none"
+                            stroke-dasharray="2, 2"
+                            transform="rotate(-90 50 50)"
+                          ></circle>
+                          <circle
+                            class="circle1"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                            transform="rotate(-90 50 50)"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div
+                        class="second-circle percentage__num11"
+                        data-percentage="27"
+                      >
+                        <svg viewBox="0 0 100 100">
+                          <circle
+                            class="circle-inner"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                            fill="none"
+                            stroke-dasharray="2, 4"
+                            transform="rotate(-90 50 50)"
+                          ></circle>
+                          <circle
+                            class="circle11"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                            transform="rotate(-90 50 50)"
+                          ></circle>
+                        </svg>
+                        <div class="percentagearea">
+                          <div class="pink">
+                            <h1>
+                              <span
+                                class="percentage__num121"
+                                data-percentage="12322"
+                              ></span>
+                            </h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+              <div class="progress_image prog_img_second">
+                <div class="image_container ex_image_container">
+                  <div class="utilization_container">
+                    <div class="background">
+                      <div>
+                        <h1 class="percentage__num3" data-percentage="51"></h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skyblue_svg">
+                    <div class="circle-block circle_2">
+                      <div class="utilization_container">
+                        <svg viewBox="0 0 100 100">
+                          <circle
+                            class="circle-inner2"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                            r="100"
+                            fill="none"
+                            stroke-dasharray="2, 4"
+                            transform="rotate(-90 50 50)"
+                          ></circle>
+                          <circle
+                            class="circle2"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                            transform="rotate(-90 50 50)"
+                          ></circle>
+                        </svg>
+
+                        <div class="percentage percentage2">
+                          <h1>
+                            <span
+                              class="percentage__num2"
+                              data-percentage="35"
+                            ></span>
+                          </h1>
+                          <p>OVERALL SCORE</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="w-60 res_area_prp">
             <div class="line-chart-sec">
@@ -1657,9 +1775,9 @@
                 </ul>
               </div>
             </div>
-            <div class="mt-5 ">
+            <div class="mt-5">
               <div class="compHead">
-               <h1>Company Competencies</h1>
+                <h1>Company Competencies</h1>
               </div>
               <div class="addMore color-orng fs-20 date-main">
                 <i class="fa fa-th"></i>
@@ -1738,9 +1856,9 @@
           <div class="text-deco">
             <div class="arrheading">
               <div
-              onclick="showInnerData('#wifi')"
+                onclick="showInnerData('#wifi')"
                 class="arrow-up-down date-main"
-                >
+              >
                 <i id="arr1" class="arrow-r1 fa fa-angle-up"></i>
                 <i class="arrow-r2 fa fa-angle-down"></i>
               </div>
@@ -2554,7 +2672,7 @@
               <span class="date-main">&#x22EE;</span>
             </div>
           </div>
-          <div  class="showing-Data" id="ethernet" style="display: none">
+          <div class="showing-Data" id="ethernet" style="display: none">
             <div>
               <div class="flex-between">
                 <div>
@@ -2606,7 +2724,7 @@
               </div>
             </div>
 
-            <div >
+            <div>
               <div class="flex-between">
                 <div>
                   <h4>Intermediate Ethernet</h4>
@@ -2994,6 +3112,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- ???????????????????//////////////////   -->
+
+    <!-- ???????????????????//////////////////   -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

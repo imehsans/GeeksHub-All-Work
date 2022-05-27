@@ -116,7 +116,7 @@ function ShowData(myid) {
 }
 
 function showInnerData(myid) {
-    var showInner = document.querySelector(myid);
+  var showInner = document.querySelector(myid);
   if (showInner.style.display === "block") {
     showInner.style.display = "none";
   } else {
@@ -341,17 +341,318 @@ zingchart.render({
 });
 
 function rotateArrow(myid) {
-//   if () {
-    document.querySelector("<i>").style.transform = "rotateX(180deg)";
-    document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
-//   }
+  //   if () {
+  document.querySelector("<i>").style.transform = "rotateX(180deg)";
+  document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
+  //   }
 }
 
 function showProg(myid) {
-    var showInner = document.querySelector(myid);
+  var showInner = document.querySelector(myid);
   if (showInner.style.display === "block") {
     showInner.style.display = "none";
   } else {
     showInner.style.display = "block";
   }
+}
+
+// ????????????????????///?//////////////////
+
+$(document).ready(function () {
+  $(".close_icon").click(function () {
+    $(".click_to_show").fadeOut();
+  });
+  $(".add_more").click(function () {
+    $(".click_to_show").fadeIn();
+  });
+
+  $(".click-div").on("click", function () {
+    // $('.upper_container').slideUp();
+    $(this).parent().find(".upper_container").slideToggle();
+  });
+  $(".text_upper i").on("click", function () {
+    $(".upper_container").slideUp();
+  });
+
+  $(".popup_dots ").on("click", function () {
+    $(".popup_inner").fadeOut();
+    $(this).parent().find(".popup_inner").fadeIn();
+  });
+  $(".icon_close i").on("click", function () {
+    $(".popup_inner").fadeOut();
+  });
+  $(".graph_outer ").on("click", function () {
+    $(".popup_graph_ex").fadeOut();
+    $(this).parent().find(".popup_graph_ex").fadeIn();
+  });
+  $(".icon_close i").on("click", function () {
+    $(".popup_graph_ex").fadeOut();
+  });
+
+  $(".alone_click ").on("click", function () {
+    $(".alone_popup").fadeOut();
+    $(this).parent().find(".alone_popup").fadeIn();
+  });
+  $(".icon_close i").on("click", function () {
+    $(".popup_inner").fadeOut();
+  });
+
+  $(".color_txt ").on("click", function () {
+    $(".popup_suggestion").fadeOut();
+    $(this).parent().find(".popup_suggestion").fadeIn();
+  });
+  $(".head_primary .fa-close").on("click", function () {
+    $(".popup_suggestion").fadeOut();
+  });
+
+  /* */
+  $(".clicked_suggestion i").on("click", function () {
+    $(".popup_suggestion").fadeOut();
+  });
+  $(".click-nav").on("click", function () {
+    $(".nav-hide").toggle();
+  });
+  $(".image-click").on("click", function () {
+    $(".image-show").toggle();
+  });
+
+  // Menu toggle
+  $(".calender_container > div").click(function () {
+    $(".click_calender").removeClass("head_tex");
+    $(this).find(".click_calender").toggleClass("head_tex");
+    if (!$(this).hasClass("ads")) {
+      $(".calender_wrapper").slideUp();
+      $(this).find(".calender_wrapper").slideToggle();
+      $(".calender_container > div").removeClass("ads");
+      $(this).addClass("ads");
+    }
+    if ($(this).data("view") === "yaba-daba") {
+      $(this).closest(".upper_container").addClass("extra-width");
+    } else {
+      $(this).closest(".upper_container").removeClass("extra-width");
+    }
+    if ($(this).data("view") === "third") {
+      $(this).addClass("set_bc");
+    } else {
+      $(".calender_container > div").removeClass("set_bc");
+    }
+  });
+  $(".view_all").click(function () {
+    $(".last_seven").slideToggle();
+  });
+
+  $(".open_close_div > div > div.wifi_container > div").on(
+    "click",
+    function () {
+      $(this).parent().parent().find(".progress_section").slideToggle();
+      $(this).toggleClass("clr_white");
+    }
+  );
+  $("#myUpDiv").on("click", function () {
+    let vheight = $(window).height();
+
+    $("html, body").animate(
+      {
+        scrollTop: (Math.ceil($(window).scrollTop() / vheight) - 1) * vheight,
+      },
+      500
+    );
+  });
+  $("#myBottomDiv").on("click", function () {
+    let vheight = $(window).height();
+    $("html, body").animate(
+      {
+        scrollTop: (Math.floor($(window).scrollTop() / vheight) + 1) * vheight,
+      },
+      500
+    );
+  });
+  allAnimations();
+  resanimationFirst();
+  resanimationThird();
+  resanimationSecond();
+});
+
+let val = 0,
+  val2 = 0;
+$(document).on("scroll", function () {
+  allAnimations();
+});
+function allAnimations() {
+  let viewportHeight = $(window).height();
+  let cal = null;
+  if ($(".comcast_section_u").length) {
+    cal = $(".comcast_section_u").offset();
+    if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+      if (val === 0) {
+        animationFirst();
+        animationSecond();
+        $("#container_svg").show();
+        val = 1;
+      }
+    }
+    cal = $(".progress_image").offset();
+    if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+      if (val2 === 0) {
+        animationThird();
+        val2 = 1;
+      }
+    }
+  }
+
+  // prog_1_1_1
+  cal = $(".prog_1_1_1").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_1_1 .progress-bar").css(
+      "width",
+      $(".prog_1_1_1 .progress-bar").data("percentage") + "%"
+    );
+  }
+  cal = $(".prog_1_1_2").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_1_2 .progress-bar").css(
+      "width",
+      $(".prog_1_1_2 .progress-bar").data("percentage") + "%"
+    );
+  }
+
+  // prog_1_1_1
+  cal = $(".prog_1_1_1").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_1_1 .progress-bar").css(
+      "width",
+      $(".prog_1_1_1 .progress-bar").data("percentage") + "%"
+    );
+  }
+
+  // prog_1_1_2
+  cal = $(".prog_1_1_2").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_1_2 .progress-bar").css(
+      "width",
+      $(".prog_1_1_2 .progress-bar").data("percentage") + "%"
+    );
+  }
+
+  // prog_1_2_1
+  cal = $(".prog_1_2_1").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_2_1 .progress-bar").css(
+      "width",
+      $(".prog_1_2_1 .progress-bar").data("percentage") + "%"
+    );
+  }
+  // prog_1_2_2
+  cal = $(".prog_1_2_2").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_2_2 .progress-bar").css(
+      "width",
+      $(".prog_1_2_2 .progress-bar").data("percentage") + "%"
+    );
+  }
+  // prog_1_3_1
+  cal = $(".prog_1_3_1").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_3_1 .progress-bar").css(
+      "width",
+      $(".prog_1_3_1 .progress-bar").data("percentage") + "%"
+    );
+  }
+
+  // prog_1_3_2
+  cal = $(".prog_1_3_2").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_3_2 .progress-bar").css(
+      "width",
+      $(".prog_1_3_2 .progress-bar").data("percentage") + "%"
+    );
+  }
+
+  // prog_1_4_1
+  cal = $(".prog_1_4_1").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_4_1 .progress-bar").css(
+      "width",
+      $(".prog_1_4_1 .progress-bar").data("percentage") + "%"
+    );
+  }
+  // prog_1_3_2
+  cal = $(".prog_1_4_2").offset();
+  if ($(this).scrollTop() > cal.top - viewportHeight * (90 / 100)) {
+    $(".prog_1_4_2 .progress-bar").css(
+      "width",
+      $(".prog_1_4_2 .progress-bar").data("percentage") + "%"
+    );
+  }
+  if ($(this).scrollTop() > 0) {
+    $("#myUpDiv").addClass("teal_color");
+  } else {
+    $("#myUpDiv").removeClass("teal_color");
+  }
+  if ($(window).scrollTop() + $(window).height() != $(document).height()) {
+    $("#myBottomDiv").addClass("teal_color");
+  } else {
+    $("#myBottomDiv").removeClass("teal_color");
+  }
+}
+
+function animationFirst() {
+  let circle1 = document.querySelector("svg .circle1");
+  let percentageElement1 = document.querySelector(".percentage__num1");
+  let i = 1;
+  let percentageValue1 = percentageElement1.getAttribute("data-percentage");
+  let totalLegth1 = 282.2865905761719 || circle1.getTotalLength();
+  let counter;
+  circle1.style.strokeDashoffset =
+    totalLegth1 - (totalLegth1 * percentageValue1) / 100;
+  // counter = setInterval(function() {
+  //     (i <= percentageValue1) ? percentageElement1.innerHTML = i++ : clearInterval(counter);
+  // }, 1000 / percentageValue1);
+  let circle11 = document.querySelector("svg .circle11");
+  let percentageElement11 = document.querySelector(".percentage__num11");
+  let a = 0;
+  let percentageValue11 = percentageElement11.getAttribute("data-percentage");
+  let totalLegth11 = 282.2865905761719 || circle11.getTotalLength();
+  let counter1;
+  circle11.style.strokeDashoffset =
+    totalLegth11 - (totalLegth11 * percentageValue11) / 100;
+  let percentageElement121 = document.querySelector(".percentage__num121");
+  let percentageValue121 = percentageElement121.getAttribute("data-percentage");
+  counter1 = setInterval(function () {
+    a = a + 89;
+    if (a <= percentageValue121) {
+      percentageElement121.innerHTML = a;
+    } else {
+      percentageElement121.innerHTML = percentageValue121;
+      clearInterval(counter1);
+    }
+  }, 1000 / percentageValue121);
+}
+
+function animationSecond() {
+  let circle2 = document.querySelector("svg .circle2");
+  let percentageElement1 = document.querySelector(".percentage__num2");
+  let i = 1;
+  let percentageValue1 = percentageElement1.getAttribute("data-percentage");
+  let totalLegth1 = 282.2865905761719 || circle2.getTotalLength();
+  let counter;
+  circle2.style.strokeDashoffset =
+    totalLegth1 - (totalLegth1 * percentageValue1) / 100;
+  counter = setInterval(function () {
+    i <= percentageValue1
+      ? (percentageElement1.innerHTML = i++)
+      : clearInterval(counter);
+  }, 1000 / percentageValue1);
+}
+
+function animationThird() {
+  let percentageElement1 = document.querySelector(".percentage__num3");
+  let i = 1;
+  let percentageValue1 = percentageElement1.getAttribute("data-percentage");
+  let counter;
+  counter = setInterval(function () {
+    i <= percentageValue1
+      ? (percentageElement1.innerHTML = i++)
+      : clearInterval(counter);
+  }, 1000 / percentageValue1);
 }
