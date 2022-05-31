@@ -79,15 +79,89 @@
           </div>
         </div>
       </nav>
+
+      <div cpass="headerpos">
+        <div class="respon-header">
+          <div class="responsive-nav">
+            <div class="displayFlex">
+              <div class="h-100 flex-align-center">
+                <div class="brand-top">
+                  <h1>CableCo</h1>
+                </div>
+                <img
+                  class="logo-img"
+                  src="../CableCoV2/assets/images/src.png"
+                  alt="src img"
+                />
+              </div>
+
+              <div class="scte_dropdown">
+                <img class="scte-logo" src="./assets/images/text.png" alt="" />
+                <span onclick="showInnerData('#scte-dropdown')">
+                  <i class="fa fa-angle-down color-white image-click1"></i>
+                </span>
+                <div
+                  id="scte-dropdown"
+                  class="scte-drop-cont showAnim"
+                  style="display: none"
+                >
+                  <a href="#"><p class="com-view">Company View</p></a>
+                  <a href="#"><p class="home">Home</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="humb_dropdown">
+              <span onclick="showInnerData('#hum-dropdown')">
+                <i class="fa fa-bars color-white"></i>
+              </span>
+              <div
+                id="hum-dropdown"
+                class="hum-drop-cont showAnim"
+                style="display: none"
+              >
+                <a href="#"><p class="">Change Setting</p></a>
+                <a href="#"><p class="">Export/Share</p></a>
+                <a href="#"><p class="">Support/FAQs</p></a>
+                <a href="#"><p class="">Log Out</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-list-main">
+          <ul class="m-p-unset top-list text-uppercase flex-between">
+            <li>
+              <a class="header-element-padding home text-white" href="#Home">Home</a>
+            </li>
+            <li>
+              <a
+                class="header-element-padding coursework-hov text-white"
+                href="#coursework"
+                >coursework</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-element-padding certification-hov text-white"
+                href="#certification"
+                >certification</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section class="hero-section">
+      <div class="hero-section">
         <div class="overlay-back"></div>
-      </section>
+      </div>
 
       <section class="overlay-data">
+        <div >
+
+        </div>
         <div class="set-pos displayFlex h-100 align-items-center">
+          
           <div class="w-20 bg-green1 overlay-padding date-main">
             <div id="toggler1" class="showAnim" style="display: none">
               <div class="Togg-back">
@@ -134,6 +208,7 @@
               </div>
             </div>
           </div>
+          
           <div class="w-20 bg-pink1 overlay-padding date-main">
             <div id="toggler2" class="showAnim" style="display: none">
               <div class="Togg-back">
@@ -154,7 +229,11 @@
                 <span>&#9679;&#9679;&#9679;</span>
               </div>
               <div>
-                <img src="./assets/images/exc-tri.png" class="worning-img" alt="negative worning" />
+                <img
+                  src="./assets/images/exc-tri.png"
+                  class="worning-img"
+                  alt="negative worning"
+                />
               </div>
             </div>
             <div
@@ -187,6 +266,7 @@
               </div>
             </div>
           </div>
+          
           <div class="w-20 bg-blue1 overlay-padding date-main">
             <div id="toggler3" class="showAnim" style="display: none">
               <div class="Togg-back">
@@ -207,7 +287,11 @@
                 <span>&#9679;&#9679;&#9679;</span>
               </div>
               <div>
-                <img src="./assets/images/exc-tri.png" class="worning-img" alt="negative worning" />
+                <img
+                  src="./assets/images/exc-tri.png"
+                  class="worning-img"
+                  alt="negative worning"
+                />
               </div>
             </div>
             <div
@@ -241,6 +325,7 @@
               </div>
             </div>
           </div>
+          
           <div class="w-20 bg-lightBlue1 overlay-padding date-main">
             <div id="toggler4" class="showAnim" style="display: none">
               <div class="Togg-back">
@@ -286,6 +371,7 @@
               </div>
             </div>
           </div>
+          
           <div class="w-20 bg-orange1 overlay-padding date-main">
             <div id="toggler5" class="showAnim" style="display: none">
               <div class="Togg-back">
@@ -305,7 +391,11 @@
                 <span>&#9679;&#9679;&#9679;</span>
               </div>
               <div>
-                <img src="./assets/images/exc-tri.png" class="worning-img" alt="negative worning" />
+                <img
+                  src="./assets/images/exc-tri.png"
+                  class="worning-img"
+                  alt="negative worning"
+                />
               </div>
             </div>
             <div
@@ -1613,92 +1703,96 @@
         <div class="utal-flex">
           <div class="utail-charts">
             <div class="utal-cha-wid">
-            <div class="pos-rel">
-              <p
-                onclick="ShowData('#utilization-togg')"
-                class="color-white date-main"
-              >
-                &#9679;&#9679;&#9679;
-              </p>
-              <div id="utilization-togg" class="showAnim" style="display: none">
-                <div class="utilization-togg-back">
-                  <p class="utilization-togg">
-                    The number of individuals utilizing the metrics (except
-                    membership) being measured on the metrics items below.
-                  </p>
-                  <p
-                    onclick="offToggler('#utilization-togg')"
-                    class="cross-togg fs-12"
-                  >
-                    &#x2573;
-                  </p>
+              <div class="pos-rel">
+                <p
+                  onclick="ShowData('#utilization-togg')"
+                  class="color-white date-main"
+                >
+                  &#9679;&#9679;&#9679;
+                </p>
+                <div
+                  id="utilization-togg"
+                  class="showAnim"
+                  style="display: none"
+                >
+                  <div class="utilization-togg-back">
+                    <p class="utilization-togg">
+                      The number of individuals utilizing the metrics (except
+                      membership) being measured on the metrics items below.
+                    </p>
+                    <p
+                      onclick="offToggler('#utilization-togg')"
+                      class="cross-togg fs-12"
+                    >
+                      &#x2573;
+                    </p>
+                  </div>
                 </div>
+
+                <h3 class="utalization-h3">Utillization</h3>
               </div>
 
-              <h3 class="utalization-h3">Utillization</h3>
-            </div>
-
-            <div class="pos-rel">
-              
-              <div class="progress-chart">
-                <div class="progress_image">
-                  <div class="image_container comcast_section_u">
-                    <div class="first-circle-block">
-                      <div class="animation-area">
-                        <div class="extra-bc"></div>
-                        <div
-                          class="first-circle percentage__num1"
-                          data-percentage="73"
-                        >
-                          <svg viewBox="0 0 100 100">
-                            <circle
-                              class="circle-inner"
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              fill="none"
-                              stroke-dasharray="2, 2"
-                              transform="rotate(-90 50 50)"
-                            ></circle>
-                            <circle
-                              class="circle1"
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              transform="rotate(-90 50 50)"
-                            ></circle>
-                          </svg>
-                        </div>
-                        <div
-                          class="second-circle percentage__num11"
-                          data-percentage="27"
-                        >
-                          <svg viewBox="0 0 100 100">
-                            <circle
-                              class="circle-inner"
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              fill="none"
-                              stroke-dasharray="2, 4"
-                              transform="rotate(-90 50 50)"
-                            ></circle>
-                            <circle
-                              class="circle11"
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              transform="rotate(-90 50 50)"
-                            ></circle>
-                          </svg>
-                          <div class="percentagearea">
-                            <div class="pink">
-                              <h1>
-                                <span
-                                  class="percentage__num121"
-                                  data-percentage="12322"
-                                ></span>
-                              </h1>
+              <div class="pos-rel">
+                <div class="progress-chart">
+                  <div class="progress_image">
+                    <div class="image_container comcast_section_u">
+                      <div class="first-circle-block">
+                        <div class="animation-area">
+                          <div class="extra-bc"></div>
+                          <div
+                            class="first-circle percentage__num1"
+                            data-percentage="73"
+                          >
+                            <svg viewBox="0 0 100 100">
+                              <circle
+                                class="circle-inner"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                fill="none"
+                                stroke-dasharray="2, 2"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                              <circle
+                                class="circle1"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                            </svg>
+                          </div>
+                          <div
+                            class="second-circle percentage__num11"
+                            data-percentage="27"
+                          >
+                            <svg viewBox="0 0 100 100">
+                              <circle
+                                class="circle-inner"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                fill="none"
+                                stroke-dasharray="2, 4"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                              <circle
+                                class="circle11"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                            </svg>
+                            <div class="percentagearea">
+                              <div class="pink">
+                                <h1>
+                                  <span
+                                    class="percentage__num121"
+                                    data-percentage="12322"
+                                  ></span>
+                                </h1>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1706,122 +1800,121 @@
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="zingchart-ab">
-                <div id="myChart" class="chart--container"></div>
-              </div>
-              <div class="set-pos-51chart">
-                <div class="progress_image prog_img_second">
-                  <div class="image_container ex_image_container">
-                    <div class="utilization_container">
-                      <div class="background">
-                        <div>
-                          <h1
-                            class="percentage__num3"
-                            data-percentage="51"
-                          ></h1>
+                <div class="zingchart-ab">
+                  <div id="myChart" class="chart--container"></div>
+                </div>
+                <div class="set-pos-51chart">
+                  <div class="progress_image prog_img_second">
+                    <div class="image_container ex_image_container">
+                      <div class="utilization_container">
+                        <div class="background">
+                          <div>
+                            <h1
+                              class="percentage__num3"
+                              data-percentage="51"
+                            ></h1>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="skyblue_svg">
-                      <div class="circle-block circle_2">
-                        <div class="utilization_container">
-                          <svg viewBox="0 0 100 100">
-                            <circle
-                              class="circle-inner2"
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              r="100"
-                              fill="none"
-                              stroke-dasharray="2, 4"
-                              transform="rotate(-90 50 50)"
-                            ></circle>
-                            <circle
-                              class="circle2"
-                              cx="50"
-                              cy="50"
-                              r="45"
-                              transform="rotate(-90 50 50)"
-                            ></circle>
-                          </svg>
+                      <div class="skyblue_svg">
+                        <div class="circle-block circle_2">
+                          <div class="utilization_container">
+                            <svg viewBox="0 0 100 100">
+                              <circle
+                                class="circle-inner2"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                r="100"
+                                fill="none"
+                                stroke-dasharray="2, 4"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                              <circle
+                                class="circle2"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                            </svg>
 
-                          <div class="percentage percentage2">
-                            <h1>
-                              <span
-                                class="percentage__num2"
-                                data-percentage="35"
-                              ></span>
-                            </h1>
-                            <p>OVERALL SCORE</p>
+                            <div class="percentage percentage2">
+                              <h1>
+                                <span
+                                  class="percentage__num2"
+                                  data-percentage="35"
+                                ></span>
+                              </h1>
+                              <p>OVERALL SCORE</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="displayFlex">
-                    <div class="w-50">
-                      <p class="color-white">&#9679;&#9679;&#9679;</p>
-                      <div class="header_text wea">
-                        <h3>
-                          Course Duration Average <br /><span>(in Days)</span>
-                        </h3>
+                    <div class="displayFlex">
+                      <div class="w-50">
+                        <p class="color-white">&#9679;&#9679;&#9679;</p>
+                        <div class="header_text wea">
+                          <h3>
+                            Course Duration Average <br /><span>(in Days)</span>
+                          </h3>
+                        </div>
                       </div>
-                    </div>
-                    <div class="w-50">
-                      <p class="paddingstart color-white">
-                        &#9679;&#9679;&#9679;
-                      </p>
-                      <div class="header_text">
-                        <h3>Single Engagement</h3>
+                      <div class="w-50">
+                        <p class="paddingstart color-white">
+                          &#9679;&#9679;&#9679;
+                        </p>
+                        <div class="header_text">
+                          <h3>Single Engagement</h3>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="color-list">
+                  <ul>
+                    <li>
+                      <span class="color-cour">&#9679;</span
+                      ><span class="li-text">COURSES</span>
+                    </li>
+                    <li>
+                      <span class="color-chap">&#9679;</span
+                      ><span class="li-text">CHAPTER</span>
+                    </li>
+                    <li>
+                      <span class="color-found">&#9679;</span
+                      ><span class="li-text">FOUNDATION</span>
+                    </li>
+                    <li>
+                      <span class="color-cert">&#9679;</span
+                      ><span class="li-text">CERTIFICATIONS</span>
+                    </li>
+                    <li>
+                      <span class="color-volt">&#9679;</span
+                      ><span class="li-text">VOLUNTEER</span>
+                    </li>
+                    <li>
+                      <span class="color-web">&#9679;</span
+                      ><span class="li-text">WEBSITE</span>
+                    </li>
+                    <li>
+                      <span class="color-orng">&#9679;</span
+                      ><span class="li-text">EXPO</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="color-list">
-                <ul>
-                  <li>
-                    <span class="color-cour">&#9679;</span
-                    ><span class="li-text">COURSES</span>
-                  </li>
-                  <li>
-                    <span class="color-chap">&#9679;</span
-                    ><span class="li-text">CHAPTER</span>
-                  </li>
-                  <li>
-                    <span class="color-found">&#9679;</span
-                    ><span class="li-text">FOUNDATION</span>
-                  </li>
-                  <li>
-                    <span class="color-cert">&#9679;</span
-                    ><span class="li-text">CERTIFICATIONS</span>
-                  </li>
-                  <li>
-                    <span class="color-volt">&#9679;</span
-                    ><span class="li-text">VOLUNTEER</span>
-                  </li>
-                  <li>
-                    <span class="color-web">&#9679;</span
-                    ><span class="li-text">WEBSITE</span>
-                  </li>
-                  <li>
-                    <span class="color-orng">&#9679;</span
-                    ><span class="li-text">EXPO</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
             </div>
           </div>
-          
+
           <div class="res_area_prp">
             <div class="line-chart-sec">
               <div class="line-chart-main pos-rel">
                 <p
                   onclick="ShowData('#proffessional-togg')"
-                  class=" color-white date-main"
+                  class="color-white date-main"
                 >
                   &#9679;&#9679;&#9679;
                 </p>
@@ -1893,7 +1986,6 @@
                   <li>DEC</li>
                 </ul>
               </div>
-              
             </div>
           </div>
         </div>
@@ -1969,19 +2061,10 @@
               <h1>Company Competencies</h1>
             </div>
             <div class="addMore color-orng fs-20 date-main text-start">
-              <i
-                onclick="ShowData('#addmore-sec-main')"
-                class="fa fa-th"
-              ></i>
-              <span onclick="ShowData('#addmore-sec-main')"
-                >Add More</span
-              >
+              <i onclick="ShowData('#addmore-sec-main')" class="fa fa-th"></i>
+              <span onclick="ShowData('#addmore-sec-main')">Add More</span>
             </div>
-            <div
-              id="addmore-sec-main"
-              class="showAnim"
-              style="display: none"
-            >
+            <div id="addmore-sec-main" class="showAnim" style="display: none">
               <div class="addMore-sec">
                 <div class="w-100">
                   <span
@@ -2233,11 +2316,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
@@ -2282,11 +2364,7 @@
               <span class="date-main">&#x22EE;</span>
             </div>
           </div>
-          <div
-            class="showAnim showing-Data"
-            id="rf"
-            style="display: none"
-          >
+          <div class="showAnim showing-Data" id="rf" style="display: none">
             <div>
               <div class="flex-between">
                 <div>
@@ -2398,11 +2476,7 @@
               <span class="date-main">&#x22EE;</span>
             </div>
           </div>
-          <div
-            class="showing-Data showAnim"
-            id="video"
-            style="display: none"
-          >
+          <div class="showing-Data showAnim" id="video" style="display: none">
             <div>
               <div class="flex-between">
                 <div>
@@ -2468,11 +2542,7 @@
                   </p>
                 </div>
               </div>
-              <div
-                id="vid-p"
-                class="showAnim sugg-main"
-                style="display: none"
-              >
+              <div id="vid-p" class="showAnim sugg-main" style="display: none">
                 <div class="head_primary flex-between color-orng">
                   <i class="fs-20 fa fa-exclamation-triangle"></i>
                   <div class="displayFlex">
@@ -2491,11 +2561,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
@@ -2612,11 +2681,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
@@ -2679,11 +2747,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
@@ -2728,11 +2795,7 @@
               <span class="date-main">&#x22EE;</span>
             </div>
           </div>
-          <div
-            class="showing-Data showAnim"
-            id="multip"
-            style="display: none"
-          >
+          <div class="showing-Data showAnim" id="multip" style="display: none">
             <div>
               <div class="flex-between">
                 <div>
@@ -2874,11 +2937,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
@@ -2999,11 +3061,7 @@
               <span class="date-main">&#x22EE;</span>
             </div>
           </div>
-          <div
-            class="showing-Data showAnim"
-            id="headend"
-            style="display: none"
-          >
+          <div class="showing-Data showAnim" id="headend" style="display: none">
             <div>
               <div class="flex-between">
                 <div>
@@ -3115,11 +3173,7 @@
               <span class="date-main">&#x22EE;</span>
             </div>
           </div>
-          <div
-            class="showing-Data showAnim"
-            id="csn"
-            style="display: none"
-          >
+          <div class="showing-Data showAnim" id="csn" style="display: none">
             <div>
               <div class="flex-between">
                 <div>
@@ -3261,11 +3315,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
@@ -3328,11 +3381,10 @@
                   <div class="text_section">
                     <p>
                       It is a long established fact that a reader will be
-                      distracted by the readable content of a page when
-                      looking at its layout . The point of using Lorem
-                      Ipsum is that it has a more-or-less normal
-                      distribution of letters, as opposed to using
-                      'Content here, content here',<br /><br />
+                      distracted by the readable content of a page when looking
+                      at its layout . The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using 'Content here, content here',<br /><br />
                       making it look like readable English.
                     </p>
                   </div>
