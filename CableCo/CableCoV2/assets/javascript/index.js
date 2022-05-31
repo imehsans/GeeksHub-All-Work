@@ -260,12 +260,6 @@ let chartConfig = {
         ],
       },
       plot: {
-        tooltip: {
-          sticky: true,
-          thousandsSeparator: ",",
-          x: "50%",
-          y: "50%",
-        },
         valueBox: [
           {
             type: "all",
@@ -281,7 +275,7 @@ let chartConfig = {
           sequence: "ANIMATION_BY_PLOT_AND_NODE",
         },
         borderWidth: "0px",
-        slice: "50%",
+        slice: "55%",
       },
       plotarea: {
         margin: "70px 0px 10px 0px",
@@ -291,7 +285,8 @@ let chartConfig = {
       },
       scaleR: {
         refAngle: 300,
-      },
+
+        },
       series: [
         {
           text: "0.0%",
@@ -336,15 +331,14 @@ let chartConfig = {
 zingchart.render({
   id: "myChart",
   data: chartConfig,
-  height: "350px",
-  width: "350px",
+  height: "340px",
+  width: "340px",
 });
 
 function rotateArrow(myid) {
-  //   if () {
+  
   document.querySelector("<i>").style.transform = "rotateX(180deg)";
   document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
-  //   }
 }
 
 function showProg(myid) {

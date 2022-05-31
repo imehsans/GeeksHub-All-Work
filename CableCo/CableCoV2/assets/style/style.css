@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&family=Roboto:wght@100;300;400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500&family=Old+Standard+TT:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&family=Roboto:wght@100;300;400;500;700&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
@@ -28,8 +27,7 @@ a {
 
 header {
   margin: 40px 40px 0 40px;
-  padding: 31px 41px 0 41px;
-  /* overflow: hidden; */
+  min-height: 170px;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +36,8 @@ header {
 
 nav {
   height: 130px;
-  padding-bottom: 10px;
+  padding: 31px 41px 0 41px;
+  height: 170px;
 }
 
 .header-end {
@@ -46,18 +45,31 @@ nav {
 }
 
 .header-end .home {
-  color: #e8a12b !important;
+  color: #e8a12b;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.header-center {
+  height: 75%;
+  padding-top: 5.5px;
+  width: 650px;
+  padding-right: 38px;
 }
 
 .header-center .element {
   opacity: 0.7;
+  font-weight: 300 !important;
+  line-height: 1;
 }
 
 header .header-center .active {
   background-color: #323b52;
-  opacity: 1 !important;
-  border-radius: 20px !important;
-  padding: 10px 19px !important;
+  opacity: 1;
+  margin-top: 3px;
+  font-weight: normal;
+  border-radius: 100px;
+  padding: 12px 25px;
 }
 
 .header-end {
@@ -74,17 +86,35 @@ header .header-center .active {
   padding: unset;
 }
 
-.brand-top {
-  font-family: "Old Standard TT", serif;
+.com-view {
+  color: #c8c9ce;
+  font-weight: 300;
+  line-height: 0.5;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.utalization-h3 {
+  color: #dcdee1;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.header-start .brand-top h1 {
   color: #ffffff;
   font-size: 57px;
-  font-weight: 50;
+  font-weight: 400;
   line-height: 1.1;
+  font-family: "Old Standard TT", serif;
+  padding-top: 12px;
 }
 
 .logo-img {
   width: 83px;
-  margin: 0 0 0 19px;
+  margin-left: 19px;
 }
 
 .f-color-white,
@@ -104,12 +134,34 @@ header .header-center .active {
 }
 
 .Secondary-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  padding-top: 21px;
+  margin: unset !important;
+  font-weight: 300;
+}
+.w-310 {
+  width: 310px;
+}
+
+.social-width {
+  width: 500px;
+}
+.bottom-padding {
+  padding-bottom: 20px;
 }
 
 .header-element-padding {
-  padding: 5px 17px;
+  padding: 6px 16px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.header-start {
+  height: 125px;
+  margin-top: -18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-start .home {
@@ -174,6 +226,10 @@ header .header-center .active {
   margin: 0 auto;
 }
 
+.w-40-1 {
+  width: 40% !important;
+}
+
 .w-60 {
   width: 60% !important;
   margin: 0 auto;
@@ -223,12 +279,14 @@ main {
   background-image: url("../images/grp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: start;
+  background-position: 10% 25%;
   margin-top: 196px;
+  max-height: 620px;
+  padding-bottom: 40px;
 }
 
 .fs-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .date-fs {
@@ -315,7 +373,7 @@ main {
   left: 0;
   right: 0;
   height: 100%;
-  background-color: black;
+  background-color: #090909;
   opacity: 0.8;
 }
 
@@ -376,8 +434,7 @@ main {
 }
 .card-percentage {
   font-size: 60px;
-  font-weight: 300;
-  letter-spacing: 0px;
+  font-weight: 300 !important;
   line-height: 1;
   padding-top: 7px;
 }
@@ -389,7 +446,8 @@ main {
 }
 .card-percentage .after-point {
   position: relative;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 .card-percentage .mod {
   position: relative;
@@ -483,6 +541,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .bg-pink {
@@ -490,6 +549,7 @@ main {
   position: absolute;
   top: 0;
   left: 365px;
+  z-index: 1;
 }
 
 .bg-blue {
@@ -497,6 +557,7 @@ main {
   position: absolute;
   top: 0;
   left: 730px;
+  z-index: 1;
 }
 
 .bg-lightBlue {
@@ -504,6 +565,7 @@ main {
   position: absolute;
   top: 0;
   right: 368px;
+  z-index: 1;
 }
 
 .bg-orange {
@@ -511,6 +573,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 .Togg-back {
@@ -530,6 +593,31 @@ main {
   font-weight: light;
   padding: 5px 0 !important;
   cursor: unset;
+}
+
+.utilization-togg-back {
+  background-color: rgba(37, 45, 62, 0.9);
+  font-size: 14px;
+  padding: 10px 8px 0;
+  max-width: 100%;
+  min-height: 50px;
+  display: flex;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+}
+
+.utilization-togg {
+  line-height: 1.5;
+  font-weight: 300;
+  padding: 5px 0 !important;
+  cursor: unset;
+  color: white;
+  padding-right: 10px !important;
+}
+
+.percentage__num121 {
+  font-weight: 400;
 }
 
 .cross-togg {
@@ -622,9 +710,10 @@ main {
   font-family: "Old Standard TT", serif;
 }
 .chat-section-main .chat-cont {
-  padding: 40px 0px 0px 17px;
+  padding-top: 40px;
   width: 610px;
-  height: 1306px;
+  min-height: 1306px;
+  margin-left: -11px;
 }
 
 .chat-box {
@@ -698,16 +787,20 @@ main {
   color: #c1c4cb;
   font-size: 20px;
   margin: 10px 0px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .months ul {
   display: flex;
   justify-content: space-around;
+  color: #6f7a84;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: 100px;
 }
 
 .container_svg {
-  min-height: 400px !important;
+  min-height: 100px !important;
   display: flex;
   align-items: center;
 }
@@ -726,18 +819,18 @@ main {
 .linechart-details {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
 .linechart-details ul {
   display: flex;
-  max-width: 289px;
+  max-width: 389px;
   font-size: 11px;
-  justify-content: flex-start;
 }
 
-.linechart-details ul li {
-  padding-left: 10px;
-  min-width: 33%;
+.linechart-details ul li span {
+  padding-left: 30px;
+  font-weight: 500 !important;
 }
 
 .zc-ref {
@@ -753,7 +846,7 @@ main {
 .text-deco {
   color: #adb0b9;
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 31.5px;
   padding-right: 30px;
   display: flex;
   justify-content: space-between;
@@ -789,7 +882,7 @@ main {
 
 .datalines {
   padding: 0px 15px;
-  margin-top: -100px;
+  margin-top: -33px;
 }
 
 .color-orng {
@@ -826,7 +919,7 @@ main {
 
 .sugges {
   color: #476076;
-  font-weight: light;
+  font-weight: 500;
   width: 113px;
 }
 
@@ -953,7 +1046,7 @@ main {
 /* .animat { */
 /* animation: upDown 1s normal linear; */
 /* position: absolute;
-  left: 0;
+    left: 0;
   right: 0;
   bottom: 0; */
 /* } */
@@ -978,8 +1071,9 @@ main {
 }
 
 .addMore {
-  margin-left: 40px;
+  margin-left: -10px;
 }
+
 .addMore span {
   padding-left: 10px;
 }
@@ -1146,7 +1240,7 @@ main {
 
 .circle_2 {
   margin-left: 27px;
-  margino-top: 3;
+  margin-top: 3;
 }
 .circle-inner2 {
   fill: none;
@@ -1249,4 +1343,1445 @@ main {
 }
 .second-circle svg {
   width: 130px;
+}
+
+.utalization-main .utail-charts {
+  width: 40% !important;
+  padding: 30px 0px !important;
+  margin: 0 auto;
+}
+
+.res_area_prp {
+  width: 58%;
+  padding: 30px 0;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.zingchart-ab {
+  position: absolute;
+  top: -100px;
+  right: 250px;
+}
+.progress-chart {
+  position: absolute;
+  top: -30px;
+}
+
+.set-pos-51chart {
+  position: absolute;
+  top: 210px;
+}
+
+.color-list {
+  position: absolute;
+  right: 27%;
+  font-size: 16px;
+}
+.color-cour {
+  color: #ff325e;
+}
+.color-chap {
+  color: #7fc2f9;
+}
+.color-found {
+  color: #58368c;
+}
+.color-cert {
+  color: #079fce;
+}
+.color-volt {
+  color: #4ee2c0;
+}
+.color-web {
+  color: #ef32ff;
+}
+
+.li-text {
+  color: #8fa5c1;
+  padding-left: 5px;
+  font-size: 7px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+tspan {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+}
+
+.header_text .wea h3 {
+  text-align: left !important;
+}
+.header_text h3 {
+  color: #dcdee1;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header_text.wea h3 span {
+  font-size: 11px;
+}
+
+.paddingstart {
+  margin-left: 23px;
+}
+
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.addMore-sec {
+  background-color: rgba(37, 45, 62, 0.9);
+  font-size: 14px;
+  padding: 30px 30px 80px 20px;
+  width: 94.5%;
+  min-height: 50px;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  top: 68%;
+}
+
+.head_primary {
+  background-color: rgba(37, 45, 62, 0.9);
+  padding: 16px 20px;
+}
+
+.second_container {
+  background-color: rgb(57, 64, 84);
+  padding: 15px 15px;
+}
+
+.text_section {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 14px;
+  padding: 12px 14px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btns {
+  padding: 11px 27px;
+  margin: 5px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+.btn_gray {
+  background: #323b52;
+}
+
+.sugg-main {
+  position: absolute;
+  top: -6px;
+  z-index: 1;
+}
+
+.showAnim {
+  animation: show 1s normal;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hideAnim {
+  animation: hide 4s normal;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animat-lineChart {
+  animation: moveline 1.5s normal forwards;
+}
+
+@keyframes moveline {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.utal-flex {
+  display: flex;
+}
+
+.utal-cha-wid {
+  width: 725px;
+  margin: 0 auto;
+}
+
+#myChart-tools {
+  display: none;
+}
+
+.flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+/* ===================================================== */
+
+@media (max-width: 1199px) and (min-width: 1024px) {
+  main {
+    margin: 0;
+  }
+
+  header {
+    margin: 0;
+    min-height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  nav {
+    padding: 31px 41px 0;
+    height: 130px;
+  }
+
+  .header-start .brand-top h1 {
+    font-size: 30px;
+  }
+
+  .logo-img {
+    width: 50px;
+    margin-left: 19px;
+  }
+
+  .header-end {
+    font-size: 16px;
+  }
+
+  .header-end .home {
+    font-size: 16px;
+  }
+
+  .header-center {
+    height: 100%;
+    width: 420px;
+    margin: 15px 0 0 15px;
+  }
+
+  header .header-center .active {
+    margin-top: 0px;
+    padding: 6px;
+  }
+
+  .w-22 {
+    width: 20.2% !important;
+    font-weight: 300 !important;
+  }
+  .scte-logo {
+    width: 100px;
+  }
+
+  .com-view {
+    line-height: 1;
+    width: 110px;
+    margin-top: 57px;
+  }
+
+  .header-element-padding {
+    padding: 4px 0;
+    margin-left: 0 5px;
+    font-size: 10px !important;
+  }
+
+  .header-start {
+    height: 85px;
+  }
+
+  .f-color-white,
+  .f-color-white a {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .hero-section {
+    height: 380px;
+  }
+  .overlay-data {
+    background-image: unset;
+    margin-top: -342px;
+    max-width: 100%;
+    min-height: 344px;
+  }
+
+  .set-pos {
+    padding-top: 141px;
+  }
+
+  .overlay-padding {
+    padding: 35px 6px 20px;
+    font-size: 10px;
+  }
+
+  .w-20 {
+    width: 20% !important;
+    margin: 0 auto;
+  }
+
+  .details-over-main {
+    position: relative;
+    margin-top: -205px;
+  }
+
+  .bg-green1 {
+    background-color: rgba(45, 191, 22, 1);
+  }
+
+  .bg-pink1 {
+    background-color: rgba(247, 0, 101, 1);
+  }
+
+  .bg-blue1 {
+    background-color: rgba(84, 78, 159, 1);
+  }
+
+  .bg-lightBlue1 {
+    background-color: rgba(0, 117, 213, 1);
+  }
+
+  .bg-orange1 {
+    background-color: rgba(252, 172, 42, 1);
+  }
+
+  .bg-green {
+    background-color: rgba(45, 191, 22, 1);
+    top: 60px;
+    left: 0;
+  }
+
+  .bg-pink {
+    background-color: rgba(247, 0, 101, 1) !important;
+    top: 60px;
+    left: 20%;
+  }
+
+  .bg-blue {
+    background-color: rgba(84, 78, 159, 1);
+    top: 60px;
+    left: 40%;
+  }
+
+  .bg-lightBlue {
+    background-color: rgba(0, 117, 213, 1);
+    top: 60px;
+    right: 20%;
+  }
+
+  .bg-orange {
+    background-color: rgba(252, 172, 42, 1);
+    top: 60px;
+    right: 0;
+  }
+
+  .card-percentage {
+    font-size: 34px;
+  }
+
+  .card-percentage .sign {
+    font-size: 24px;
+    top: -15px;
+  }
+  .card-percentage .mod {
+    right: 10px;
+    font-size: 16px;
+    top: -18px;
+  }
+
+  .down-text {
+    font-size: 9px;
+    vertical-align: bottom;
+    padding-top: 6px;
+  }
+
+  .arrow-img {
+    width: 14px;
+    height: 16px;
+    margin-top: 0px;
+  }
+
+  .Togg-back {
+    max-width: 19%;
+    top: 220px;
+  }
+
+  .worning-img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .date-fs {
+    font-size: 20px;
+  }
+
+  .profile {
+    width: 30px;
+  }
+
+  .background-togler {
+    height: 200px;
+  }
+
+  .toogler-sec {
+    padding: 10px 6px;
+  }
+
+  .calendar {
+    width: 95%;
+    margin: 0 auto !important;
+    min-height: 100px;
+  }
+
+  .headline {
+    padding: 5px 0;
+  }
+  .weekdays * {
+    width: 20px;
+    font-size: 10px;
+    margin: 2px 2px;
+  }
+  .date {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 2px 4px;
+    font-size: 10px;
+  }
+
+  .toogled-border {
+    margin: 0px;
+  }
+
+  .contact-wh {
+    min-width: 160px;
+    padding-top: 19px;
+    font-size: 12px;
+  }
+
+  .cont-width {
+    width: 340px;
+  }
+
+  .w-333 {
+    width: 200px;
+  }
+
+  .utalization-main {
+    background-image: unset;
+    background-color: #333b52;
+    min-height: 1000px !important;
+  }
+
+  .utalization-main .utail-charts {
+    width: 100% !important;
+    height: 635px;
+  }
+
+  .res_area_prp {
+    background-image: url(../images/grp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 73%;
+    background-position: bottom;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .utal-flex {
+    display: block;
+  }
+
+  .zingchart-ab {
+    right: 36px;
+  }
+
+  .color-list {
+    right: 0;
+  }
+
+  .utal-cha-wid {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .line-chart-sec {
+    text-align: left;
+  }
+
+  .line-chart-main {
+    margin-left: 40px;
+  }
+
+  .linechart-details {
+    justify-content: flex-start;
+  }
+
+  .linechart-details ul {
+    padding: unset !important;
+    max-width: 389px;
+  }
+
+  .linechart-details ul li span {
+    padding-left: unset;
+    padding-right: 30px;
+  }
+
+  .w-40-1 {
+    width: 50% !important;
+  }
+
+  .chat-section-main {
+    padding-top: 20px;
+  }
+
+  .chat-section-main .chat-heading h1 {
+    margin-left: 0px;
+    padding: 20px 0 10px 14px;
+    font-size: 30px;
+  }
+
+  .chat-section-main .chat-cont {
+    padding: 25px;
+    width: 100%;
+    min-height: 875px;
+    margin-left: 0x;
+  }
+
+  .chat-box {
+    max-width: 100%;
+    min-height: 80px;
+    font-size: 14px;
+    padding: 25px;
+  }
+
+  .left-box {
+    margin-left: 6px;
+    margin-right: 0;
+  }
+
+  .right-box {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+
+  .chat-box p {
+    max-width: 100%;
+  }
+
+  .compHead h1 {
+    font-size: 30px !important;
+    text-align: left;
+    margin-top: 20px 0 10px 14px;
+  }
+
+  .addMore {
+    margin-left: -5px;
+  }
+
+  .datalines {
+    width: 50%;
+    padding: 33px;
+  }
+
+  .Secondary-container {
+    width: 90%;
+    padding-top: 21px;
+    margin: 0;
+    padding-left: 23px;
+    font-weight: 300;
+  }
+  .w-310 {
+    min-width: 17.5%;
+  }
+
+  .social-width {
+    width: 480px;
+  }
+  footer a {
+    font-weight: 300;
+  }
+
+  .w-310 ul {
+    padding-left: 0px;
+  }
+
+  .justify-end {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-end-container {
+    width: 89%;
+    margin: 0 0 0 1%;
+  }
+
+  .footer-end-container .w-40 {
+    width: 70% !important;
+  }
+
+  .footer-end-container .w-60 {
+    width: 30% !important;
+  }
+}
+
+/* ========================================================= */
+@media (max-width: 1023px) and (min-width: 992px) {
+  main {
+    margin: 0;
+  }
+  header {
+    margin: 0;
+    min-height: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  nav {
+    padding: 31px 41px 0;
+    height: 130px;
+  }
+  .header-start .brand-top h1 {
+    font-size: 30px;
+  }
+  .logo-img {
+    width: 50px;
+    margin-left: 19px;
+  }
+
+  .header-end {
+    font-size: 16px;
+  }
+
+  .header-end .home {
+    font-size: 16px;
+  }
+
+  .header-center {
+    height: 100%;
+    width: 420px;
+    margin: 15px 0 0 15px;
+  }
+
+  header .header-center .active {
+    margin-top: 0px;
+    padding: 6px;
+  }
+
+  .w-22 {
+    width: 20.2% !important;
+    font-weight: 300 !important;
+  }
+  .scte-logo {
+    width: 100px;
+  }
+
+  .com-view {
+    line-height: 1;
+    width: 110px;
+    margin-top: 57px;
+  }
+
+  .header-element-padding {
+    padding: 4px 0;
+    margin-left: 0 5px;
+    font-size: 10px !important;
+  }
+
+  .header-start {
+    height: 85px;
+  }
+
+  .f-color-white,
+  .f-color-white a {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .hero-section {
+    height: 380px;
+  }
+  .overlay-data {
+    background-image: unset;
+    margin-top: -342px;
+    max-width: 100%;
+    min-height: 344px;
+  }
+
+  .set-pos {
+    padding-top: 141px;
+  }
+
+  .overlay-padding {
+    padding: 35px 6px 20px;
+    font-size: 10px;
+  }
+
+  .w-20 {
+    width: 20% !important;
+    margin: 0 auto;
+  }
+
+  .details-over-main {
+    position: relative;
+    margin-top: -205px;
+  }
+
+  .bg-green1 {
+    background-color: rgba(45, 191, 22, 1);
+  }
+
+  .bg-pink1 {
+    background-color: rgba(247, 0, 101, 1);
+  }
+
+  .bg-blue1 {
+    background-color: rgba(84, 78, 159, 1);
+  }
+
+  .bg-lightBlue1 {
+    background-color: rgba(0, 117, 213, 1);
+  }
+
+  .bg-orange1 {
+    background-color: rgba(252, 172, 42, 1);
+  }
+
+  .bg-green {
+    background-color: rgba(45, 191, 22, 1);
+    top: 60px;
+    left: 0;
+  }
+
+  .bg-pink {
+    background-color: rgba(247, 0, 101, 1) !important;
+    top: 60px;
+    left: 20%;
+  }
+
+  .bg-blue {
+    background-color: rgba(84, 78, 159, 1);
+    top: 60px;
+    left: 40%;
+  }
+
+  .bg-lightBlue {
+    background-color: rgba(0, 117, 213, 1);
+    top: 60px;
+    right: 20%;
+  }
+
+  .bg-orange {
+    background-color: rgba(252, 172, 42, 1);
+    top: 60px;
+    right: 0;
+  }
+
+  .card-percentage {
+    font-size: 34px;
+  }
+
+  .card-percentage .sign {
+    font-size: 24px;
+    top: -15px;
+  }
+  .card-percentage .mod {
+    right: 10px;
+    font-size: 16px;
+    top: -18px;
+  }
+
+  .down-text {
+    font-size: 9px;
+    vertical-align: bottom;
+    padding-top: 6px;
+  }
+
+  .arrow-img {
+    width: 14px;
+    height: 16px;
+    margin-top: 0px;
+  }
+
+  .Togg-back {
+    max-width: 19%;
+    top: 220px;
+  }
+
+  .worning-img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .date-fs {
+    font-size: 20px;
+  }
+
+  .profile {
+    width: 30px;
+  }
+
+  .background-togler {
+    height: 200px;
+  }
+
+  .toogler-sec {
+    padding: 10px 6px;
+  }
+
+  .calendar {
+    width: 95%;
+    margin: 0 auto !important;
+    min-height: 100px;
+  }
+
+  .headline {
+    padding: 5px 0;
+  }
+  .weekdays * {
+    width: 20px;
+    font-size: 10px;
+    margin: 2px 2px;
+  }
+  .date {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 2px 4px;
+    font-size: 10px;
+  }
+
+  .toogled-border {
+    margin: 0px;
+  }
+
+  .contact-wh {
+    min-width: 160px;
+    padding-top: 19px;
+    font-size: 12px;
+  }
+
+  .cont-width {
+    width: 340px;
+  }
+
+  .w-333 {
+    width: 200px;
+  }
+
+  .utalization-main {
+    background-image: unset;
+    background-color: #333b52;
+    min-height: 1000px !important;
+  }
+
+  .utalization-main .utail-charts {
+    width: 100% !important;
+    height: 635px;
+  }
+
+  .res_area_prp {
+    background-image: url(../images/grp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 73%;
+    background-position: bottom;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .utal-flex {
+    display: block;
+  }
+
+  .zingchart-ab {
+    right: 36px;
+  }
+
+  .color-list {
+    right: 0;
+  }
+
+  .utal-cha-wid {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .line-chart-sec {
+    text-align: left;
+  }
+
+  .line-chart-main {
+    margin-left: 40px;
+  }
+
+  .linechart-details {
+    justify-content: flex-start;
+  }
+
+  .linechart-details ul {
+    padding: unset !important;
+    max-width: 389px;
+  }
+
+  .linechart-details ul li span {
+    padding-left: unset;
+    padding-right: 30px;
+  }
+
+  .w-40-1 {
+    width: 50% !important;
+  }
+
+  .chat-section-main {
+    padding-top: 20px;
+  }
+
+  .chat-section-main .chat-heading h1 {
+    margin-left: 0px;
+    padding: 20px 0 10px 14px;
+    font-size: 30px;
+  }
+
+  .chat-section-main .chat-cont {
+    padding: 25px;
+    width: 100%;
+    min-height: 875px;
+    margin-left: 0x;
+  }
+
+  .chat-box {
+    max-width: 100%;
+    min-height: 80px;
+    font-size: 14px;
+    padding: 25px;
+  }
+
+  .left-box {
+    margin-left: 6px;
+    margin-right: 0;
+  }
+
+  .right-box {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+
+  .chat-box p {
+    max-width: 100%;
+  }
+
+  .compHead h1 {
+    font-size: 30px !important;
+    text-align: left;
+    margin-top: 20px 0 10px 14px;
+  }
+
+  .addMore {
+    margin-left: -5px;
+  }
+
+  .datalines {
+    width: 50%;
+    padding: 33px;
+  }
+
+  .Secondary-container {
+    width: 92%;
+    padding-top: 21px;
+    margin: 0;
+    padding-left: 23px;
+    font-weight: 300;
+  }
+  .w-310 {
+    min-width: 17.5%;
+  }
+
+  .social-width {
+    width: 480px;
+  }
+  footer a {
+    font-weight: 300;
+  }
+
+  .w-310 ul {
+    padding-left: 0px;
+  }
+
+  .justify-end {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-end-container {
+    width: 91%;
+    margin: 0 0 0 1%;
+  }
+
+  .footer-end-container .w-40 {
+    width: 70% !important;
+  }
+
+  .footer-end-container .w-60 {
+    width: 30% !important;
+  }
+}
+
+/* ========================================================= */
+@media (max-width: 991px) and (min-width: 768px) {
+  main {
+    margin: 0;
+  }
+  header {
+    margin: 0;
+    min-height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  nav {
+    padding: 31px 41px 0;
+    height: 130px;
+  }
+  .header-start .brand-top h1 {
+    font-size: 30px;
+  }
+  .logo-img {
+    width: 50px;
+    margin-left: 19px;
+  }
+
+  .header-end {
+    font-size: 16px;
+  }
+
+  .header-end .home {
+    font-size: 16px;
+  }
+
+  .header-center {
+    height: 100%;
+    width: 360px;
+    margin: 15px 0 0 100px;
+  }
+
+  header .header-center .active {
+    margin-top: 0px;
+    padding: 6px;
+  }
+
+  .w-22 {
+    width: 18% !important;
+    font-weight: 300 !important;
+  }
+
+  .scte-logo {
+    width: 100px;
+  }
+
+  .com-view {
+    line-height: 1;
+    width: 106px;
+    margin-top: 57px;
+  }
+
+  .header-element-padding {
+    padding: 4px 0;
+    margin-left: 0 5px;
+    font-size: 10px !important;
+  }
+
+  .header-start {
+    height: 80px;
+  }
+
+  .f-color-white,
+  .f-color-white a {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  .hero-section {
+    height: 380px;
+  }
+  .overlay-data {
+    background-image: unset;
+    margin-top: -342px;
+    max-width: 100%;
+    min-height: 344px;
+  }
+
+  .set-pos {
+    padding-top: 141px;
+  }
+
+  .overlay-padding {
+    padding: 35px 6px 20px;
+    font-size: 10px;
+  }
+
+  .w-20 {
+    width: 20% !important;
+    margin: 0 auto;
+  }
+
+  .details-over-main {
+    position: relative;
+    margin-top: -205px;
+  }
+
+  .bg-green1 {
+    background-color: rgba(45, 191, 22, 1);
+  }
+
+  .bg-pink1 {
+    background-color: rgba(247, 0, 101, 1);
+  }
+
+  .bg-blue1 {
+    background-color: rgba(84, 78, 159, 1);
+  }
+
+  .bg-lightBlue1 {
+    background-color: rgba(0, 117, 213, 1);
+  }
+
+  .bg-orange1 {
+    background-color: rgba(252, 172, 42, 1);
+  }
+
+  .bg-green {
+    background-color: rgba(45, 191, 22, 1);
+    top: 60px;
+    left: 0;
+  }
+
+  .bg-pink {
+    background-color: rgba(247, 0, 101, 1) !important;
+    top: 60px;
+    left: 20%;
+  }
+
+  .bg-blue {
+    background-color: rgba(84, 78, 159, 1);
+    top: 60px;
+    left: 40%;
+  }
+
+  .bg-lightBlue {
+    background-color: rgba(0, 117, 213, 1);
+    top: 60px;
+    right: 20%;
+  }
+
+  .bg-orange {
+    background-color: rgba(252, 172, 42, 1);
+    top: 60px;
+    right: 0;
+  }
+
+  .card-percentage {
+    font-size: 34px;
+  }
+
+  .card-percentage .sign {
+    font-size: 24px;
+    top: -15px;
+  }
+  .card-percentage .mod {
+    right: 10px;
+    font-size: 16px;
+    top: -18px;
+  }
+
+  .down-text {
+    font-size: 9px;
+    vertical-align: bottom;
+    padding-top: 6px;
+  }
+
+  .arrow-img {
+    width: 14px;
+    height: 16px;
+    margin-top: 0px;
+  }
+
+  .Togg-back {
+    max-width: 19%;
+    top: 220px;
+  }
+
+  .worning-img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .date-fs {
+    font-size: 20px;
+  }
+
+  .profile {
+    width: 30px;
+  }
+
+  .background-togler {
+    height: 200px;
+  }
+
+  .toogler-sec {
+    padding: 10px 6px;
+  }
+
+  .calendar {
+    width: 95%;
+    margin: 0 auto !important;
+    min-height: 100px;
+  }
+
+  .headline {
+    padding: 5px 0;
+  }
+  .weekdays * {
+    width: 20px;
+    font-size: 10px;
+    margin: 2px 2px;
+  }
+  .date {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 2px 4px;
+    font-size: 10px;
+  }
+
+  .toogled-border {
+    margin: 0px;
+  }
+
+  .contact-wh {
+    min-width: 160px;
+    padding-top: 19px;
+    font-size: 12px;
+  }
+
+  .cont-width {
+    width: 340px;
+  }
+
+  .w-333 {
+    width: 200px;
+  }
+
+  .utalization-main {
+    background-image: unset;
+    background-color: #333b52;
+    min-height: 1000px !important;
+  }
+
+  .utalization-main .utail-charts {
+    width: 100% !important;
+    height: 635px;
+  }
+
+  .res_area_prp {
+    background-image: url(../images/grp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 73%;
+    background-position: bottom;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .utal-flex {
+    display: block;
+  }
+
+  .zingchart-ab {
+    right: 36px;
+  }
+
+  .color-list {
+    right: 0;
+  }
+
+  .utal-cha-wid {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .line-chart-sec {
+    text-align: left;
+  }
+
+  .line-chart-main {
+    margin-left: 40px;
+  }
+
+  .linechart-details {
+    justify-content: flex-start;
+  }
+
+  .linechart-details ul {
+    padding: unset !important;
+    max-width: 389px;
+  }
+
+  .linechart-details ul li span {
+    padding-left: unset;
+    padding-right: 30px;
+  }
+
+  .w-40-1 {
+    width: 42% !important;
+  }
+
+  .chat-section-main {
+    padding-top: 20px;
+  }
+
+  .chat-section-main .chat-heading h1 {
+    margin-left: 0px;
+    padding: 20px 0 10px 14px;
+    font-size: 30px;
+  }
+
+  .chat-section-main .chat-cont {
+    padding: 0px 25px;
+    width: 100%;
+    min-height: 875px;
+    margin-left: 0x;
+  }
+
+  .chat-box {
+    max-width: 100%;
+    min-height: 80px;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .left-box {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .right-box {
+    margin-right: 0px;
+    margin-left: 30px;
+  }
+
+  .chat-box p {
+    max-width: 100%;
+  }
+
+  .compHead h1 {
+    font-size: 30px !important;
+    text-align: left;
+    margin-top: 20px 0 10px 14px;
+  }
+
+  .addMore {
+    margin-left: -5px;
+  }
+
+  .datalines {
+    width: 55%;
+    padding: 33px 5px;
+  }
+
+  .Secondary-container {
+    width: 92%;
+    padding-top: 21px;
+    margin: 0;
+    padding-left: 23px;
+    font-weight: 300;
+  }
+  .w-310 {
+    min-width: 17.5%;
+  }
+
+  .social-width {
+    width: 480px;
+  }
+  footer a {
+    font-weight: 300;
+  }
+
+  .w-310 ul {
+    padding-left: 0px;
+  }
+
+  .justify-end {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-end-container {
+    width: 88.5%;
+    margin: 0 0 0 1%;
+  }
+
+  .footer-end-container .w-40 {
+    width: 85% !important;
+  }
+
+  .footer-end-container .w-60 {
+    width: 15% !important;
+  }
+}
+
+/* ========================================================= */
+@media (max-width: 767px) and (min-width: 685px) {
+}
+
+/* ========================================================= */
+@media (max-width: 684px) and (min-width: 568px) {
+}
+
+/* ========================================================= */
+@media (max-width: 567px) and (min-width: 480px) {
+}
+
+/* ========================================================= */
+@media (max-width: 479px) and (min-width: 320px) {
 }
