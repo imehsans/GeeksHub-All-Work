@@ -92,8 +92,25 @@ var togg_ids = [
   "#toggler5",
 ];
 
+function ExpendAnimat(id) {
+  document.styleSheets[0].insertRule(
+    "\
+  @keyframes anim{\
+     0% {\
+      height:0%;\
+    }\
+    100% {\
+      height:100%;\
+    }\
+  }"
+  );
+  var mydiv = document.getElementById(id);
+  mydiv.style.animation = 'anim 3s linear forwords' 
+}
+
 function sectionExplore(id) {
   document.querySelector(id).style.display = "block";
+  ExpendAnimat(id);
 }
 
 function onToggler(id) {
@@ -110,6 +127,7 @@ function offToggler(id) {
 function ShowData(myid) {
   folldAll();
   document.querySelector(myid).style.display = "block";
+  ExpendAnimat(myid);
   for (var i = 0; i < tex_col.length; i++)
     if (myid == tex_colid[i])
       document.querySelector(tex_col[i]).style.color = "black";
@@ -285,8 +303,7 @@ let chartConfig = {
       },
       scaleR: {
         refAngle: 300,
-
-        },
+      },
       series: [
         {
           text: "0.0%",
@@ -336,7 +353,6 @@ zingchart.render({
 });
 
 function rotateArrow(myid) {
-  
   document.querySelector("<i>").style.transform = "rotateX(180deg)";
   document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
 }

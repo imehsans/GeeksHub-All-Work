@@ -357,6 +357,14 @@ main {
   right: 0;
 }
 
+.w-img{
+  display: block;
+}
+.drop-btn{
+  display: none;
+}
+
+
 .hero-section {
   background-image: url("../images/polycable_header.png");
   background-repeat: no-repeat;
@@ -882,7 +890,8 @@ main {
 
 .datalines {
   padding: 0px 15px;
-  margin-top: -33px;
+  margin-top: -233px;
+  width: 58.8%;
 }
 
 .color-orng {
@@ -1349,6 +1358,7 @@ main {
   width: 40% !important;
   padding: 30px 0px !important;
   margin: 0 auto;
+  height: 650px;
 }
 
 .res_area_prp {
@@ -1553,6 +1563,10 @@ tspan {
 
 .justify-end {
   justify-content: end;
+}
+
+.headerpos {
+  display: none !important;
 }
 
 /* ===================================================== */
@@ -1920,6 +1934,7 @@ tspan {
   .datalines {
     width: 50%;
     padding: 33px;
+    margin-top: -30px;
   }
 
   .Secondary-container {
@@ -2323,6 +2338,7 @@ tspan {
   .datalines {
     width: 50%;
     padding: 33px;
+    margin-top: -30px;
   }
 
   .Secondary-container {
@@ -2593,7 +2609,7 @@ tspan {
   }
 
   .calendar {
-    width: 98%;
+    width: 300px;
     margin: 0 auto !important;
     min-height: 100px;
   }
@@ -2747,6 +2763,7 @@ tspan {
   .datalines {
     width: 55%;
     padding: 33px 5px;
+    margin-top: -30px;
   }
 
   .Secondary-container {
@@ -2790,9 +2807,6 @@ tspan {
   }
 }
 
-.headerpos {
-  display: none !important;
-}
 /* ========================================================= */
 @media (max-width: 767px) and (min-width: 685px) {
   main {
@@ -2804,7 +2818,7 @@ tspan {
 
   header {
     margin: 0;
-    min-height: 50px;
+    min-height: 40px;
   }
 
   .responsive-nav {
@@ -2820,7 +2834,7 @@ tspan {
   }
 
   .headerpos {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -2921,10 +2935,103 @@ tspan {
     transition: all 1s;
   }
 
+  .respon-perfo {
+    width: 100%;
+    margin-top: 100px;
+  }
 
+  .perform-respon {
+    width: 100%;
+    min-height: 30px;
+  }
 
+  .perform-respon .perform-header {
+    width: 400px;
+    min-height: 65px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #f9f9f9;
+  }
   
+  h6 {
+    color: #f9f9f9;
+    font-weight: 300;
+    font-size: 20px !important;
+  }
 
+  .green-bg {
+    background-color: rgba(45, 191, 22, 1);
+  }
+
+  .pink-bg {
+    background-color: rgba(247, 0, 101, 1);
+  }
+  .blue-bg {
+    background-color: rgba(84, 78, 159, 1);
+  }
+
+  .lightblue-bg {
+    background-color: rgba(0, 117, 213, 1);
+  }
+  
+  .orange-bg{
+    background-color: rgba(252, 172, 42, 1);
+  }
+
+  .w-img{
+    display: none;
+  }
+  .drop-btn{
+    display: block;
+  }
+
+  .set-pos {
+    padding-top: 0px;
+  }
+
+  .card-percentage {
+    font-size: 76px;
+    color: #ffffff;
+  }
+
+  .card-percentage .sign {
+    font-size: 38px;
+    top: -40px;
+  }
+  .card-percentage .mod {
+    right: 16px;
+    font-size: 33px;
+    top: -45px;
+  }
+
+  .down-text {
+    font-size: 12px;
+    vertical-align: bottom;
+    padding-top: 6px;
+    color: White;
+  }
+
+  .arrow-img {
+    width: 23px;
+    height: 25px;
+    margin-top: 0px;
+  }
+
+  .Togg-back {
+    max-width: 19%;
+    top: 220px;
+  }
+  .company-sourse-main{
+    padding: 20px 0;
+  }
+  .course-sourse{
+    width: 90%;
+    margin:0 auto;
+    color: #fff;
+  }
   /* /////////////////////////////////////////////////// */
   /* /////////////////////////////////////////////////// */
   /* /////////////////////////////////////////////////// */
@@ -2970,9 +3077,7 @@ tspan {
     min-height: 244px;
   }
 
-  .set-pos {
-    padding-top: 141px;
-  }
+  
 
   .overlay-padding {
     padding: 35px 6px 20px;
@@ -3063,44 +3168,9 @@ tspan {
     right: 0;
   }
 
-  .card-percentage {
-    font-size: 24px;
-  }
-
-  .card-percentage .sign {
-    font-size: 20px;
-    top: -10px;
-  }
-  .card-percentage .mod {
-    right: 10px;
-    font-size: 14px;
-    top: -15px;
-  }
-
-  .down-text {
-    font-size: 8px;
-    vertical-align: bottom;
-    padding-top: 6px;
-  }
-
-  .arrow-img {
-    width: 10px;
-    height: 10px;
-    margin-top: 10px;
-  }
-
-  .Togg-back {
-    max-width: 19%;
-    top: 220px;
-  }
-
-  .worning-img {
-    width: 10px;
-    height: 10px;
-  }
-
+  
   .date-fs {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .profile {
