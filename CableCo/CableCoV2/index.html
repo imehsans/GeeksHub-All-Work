@@ -158,14 +158,19 @@
         <div class="overlay-back"></div>
       </div>
 
-      <section class="overlay-data">
+      <section class="pos-rel">
         <div class="respon-perfo">
           <div class="perform-respon green-bg">
-            <div class="perform-header">
-              <h6>Course Performance</h6>
-              <i class="fa fa-angle-up upper-first-arrow"></i>
+            <div id="perfh1" style="display: block">
+              <div
+                onclick="ShowDataRespon('.cou1', '#perfh1')"
+                class="perform-header"
+              >
+                <h6>Course Performance</h6>
+                <i class="fa fa-angle-up upper-first-arrow"></i>
+              </div>
             </div>
-            <div class="course-sourse">
+            <div class="cou1 course-sourse green-bg" style="display: none">
               <div class="company-sourse-main date-main">
                 <div id="" class="showAnim" style="display: none">
                   <div class="Togg-back">
@@ -173,10 +178,7 @@
                       Indicates average performance in courses that are passed
                       by team members
                     </p>
-                    <p
-                      onclick="offToggler('#toggler1')"
-                      class="cross-togg fs-12"
-                    >
+                    <p onclick="offToggler('#')" class="cross-togg fs-12">
                       &#x2573;
                     </p>
                   </div>
@@ -189,12 +191,15 @@
                     <span>&#9679;&#9679;&#9679;</span>
                   </div>
                   <div>
-                    <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                    <i
+                      onclick="offTogglerResp('.cou1', '#perfh1')"
+                      class="fa fa-angle-down color-white fs-20 drop-btn"
+                    ></i>
                   </div>
                 </div>
 
                 <div
-                  onclick="sectionExplore('#')"
+                  onclick="showInnerData('#toggreen')"
                   class="displayFlex flex-column"
                 >
                   <div class="flex-between">
@@ -226,16 +231,16 @@
                 </div>
               </div>
 
-              <div id="" class="showAnim">
+              <div id="toggreen" class="showAnim" style="display: none">
                 <div
                   class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
-                  onclick="ShowData('#mydata1')"
+                  onclick="ShowData('#mydat1')"
                 >
                   <div class="fs-12">Period Bigins</div>
-                  <div class="date-fs" id="dateBeg">10.15.17</div>
+                  <div class="date-fs">10.15.17</div>
                 </div>
                 <div
-                  id="mydata1"
+                  id="mydat1"
                   style="display: none"
                   class="calendar toogled-border showAnim"
                 >
@@ -263,13 +268,13 @@
 
                 <div
                   class="text-color2 toogler-sec date-main displayFlex align-items-center justify-content-between"
-                  onclick="ShowData('#mydata2')"
+                  onclick="ShowData('#mydat11')"
                 >
                   <div class="fs-12">Period Ends</div>
-                  <div class="date-fs" id="dateEnd">10.15.18</div>
+                  <div class="date-fs">10.15.18</div>
                 </div>
                 <div
-                  id="mydata2"
+                  id="mydat11"
                   style="display: none"
                   class="calendar toogled-border showAnim"
                 >
@@ -296,13 +301,13 @@
                 </div>
 
                 <div
-                  onclick="ShowData('#performers')"
+                  onclick="ShowData('#perf1')"
                   class="toogler-sec performance"
                 >
                   <p>Top Performers</p>
                 </div>
                 <div
-                  id="performers"
+                  id="perf1"
                   class="toogler-sec showAnim"
                   style="display: none"
                 >
@@ -342,7 +347,7 @@
                       <p>Patrick Eberhard</p>
                     </div>
                   </div>
-                  <div id="innerData" class="showAnim" style="display: none">
+                  <div id="innerD1" class="showAnim" style="display: none">
                     <div class="flex-align-center">
                       <div>
                         <img
@@ -429,7 +434,7 @@
                     </div>
                   </div>
                   <div
-                    onclick="showInnerData('#innerData')"
+                    onclick="showInnerData('#innerD1')"
                     class="flex-align-center date-main"
                   >
                     <div>
@@ -446,18 +451,18 @@
                 </div>
                 <div
                   class="toogler-sec performance"
-                  onclick="listChart('#chart-view')"
+                  onclick="listChart('#chart-v1')"
                 >
                   <p>Chart View</p>
                 </div>
                 <div
-                  id="chart-view"
+                  id="chart-v1"
                   class="toogler-sec background-togler showAnim"
                   style="display: none"
                 >
                   <div class="flex-between fs-20 align-bottom h-100">
-                    <div id="perBeg"></div>
-                    <div id="perEnd"></div>
+                    <div>10.15.17</div>
+                    <div>10.15.18</div>
                   </div>
                 </div>
 
@@ -469,11 +474,16 @@
           </div>
 
           <div class="perform-respon pink-bg">
-            <div class="perform-header">
-              <h6>Certification Performance</h6>
-              <i class="fa fa-angle-up upper-first-arrow"></i>
+            <div id="perfh2" style="display: block">
+              <div
+                onclick="ShowDataRespon('.cou2', '#perfh2')"
+                class="perform-header"
+              >
+                <h6>Certification Performance</h6>
+                <i class="fa fa-angle-up upper-first-arrow"></i>
+              </div>
             </div>
-            <div class="course-sourse">
+            <div class="cou2 course-sourse pink-bg" style="display: none">
               <div class="company-sourse-main date-main">
                 <div id="" class="showAnim" style="display: none">
                   <div class="Togg-back">
@@ -497,12 +507,15 @@
                     <span>&#9679;&#9679;&#9679;</span>
                   </div>
                   <div>
-                    <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                    <i
+                      onclick="offTogglerResp('.cou2', '#perfh2')"
+                      class="fa fa-angle-down color-white fs-20 drop-btn"
+                    ></i>
                   </div>
                 </div>
 
                 <div
-                  onclick="sectionExplore('#')"
+                  onclick="showInnerData('#togpink')"
                   class="displayFlex flex-column"
                 >
                   <div class="flex-between">
@@ -534,16 +547,16 @@
                 </div>
               </div>
 
-              <div id="" class="showAnim">
+              <div id="togpink" class="showAnim" style="display: none">
                 <div
-                  class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
-                  onclick="ShowData('#mydata1')"
+                  class="text-colorz1 toogler-sec date-main flex-align-center justify-content-between"
+                  onclick="ShowData('#mydat2')"
                 >
                   <div class="fs-12">Period Bigins</div>
-                  <div class="date-fs" id="dateBeg">10.15.17</div>
+                  <div class="date-fs">10.15.17</div>
                 </div>
                 <div
-                  id="mydata1"
+                  id="mydat2"
                   style="display: none"
                   class="calendar toogled-border showAnim"
                 >
@@ -571,13 +584,13 @@
 
                 <div
                   class="text-color2 toogler-sec date-main displayFlex align-items-center justify-content-between"
-                  onclick="ShowData('#mydata2')"
+                  onclick="ShowData('#mydat22')"
                 >
                   <div class="fs-12">Period Ends</div>
-                  <div class="date-fs" id="dateEnd">10.15.18</div>
+                  <div class="date-fs">10.15.18</div>
                 </div>
                 <div
-                  id="mydata2"
+                  id="mydat22"
                   style="display: none"
                   class="calendar toogled-border showAnim"
                 >
@@ -604,13 +617,13 @@
                 </div>
 
                 <div
-                  onclick="ShowData('#performers')"
+                  onclick="ShowData('#perf2')"
                   class="toogler-sec performance"
                 >
                   <p>Top Performers</p>
                 </div>
                 <div
-                  id="performers"
+                  id="perf2"
                   class="toogler-sec showAnim"
                   style="display: none"
                 >
@@ -650,7 +663,7 @@
                       <p>Patrick Eberhard</p>
                     </div>
                   </div>
-                  <div id="innerData" class="showAnim" style="display: none">
+                  <div id="innerD2" class="showAnim" style="display: none">
                     <div class="flex-align-center">
                       <div>
                         <img
@@ -737,7 +750,7 @@
                     </div>
                   </div>
                   <div
-                    onclick="showInnerData('#innerData')"
+                    onclick="showInnerData('#innerD2')"
                     class="flex-align-center date-main"
                   >
                     <div>
@@ -754,18 +767,18 @@
                 </div>
                 <div
                   class="toogler-sec performance"
-                  onclick="listChart('#chart-view')"
+                  onclick="listChart('#chart-v2')"
                 >
                   <p>Chart View</p>
                 </div>
                 <div
-                  id="chart-view"
+                  id="chart-v2"
                   class="toogler-sec background-togler showAnim"
                   style="display: none"
                 >
                   <div class="flex-between fs-20 align-bottom h-100">
-                    <div id="perBeg"></div>
-                    <div id="perEnd"></div>
+                    <div>10.15.17</div>
+                    <div>10.15.18</div>
                   </div>
                 </div>
 
@@ -777,11 +790,17 @@
           </div>
 
           <div class="perform-respon blue-bg">
-            <div class="perform-header">
-              <h6>Course-Completion Rate</h6>
-              <i class="fa fa-angle-up upper-first-arrow"></i>
+            <div id="perfh3" style="display: block">
+              <div
+                onclick="ShowDataRespon('.cou3', '#perfh3')"
+                class="perform-header"
+              >
+                <h6>Course-Completion Rate</h6>
+                <i class="fa fa-angle-up upper-first-arrow"></i>
+              </div>
             </div>
-            <div class="course-sourse">
+
+            <div class="cou3 course-sourse blue-bg" style="display: none">
               <div class="company-sourse-main date-main">
                 <div id="" class="showAnim" style="display: none">
                   <div class="Togg-back">
@@ -805,12 +824,15 @@
                     <span>&#9679;&#9679;&#9679;</span>
                   </div>
                   <div>
-                    <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                    <i
+                      onclick="offTogglerResp('.cou3', '#perfh3')"
+                      class="fa fa-angle-down color-white fs-20 drop-btn"
+                    ></i>
                   </div>
                 </div>
 
                 <div
-                  onclick="sectionExplore('#')"
+                  onclick="showInnerData('#togblue')"
                   class="displayFlex flex-column"
                 >
                   <div class="flex-between">
@@ -842,16 +864,16 @@
                 </div>
               </div>
 
-              <div id="" class="showAnim">
+              <div id="togblue" class="showAnim" style="display: none">
                 <div
                   class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
-                  onclick="ShowData('#mydata1')"
+                  onclick="ShowData('#mydat3')"
                 >
                   <div class="fs-12">Period Bigins</div>
-                  <div class="date-fs" id="dateBeg">10.15.17</div>
+                  <div class="date-fs">10.15.17</div>
                 </div>
                 <div
-                  id="mydata1"
+                  id="mydat3"
                   style="display: none"
                   class="calendar toogled-border showAnim"
                 >
@@ -879,13 +901,13 @@
 
                 <div
                   class="text-color2 toogler-sec date-main displayFlex align-items-center justify-content-between"
-                  onclick="ShowData('#mydata2')"
+                  onclick="ShowData('#mydat33')"
                 >
                   <div class="fs-12">Period Ends</div>
-                  <div class="date-fs" id="dateEnd">10.15.18</div>
+                  <div class="date-fs">10.15.18</div>
                 </div>
                 <div
-                  id="mydata2"
+                  id="mydat33"
                   style="display: none"
                   class="calendar toogled-border showAnim"
                 >
@@ -912,13 +934,13 @@
                 </div>
 
                 <div
-                  onclick="ShowData('#performers')"
+                  onclick="ShowData('#perf3')"
                   class="toogler-sec performance"
                 >
                   <p>Top Performers</p>
                 </div>
                 <div
-                  id="performers"
+                  id="perf3"
                   class="toogler-sec showAnim"
                   style="display: none"
                 >
@@ -958,7 +980,7 @@
                       <p>Patrick Eberhard</p>
                     </div>
                   </div>
-                  <div id="innerData" class="showAnim" style="display: none">
+                  <div id="innerD3" class="showAnim" style="display: none">
                     <div class="flex-align-center">
                       <div>
                         <img
@@ -1045,7 +1067,7 @@
                     </div>
                   </div>
                   <div
-                    onclick="showInnerData('#innerData')"
+                    onclick="showInnerData('#innerD3')"
                     class="flex-align-center date-main"
                   >
                     <div>
@@ -1062,18 +1084,18 @@
                 </div>
                 <div
                   class="toogler-sec performance"
-                  onclick="listChart('#chart-view')"
+                  onclick="listChart('#chart-v3')"
                 >
                   <p>Chart View</p>
                 </div>
                 <div
-                  id="chart-view"
+                  id="chart-v3"
                   class="toogler-sec background-togler showAnim"
                   style="display: none"
                 >
                   <div class="flex-between fs-20 align-bottom h-100">
-                    <div id="perBeg"></div>
-                    <div id="perEnd"></div>
+                    <div>10.15.17</div>
+                    <div>10.15.18</div>
                   </div>
                 </div>
 
@@ -1085,11 +1107,17 @@
           </div>
 
           <div class="perform-respon lightblue-bg">
-            <div class="perform-header">
-              <h6>Course Pass Rate</h6>
-              <i class="fa fa-angle-up upper-first-arrow"></i>
+            <div id="perfh4" style="display: block">
+              <div
+                onclick="ShowDataRespon('.cou4', '#perfh4')"
+                class="perform-header"
+              >
+                <h6>Course Pass Rate</h6>
+                <i class="fa fa-angle-up upper-first-arrow"></i>
+              </div>
             </div>
-            <div class="course-sourse">
+
+            <div class="cou4 course-sourse lightblue-bg" style="display: none">
               <div class="company-sourse-main date-main">
                 <div id="" class="showAnim" style="display: none">
                   <div class="Togg-back">
@@ -1113,7 +1141,10 @@
                     <span>&#9679;&#9679;&#9679;</span>
                   </div>
                   <div>
-                    <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                    <i
+                      onclick="offTogglerResp('.cou4', '#perfh4')"
+                      class="fa fa-angle-down color-white fs-20 drop-btn"
+                    ></i>
                   </div>
                 </div>
 
@@ -1150,13 +1181,13 @@
                 </div>
               </div>
 
-              <div id="toglightblue" class="showAnim" style="display: none;">
+              <div id="toglightblue" class="showAnim" style="display: none">
                 <div
                   class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
                   onclick="ShowData('#mydat4')"
                 >
                   <div class="fs-12">Period Bigins</div>
-                  <div class="date-fs" id="dateBeg">10.15.17</div>
+                  <div class="date-fs">10.15.17</div>
                 </div>
                 <div
                   id="mydat4"
@@ -1190,7 +1221,7 @@
                   onclick="ShowData('#mydat44')"
                 >
                   <div class="fs-12">Period Ends</div>
-                  <div class="date-fs" id="dateEnd">10.15.18</div>
+                  <div class="date-fs">10.15.18</div>
                 </div>
                 <div
                   id="mydat44"
@@ -1380,8 +1411,8 @@
                   style="display: none"
                 >
                   <div class="flex-between fs-20 align-bottom h-100">
-                    <div id="perBeg"></div>
-                    <div id="perEnd"></div>
+                    <div>10.15.17</div>
+                    <div>10.15.18</div>
                   </div>
                 </div>
 
@@ -1393,11 +1424,16 @@
           </div>
 
           <div class="perform-respon orange-bg">
-            <div class="perform-header">
-              <h6>Course Fail Rate</h6>
-              <i class="fa fa-angle-up upper-first-arrow"></i>
+            <div id="perfh5" style="display: block">
+              <div
+                onclick="ShowDataRespon('.cou5', '#perfh5')"
+                class="perform-header"
+              >
+                <h6>Course Fail Rate</h6>
+                <i class="fa fa-angle-up upper-first-arrow"></i>
+              </div>
             </div>
-            <div class="course-sourse">
+            <div class="cou5 course-sourse orange-bg" style="display: none">
               <div class="company-sourse-main date-main">
                 <div id="tog5" class="showAnim" style="display: none">
                   <div class="Togg-back">
@@ -1405,10 +1441,7 @@
                       Indicates average performance in courses that are passed
                       by team members
                     </p>
-                    <p
-                      onclick="offToggler('#tog5')"
-                      class="cross-togg fs-12"
-                    >
+                    <p onclick="offToggler('#tog5')" class="cross-togg fs-12">
                       &#x2573;
                     </p>
                   </div>
@@ -1421,7 +1454,10 @@
                     <span>&#9679;&#9679;&#9679;</span>
                   </div>
                   <div>
-                    <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                    <i
+                      onclick="offTogglerResp('.cou5','#perfh5')"
+                      class="fa fa-angle-down color-white fs-20 drop-btn"
+                    ></i>
                   </div>
                 </div>
 
@@ -1458,13 +1494,13 @@
                 </div>
               </div>
 
-              <div id="togorng" class="showAnim" style="display: none;">
+              <div id="togorng" class="showAnim" style="display: none">
                 <div
                   class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
                   onclick="ShowData('#mydat5')"
                 >
                   <div class="fs-12">Period Bigins</div>
-                  <div class="date-fs" id="dateBeg">10.15.17</div>
+                  <div class="date-fs">10.15.17</div>
                 </div>
                 <div
                   id="mydat5"
@@ -1498,7 +1534,7 @@
                   onclick="ShowData('#mydat55')"
                 >
                   <div class="fs-12">Period Ends</div>
-                  <div class="date-fs" id="dateEnd">10.15.18</div>
+                  <div class="date-fs">10.15.18</div>
                 </div>
                 <div
                   id="mydat55"
@@ -1688,8 +1724,8 @@
                   style="display: none"
                 >
                   <div class="flex-between fs-20 align-bottom h-100">
-                    <div id="perBeg"></div>
-                    <div id="perEnd"></div>
+                    <div>10.15.17</div>
+                    <div>10.15.18</div>
                   </div>
                 </div>
 
@@ -1698,1581 +1734,2015 @@
                 </div>
               </div>
             </div>
-          
-          </div>
-          
-        </div>
-
-        <div class="set-pos displayFlex h-100 align-items-center">
-          <div class="w-20 bg-green1 overlay-padding date-main">
-            <div id="toggler1" class="showAnim" style="display: none">
-              <div class="Togg-back">
-                <p class="togg-text">
-                  Indicates average performance in courses that are passed by
-                  team members
-                </p>
-                <p onclick="offToggler('#toggler1')" class="cross-togg fs-12">
-                  &#x2573;
-                </p>
-              </div>
-            </div>
-            <div
-              class="popup-dots displayFlex justify-content-between"
-              onclick="onToggler('#toggler1')"
-            >
-              <div>
-                <span>&#9679;&#9679;&#9679;</span>
-              </div>
-              <div>
-                <img
-                  src="./assets/images/exc-tri.png"
-                  class="worning-img w-img"
-                  alt="negative worning"
-                />
-                <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
-              </div>
-            </div>
-
-            <div
-              onclick="sectionExplore('#green-sec')"
-              class="displayFlex flex-column"
-            >
-              <div class="flex-between">
-                <div class="opc-7">Course Performance</div>
-                <div>
-                  <div class="card-percentage fw-light">
-                    <sup class="sign">+</sup>0<span class="after-point">.1</span
-                    ><sup class="mod">%</sup>
-                  </div>
-                </div>
-              </div>
-              <div class="opc-7">
-                <h1 class="card-percentage">
-                  87<span class="after-point">.9</span><sup class="mod">%</sup>
-                </h1>
-              </div>
-              <div class="displayFlex justify-content-between">
-                <div class="down-text">Company Avg Source vs Others</div>
-                <div>
-                  <img
-                    class="arrow-img"
-                    src="./assets/images/arrow_up.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-20 bg-pink1 overlay-padding date-main">
-            <div id="toggler2" class="showAnim" style="display: none">
-              <div class="Togg-back">
-                <p class="togg-text">
-                  Certifications completed from within total certifications
-                  attempted by team members of this company.
-                </p>
-                <p onclick="offToggler('#toggler2')" class="cross-togg fs-12">
-                  &#x2573;
-                </p>
-              </div>
-            </div>
-            <div
-              class="popup-dots displayFlex justify-content-between"
-              onclick="onToggler('#toggler2')"
-            >
-              <div>
-                <span>&#9679;&#9679;&#9679;</span>
-              </div>
-              <div>
-                <img
-                  src="./assets/images/exc-tri.png"
-                  class="worning-img w-img"
-                  alt="negative worning"
-                />
-                <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
-              </div>
-            </div>
-            <div
-              onclick="sectionExplore('#pink-sec')"
-              class="displayFlex flex-column"
-            >
-              <div class="displayFlex justify-content-between">
-                <div class="opc-7 fw-light">Certification Performeance</div>
-                <div>
-                  <h1 class="card-percentage">
-                    <sup class="sign">-</sup>2<span class="after-point">.1</span
-                    ><sup class="mod">%</sup>
-                  </h1>
-                </div>
-              </div>
-              <div class="opc-7">
-                <h1 class="card-percentage">
-                  78<span class="after-point">.6</span><sup class="mod">%</sup>
-                </h1>
-              </div>
-              <div class="displayFlex justify-content-between">
-                <div class="down-text">Company Avg Score vs Others</div>
-                <div>
-                  <img
-                    class="arrow-img"
-                    src="./assets/images/arrow_down.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-20 bg-blue1 overlay-padding date-main">
-            <div id="toggler3" class="showAnim" style="display: none">
-              <div class="Togg-back">
-                <p class="togg-text">
-                  Courses completed from within total courses attempted by team
-                  members of this company.
-                </p>
-                <p onclick="offToggler('#toggler3')" class="cross-togg fs-12">
-                  &#x2573;
-                </p>
-              </div>
-            </div>
-            <div
-              class="popup-dots displayFlex justify-content-between"
-              onclick="onToggler('#toggler3')"
-            >
-              <div>
-                <span>&#9679;&#9679;&#9679;</span>
-              </div>
-              <div>
-                <img
-                  src="./assets/images/exc-tri.png"
-                  class="worning-img w-img"
-                  alt="negative worning"
-                />
-                <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
-              </div>
-            </div>
-            <div
-              onclick="sectionExplore('#blue-sec')"
-              class="displayFlex flex-column"
-            >
-              <div class="displayFlex justify-content-between">
-                <div class="opc-7 fw-light">Courses- Completion Rate</div>
-                <div>
-                  <h1 class="card-percentage">
-                    <sup class="sign">-</sup>8<span class="after-point"
-                      >.63</span
-                    ><sup class="mod">%</sup>
-                  </h1>
-                </div>
-              </div>
-              <div class="opc-7">
-                <h1 class="card-percentage">
-                  30<span class="after-point">.16</span><sup class="mod">%</sup>
-                </h1>
-              </div>
-              <div class="displayFlex justify-content-between">
-                <div class="down-text">Company Completion Rate vs Others</div>
-                <div>
-                  <img
-                    class="arrow-img"
-                    src="./assets/images/arrow_down.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-20 bg-lightBlue1 overlay-padding date-main">
-            <div id="toggler4" class="showAnim" style="display: none">
-              <div class="Togg-back">
-                <p class="togg-text">
-                  Percentage of courses passed against courses attempted.
-                </p>
-                <p onclick="offToggler('#toggler4')" class="cross-togg fs-12">
-                  &#x2573;
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="popup-dots displayFlex justify-content-between"
-              onclick="onToggler('#toggler4')"
-            >
-              <div>
-                <span>&#9679;&#9679;&#9679;</span>
-              </div>
-              <div>
-                <img
-                  src="./assets/images/exc-tri.png"
-                  class="worning-img w-img"
-                  alt="negative worning"
-                />
-                <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
-              </div>
-            </div>
-
-            <div
-              onclick="sectionExplore('#lightblue-sec')"
-              class="displayFlex flex-column"
-            >
-              <div class="displayFlex justify-content-between">
-                <div class="opc-7 fw-light">Course Pass Rate</div>
-                <div>
-                  <h1 class="card-percentage">
-                    <sup class="sign">+</sup>3<span class="after-point"
-                      >.41</span
-                    ><sup class="mod">%</sup>
-                  </h1>
-                </div>
-              </div>
-              <div class="opc-7">
-                <h1 class="card-percentage">
-                  98<span class="after-point">.16</span><sup class="mod">%</sup>
-                </h1>
-              </div>
-              <div class="displayFlex justify-content-between">
-                <div class="down-text">Company Pass Rate vs Others</div>
-                <div>
-                  <img
-                    class="arrow-img"
-                    src="./assets/images/arrow_up.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-20 bg-orange1 overlay-padding date-main">
-            <div id="toggler5" class="showAnim" style="display: none">
-              <div class="Togg-back">
-                <p class="togg-text">
-                  Percentage of courses failed against courses attempted.
-                </p>
-                <p onclick="offToggler('#toggler5')" class="cross-togg fs-12">
-                  &#x2573;
-                </p>
-              </div>
-            </div>
-            <div
-              class="popup-dots displayFlex justify-content-between"
-              onclick="onToggler('#toggler5')"
-            >
-              <div>
-                <span>&#9679;&#9679;&#9679;</span>
-              </div>
-              <div>
-                <img
-                  src="./assets/images/exc-tri.png"
-                  class="worning-img w-img"
-                  alt="negative worning"
-                />
-                <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
-              </div>
-            </div>
-            <div
-              onclick="sectionExplore('#orange-sec')"
-              class="displayFlex flex-column"
-            >
-              <div class="displayFlex justify-content-between">
-                <div class="opc-7 fw-light">Course Fail Rate</div>
-                <div>
-                  <h1 class="card-percentage">
-                    <sup class="sign">-</sup>3<span class="after-point"
-                      >.43</span
-                    >
-                    <sup class="mod">%</sup>
-                  </h1>
-                </div>
-              </div>
-              <div class="opc-7">
-                <h1 class="card-percentage">
-                  1<span class="after-point">.57</span><sup class="mod">%</sup>
-                </h1>
-              </div>
-              <div class="displayFlex justify-content-between">
-                <div class="down-text">Company Fail vs Others</div>
-                <div>
-                  <img
-                    class="arrow-img"
-                    src="./assets/images/arrow_up.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div class="details-over-main">
-          <div
-            id="green-sec"
-            class="flowing-section w-20-1 bg-green showAnim"
-            style="display: none"
-          >
-            <div class="toogler-sec displayFlex justify-content-between">
-              <div class="opc-7 fw-light fs-16">Course Performeance</div>
-              <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
-            </div>
-
-            <div
-              class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
-              onclick="ShowData('#mydata1')"
-            >
-              <div class="fs-12">Period Bigins</div>
-              <div class="date-fs" id="dateBeg">10.15.17</div>
-            </div>
-            <div
-              id="mydata1"
-              style="display: none"
-              class="calendar toogled-border showAnim"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
-                >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="text-color2 toogler-sec date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata2')"
-            >
-              <div class="fs-12">Period Ends</div>
-              <div class="date-fs" id="dateEnd">10.15.18</div>
-            </div>
-            <div
-              id="mydata2"
-              style="display: none"
-              class="calendar toogled-border showAnim"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
-                >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              onclick="ShowData('#performers')"
-              class="toogler-sec performance"
-            >
-              <p>Top Performers</p>
-            </div>
-            <div
-              id="performers"
-              class="toogler-sec showAnim"
-              style="display: none"
-            >
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Rayan Grubb</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Andrew LaPine</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Patrick Eberhard</p>
-                </div>
-              </div>
-              <div id="innerData" class="showAnim" style="display: none">
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Steven Lee Jr</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Sadain Hill</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Christopher Heffron</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark Trent</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark English</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Trevor Rrahan</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Alberto Marquex Villegas</p>
-                  </div>
+        <div class="overlay-data">
+          <div class="disktopperf set-pos displayFlex h-100 align-items-center">
+            <div class="w-20 bg-green1 overlay-padding date-main">
+              <div id="toggler1" class="showAnim" style="display: none">
+                <div class="Togg-back">
+                  <p class="togg-text">
+                    Indicates average performance in courses that are passed by
+                    team members
+                  </p>
+                  <p onclick="offToggler('#toggler1')" class="cross-togg fs-12">
+                    &#x2573;
+                  </p>
                 </div>
               </div>
               <div
-                onclick="showInnerData('#innerData')"
-                class="flex-align-center date-main"
+                class="popup-dots displayFlex justify-content-between"
+                onclick="onToggler('#toggler1')"
               >
                 <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/download.png"
-                    alt="profile"
-                  />
+                  <span>&#9679;&#9679;&#9679;</span>
                 </div>
-                <div class="contact-wh">
-                  <p>View All Top Performance</p>
+                <div>
+                  <img
+                    src="./assets/images/exc-tri.png"
+                    class="worning-img w-img"
+                    alt="negative worning"
+                  />
+                  <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
                 </div>
               </div>
-            </div>
-            <div
-              class="toogler-sec performance"
-              onclick="listChart('#chart-view')"
-            >
-              <p>Chart View</p>
-            </div>
-            <div
-              id="chart-view"
-              class="toogler-sec background-togler showAnim"
-              style="display: none"
-            >
-              <div class="flex-between fs-20 align-bottom h-100">
-                <div id="perBeg"></div>
-                <div id="perEnd"></div>
+
+              <div
+                onclick="sectionExplore('#green-sec')"
+                class="displayFlex flex-column"
+              >
+                <div class="flex-between">
+                  <div class="opc-7">Course Performance</div>
+                  <div>
+                    <div class="card-percentage fw-light">
+                      <sup class="sign">+</sup>0<span class="after-point"
+                        >.1</span
+                      ><sup class="mod">%</sup>
+                    </div>
+                  </div>
+                </div>
+                <div class="opc-7">
+                  <h1 class="card-percentage">
+                    87<span class="after-point">.9</span
+                    ><sup class="mod">%</sup>
+                  </h1>
+                </div>
+                <div class="displayFlex justify-content-between">
+                  <div class="down-text">Company Avg Source vs Others</div>
+                  <div>
+                    <img
+                      class="arrow-img"
+                      src="./assets/images/arrow_up.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="toogler-sec performance" onclick="folldAll()">
-              <p>Customize My Views</p>
+            <div class="w-20 bg-pink1 overlay-padding date-main">
+              <div id="toggler2" class="showAnim" style="display: none">
+                <div class="Togg-back">
+                  <p class="togg-text">
+                    Certifications completed from within total certifications
+                    attempted by team members of this company.
+                  </p>
+                  <p onclick="offToggler('#toggler2')" class="cross-togg fs-12">
+                    &#x2573;
+                  </p>
+                </div>
+              </div>
+              <div
+                class="popup-dots displayFlex justify-content-between"
+                onclick="onToggler('#toggler2')"
+              >
+                <div>
+                  <span>&#9679;&#9679;&#9679;</span>
+                </div>
+                <div>
+                  <img
+                    src="./assets/images/exc-tri.png"
+                    class="worning-img w-img"
+                    alt="negative worning"
+                  />
+                  <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                </div>
+              </div>
+              <div
+                onclick="sectionExplore('#pink-sec')"
+                class="displayFlex flex-column"
+              >
+                <div class="displayFlex justify-content-between">
+                  <div class="opc-7 fw-light">Certification Performeance</div>
+                  <div>
+                    <h1 class="card-percentage">
+                      <sup class="sign">-</sup>2<span class="after-point"
+                        >.1</span
+                      ><sup class="mod">%</sup>
+                    </h1>
+                  </div>
+                </div>
+                <div class="opc-7">
+                  <h1 class="card-percentage">
+                    78<span class="after-point">.6</span
+                    ><sup class="mod">%</sup>
+                  </h1>
+                </div>
+                <div class="displayFlex justify-content-between">
+                  <div class="down-text">Company Avg Score vs Others</div>
+                  <div>
+                    <img
+                      class="arrow-img"
+                      src="./assets/images/arrow_down.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-20 bg-blue1 overlay-padding date-main">
+              <div id="toggler3" class="showAnim" style="display: none">
+                <div class="Togg-back">
+                  <p class="togg-text">
+                    Courses completed from within total courses attempted by
+                    team members of this company.
+                  </p>
+                  <p onclick="offToggler('#toggler3')" class="cross-togg fs-12">
+                    &#x2573;
+                  </p>
+                </div>
+              </div>
+              <div
+                class="popup-dots displayFlex justify-content-between"
+                onclick="onToggler('#toggler3')"
+              >
+                <div>
+                  <span>&#9679;&#9679;&#9679;</span>
+                </div>
+                <div>
+                  <img
+                    src="./assets/images/exc-tri.png"
+                    class="worning-img w-img"
+                    alt="negative worning"
+                  />
+                  <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                </div>
+              </div>
+              <div
+                onclick="sectionExplore('#blue-sec')"
+                class="displayFlex flex-column"
+              >
+                <div class="displayFlex justify-content-between">
+                  <div class="opc-7 fw-light">Courses- Completion Rate</div>
+                  <div>
+                    <h1 class="card-percentage">
+                      <sup class="sign">-</sup>8<span class="after-point"
+                        >.63</span
+                      ><sup class="mod">%</sup>
+                    </h1>
+                  </div>
+                </div>
+                <div class="opc-7">
+                  <h1 class="card-percentage">
+                    30<span class="after-point">.16</span
+                    ><sup class="mod">%</sup>
+                  </h1>
+                </div>
+                <div class="displayFlex justify-content-between">
+                  <div class="down-text">Company Completion Rate vs Others</div>
+                  <div>
+                    <img
+                      class="arrow-img"
+                      src="./assets/images/arrow_down.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-20 bg-lightBlue1 overlay-padding date-main">
+              <div id="toggler4" class="showAnim" style="display: none">
+                <div class="Togg-back">
+                  <p class="togg-text">
+                    Percentage of courses passed against courses attempted.
+                  </p>
+                  <p onclick="offToggler('#toggler4')" class="cross-togg fs-12">
+                    &#x2573;
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="popup-dots displayFlex justify-content-between"
+                onclick="onToggler('#toggler4')"
+              >
+                <div>
+                  <span>&#9679;&#9679;&#9679;</span>
+                </div>
+                <div>
+                  <img
+                    src="./assets/images/exc-tri.png"
+                    class="worning-img w-img"
+                    alt="negative worning"
+                  />
+                  <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                </div>
+              </div>
+
+              <div
+                onclick="sectionExplore('#lightblue-sec')"
+                class="displayFlex flex-column"
+              >
+                <div class="displayFlex justify-content-between">
+                  <div class="opc-7 fw-light">Course Pass Rate</div>
+                  <div>
+                    <h1 class="card-percentage">
+                      <sup class="sign">+</sup>3<span class="after-point"
+                        >.41</span
+                      ><sup class="mod">%</sup>
+                    </h1>
+                  </div>
+                </div>
+                <div class="opc-7">
+                  <h1 class="card-percentage">
+                    98<span class="after-point">.16</span
+                    ><sup class="mod">%</sup>
+                  </h1>
+                </div>
+                <div class="displayFlex justify-content-between">
+                  <div class="down-text">Company Pass Rate vs Others</div>
+                  <div>
+                    <img
+                      class="arrow-img"
+                      src="./assets/images/arrow_up.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-20 bg-orange1 overlay-padding date-main">
+              <div id="toggler5" class="showAnim" style="display: none">
+                <div class="Togg-back">
+                  <p class="togg-text">
+                    Percentage of courses failed against courses attempted.
+                  </p>
+                  <p onclick="offToggler('#toggler5')" class="cross-togg fs-12">
+                    &#x2573;
+                  </p>
+                </div>
+              </div>
+              <div
+                class="popup-dots displayFlex justify-content-between"
+                onclick="onToggler('#toggler5')"
+              >
+                <div>
+                  <span>&#9679;&#9679;&#9679;</span>
+                </div>
+                <div>
+                  <img
+                    src="./assets/images/exc-tri.png"
+                    class="worning-img w-img"
+                    alt="negative worning"
+                  />
+                  <i class="fa fa-angle-down color-white fs-20 drop-btn"></i>
+                </div>
+              </div>
+              <div
+                onclick="sectionExplore('#orange-sec')"
+                class="displayFlex flex-column"
+              >
+                <div class="displayFlex justify-content-between">
+                  <div class="opc-7 fw-light">Course Fail Rate</div>
+                  <div>
+                    <h1 class="card-percentage">
+                      <sup class="sign">-</sup>3<span class="after-point"
+                        >.43</span
+                      >
+                      <sup class="mod">%</sup>
+                    </h1>
+                  </div>
+                </div>
+                <div class="opc-7">
+                  <h1 class="card-percentage">
+                    1<span class="after-point">.57</span
+                    ><sup class="mod">%</sup>
+                  </h1>
+                </div>
+                <div class="displayFlex justify-content-between">
+                  <div class="down-text">Company Fail vs Others</div>
+                  <div>
+                    <img
+                      class="arrow-img"
+                      src="./assets/images/arrow_up.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div
-            id="pink-sec"
-            class="flowing-section w-20-2 bg-pink showAnim"
-            style="display: none"
-          >
-            <div class="toogler-sec w-333 displayFlex justify-content-between">
-              <div class="opc-7 fw-light fs-16">
-                Certification<br />Performance
-              </div>
-              <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
-            </div>
-
+          <div class="details-over-main">
             <div
-              class="text-color3 w-333 toogler-sec date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata12')"
-            >
-              <div class="fs-12">Period Bigins</div>
-              <div class="date-fs" id="dateBeg2">10.15.17</div>
-            </div>
-            <div
-              id="mydata12"
+              id="green-sec"
+              class="flowing-section w-20-1 bg-green showAnim"
               style="display: none"
-              class="calendar toogled-border showAnim"
             >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;
-                  <i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
+              <div class="toogler-sec displayFlex justify-content-between">
+                <div class="opc-7 fw-light fs-16">Course Performeance</div>
+                <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
+              </div>
+
+              <div
+                class="text-color1 toogler-sec date-main flex-align-center justify-content-between"
+                onclick="ShowData('#mydata1')"
+              >
+                <div class="fs-12">Period Bigins</div>
+                <div class="date-fs" id="dateBeg">10.15.17</div>
+              </div>
+              <div
+                id="mydata1"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="text-color2 toogler-sec date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata2')"
+              >
+                <div class="fs-12">Period Ends</div>
+                <div class="date-fs" id="dateEnd">10.15.18</div>
+              </div>
+              <div
+                id="mydata2"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                onclick="ShowData('#performers')"
+                class="toogler-sec performance"
+              >
+                <p>Top Performers</p>
+              </div>
+              <div
+                id="performers"
+                class="toogler-sec showAnim"
+                style="display: none"
+              >
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Rayan Grubb</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Andrew LaPine</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Patrick Eberhard</p>
+                  </div>
+                </div>
+                <div id="innerData" class="showAnim" style="display: none">
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Steven Lee Jr</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Sadain Hill</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Christopher Heffron</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark Trent</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark English</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Trevor Rrahan</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Alberto Marquex Villegas</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  onclick="showInnerData('#innerData')"
+                  class="flex-align-center date-main"
                 >
-                <span class="year">2022</span>
-                <span class="click-right">
-                  <p>&#9658;</p>
-                </span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="text-color4 toogler-sec w-333 date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata22')"
-            >
-              <div class="fs-12">Period Ends</div>
-              <div class="date-fs" id="dateEnd2">10.15.18</div>
-            </div>
-            <div
-              id="mydata22"
-              style="display: none"
-              class="calendar toogled-border showAnim"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
-                >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              onclick="ShowData('#performers2')"
-              class="toogler-sec performance"
-            >
-              <p>Top Performers</p>
-            </div>
-            <div
-              class="toogler-sec showAnim"
-              id="performers2"
-              style="display: none"
-            >
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Rayan Grubb</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Andrew LaPine</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Patrick Eberhard</p>
-                </div>
-              </div>
-              <div id="innerData2" class="showAnim" style="display: none">
-                <div class="flex-align-center">
                   <div>
                     <img
                       class="profile"
-                      src="./assets/images/profile.png"
+                      src="./assets/images/download.png"
                       alt="profile"
                     />
                   </div>
                   <div class="contact-wh">
-                    <p>Steven Lee Jr</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Sadain Hill</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Christopher Heffron</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark Trent</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark English</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Trevor Rrahan</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Alberto Marquex Villegas</p>
+                    <p>View All Top Performance</p>
                   </div>
                 </div>
               </div>
               <div
-                onclick="showInnerData('#innerData2')"
-                class="flex-align-center date-main"
-                onclick="toggleInnerData2()"
+                class="toogler-sec performance"
+                onclick="listChart('#chart-view')"
               >
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/download.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>View All Top Performance</p>
+                <p>Chart View</p>
+              </div>
+              <div
+                id="chart-view"
+                class="toogler-sec background-togler showAnim"
+                style="display: none"
+              >
+                <div class="flex-between fs-20 align-bottom h-100">
+                  <div id="perBeg"></div>
+                  <div id="perEnd"></div>
                 </div>
               </div>
+
+              <div class="toogler-sec performance" onclick="folldAll()">
+                <p>Customize My Views</p>
+              </div>
             </div>
+
             <div
-              class="toogler-sec performance"
-              onclick="listChart('#chart-view2')"
-            >
-              <p>Chart View</p>
-            </div>
-            <div
-              id="chart-view2"
-              class="toogler-sec background-togler showAnim"
+              id="pink-sec"
+              class="flowing-section w-20-2 bg-pink showAnim"
               style="display: none"
             >
-              <div class="flex-between fs-20 align-bottom h-100">
-                <div id="perBeg2"></div>
-                <div id="perEnd2"></div>
+              <div
+                class="toogler-sec w-333 displayFlex justify-content-between"
+              >
+                <div class="opc-7 fw-light fs-16">
+                  Certification<br />Performance
+                </div>
+                <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
               </div>
-            </div>
 
-            <div class="toogler-sec performance" onclick="folldAll()">
-              <p>Customize My Views</p>
-            </div>
-          </div>
-
-          <div
-            id="blue-sec"
-            class="flowing-section w-20-3 bg-blue showAnim"
-            style="display: none"
-          >
-            <div class="toogler-sec w-333 displayFlex justify-content-between">
-              <div class="opc-7 fw-light fs-16">
-                Course-<br />Completion Rate
+              <div
+                class="text-color3 w-333 toogler-sec date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata12')"
+              >
+                <div class="fs-12">Period Bigins</div>
+                <div class="date-fs" id="dateBeg2">10.15.17</div>
               </div>
-              <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
-            </div>
+              <div
+                id="mydata12"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;
+                    <i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right">
+                    <p>&#9658;</p>
+                  </span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
 
-            <div
-              class="text-color5 toogler-sec w-333 date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata13')"
-            >
-              <div class="fs-12">Period Bigins</div>
-              <div class="date-fs" id="dateBeg3">10.15.17</div>
-            </div>
-            <div
-              id="mydata13"
-              style="display: none"
-              class="calendar toogled-border showAnim"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
+              <div
+                class="text-color4 toogler-sec w-333 date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata22')"
+              >
+                <div class="fs-12">Period Ends</div>
+                <div class="date-fs" id="dateEnd2">10.15.18</div>
+              </div>
+              <div
+                id="mydata22"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                onclick="ShowData('#performers2')"
+                class="toogler-sec performance"
+              >
+                <p>Top Performers</p>
+              </div>
+              <div
+                class="toogler-sec showAnim"
+                id="performers2"
+                style="display: none"
+              >
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Rayan Grubb</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Andrew LaPine</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Patrick Eberhard</p>
+                  </div>
+                </div>
+                <div id="innerData2" class="showAnim" style="display: none">
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Steven Lee Jr</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Sadain Hill</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Christopher Heffron</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark Trent</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark English</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Trevor Rrahan</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Alberto Marquex Villegas</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  onclick="showInnerData('#innerData2')"
+                  class="flex-align-center date-main"
+                  onclick="toggleInnerData2()"
                 >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="text-color6 w-333 toogler-sec date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata23')"
-            >
-              <div class="fs-12">Period Ends</div>
-              <div class="date-fs" id="dateEnd3">10.15.18</div>
-            </div>
-            <div
-              id="mydata23"
-              style="display: none"
-              class="showAnim calendar toogled-border"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
-                >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="toogler-sec performance"
-              onclick="ShowData('#performers3')"
-            >
-              <p>Top Performers</p>
-            </div>
-            <div
-              class="toogler-sec showAnim"
-              id="performers3"
-              style="display: none"
-            >
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Rayan Grubb</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Andrew LaPine</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Patrick Eberhard</p>
-                </div>
-              </div>
-              <div id="innerData3" class="showAnim" style="display: none">
-                <div class="flex-align-center">
                   <div>
                     <img
                       class="profile"
-                      src="./assets/images/profile.png"
+                      src="./assets/images/download.png"
                       alt="profile"
                     />
                   </div>
                   <div class="contact-wh">
-                    <p>Steven Lee Jr</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Sadain Hill</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Christopher Heffron</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark Trent</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark English</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Trevor Rrahan</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Alberto Marquex Villegas</p>
+                    <p>View All Top Performance</p>
                   </div>
                 </div>
               </div>
               <div
-                class="flex-align-center date-main"
-                onclick="showInnerData('#innerData3')"
+                class="toogler-sec performance"
+                onclick="listChart('#chart-view2')"
               >
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/download.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>View All Top Performance</p>
+                <p>Chart View</p>
+              </div>
+              <div
+                id="chart-view2"
+                class="toogler-sec background-togler showAnim"
+                style="display: none"
+              >
+                <div class="flex-between fs-20 align-bottom h-100">
+                  <div id="perBeg2"></div>
+                  <div id="perEnd2"></div>
                 </div>
               </div>
-            </div>
-            <div
-              class="toogler-sec performance"
-              onclick="listChart('#chart-view3')"
-            >
-              <p>Chart View</p>
-            </div>
-            <div
-              id="chart-view3"
-              class="toogler-sec background-togler showAnim"
-              style="display: none"
-            >
-              <div class="flex-between fs-20 align-bottom h-100">
-                <div id="perBeg3"></div>
-                <div id="perEnd3"></div>
+
+              <div class="toogler-sec performance" onclick="folldAll()">
+                <p>Customize My Views</p>
               </div>
             </div>
 
-            <div class="toogler-sec performance" onclick="folldAll()">
-              <p>Customize My Views</p>
-            </div>
-          </div>
-
-          <div
-            id="lightblue-sec"
-            class="flowing-section w-20-4 bg-lightBlue showAnim"
-            style="display: none"
-          >
             <div
-              class="toogler-sec w-333 float-right displayFlex justify-content-between"
-            >
-              <div class="opc-7 fw-light fs-16">Course Pass Rate</div>
-              <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
-            </div>
-
-            <div
-              class="text-color7 w-333 float-right toogler-sec date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata14')"
-            >
-              <div class="fs-12">Period Bigins</div>
-              <div class="date-fs" id="dateBeg4">10.15.17</div>
-            </div>
-
-            <div
-              id="mydata14"
+              id="blue-sec"
+              class="flowing-section w-20-3 bg-blue showAnim"
               style="display: none"
-              class="calendar toogled-border showAnim"
             >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
+              <div
+                class="toogler-sec w-333 displayFlex justify-content-between"
+              >
+                <div class="opc-7 fw-light fs-16">
+                  Course-<br />Completion Rate
+                </div>
+                <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
+              </div>
+
+              <div
+                class="text-color5 toogler-sec w-333 date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata13')"
+              >
+                <div class="fs-12">Period Bigins</div>
+                <div class="date-fs" id="dateBeg3">10.15.17</div>
+              </div>
+              <div
+                id="mydata13"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="text-color6 w-333 toogler-sec date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata23')"
+              >
+                <div class="fs-12">Period Ends</div>
+                <div class="date-fs" id="dateEnd3">10.15.18</div>
+              </div>
+              <div
+                id="mydata23"
+                style="display: none"
+                class="showAnim calendar toogled-border"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="toogler-sec performance"
+                onclick="ShowData('#performers3')"
+              >
+                <p>Top Performers</p>
+              </div>
+              <div
+                class="toogler-sec showAnim"
+                id="performers3"
+                style="display: none"
+              >
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Rayan Grubb</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Andrew LaPine</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Patrick Eberhard</p>
+                  </div>
+                </div>
+                <div id="innerData3" class="showAnim" style="display: none">
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Steven Lee Jr</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Sadain Hill</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Christopher Heffron</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark Trent</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark English</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Trevor Rrahan</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Alberto Marquex Villegas</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-align-center date-main"
+                  onclick="showInnerData('#innerData3')"
                 >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="text-color8 w-333 float-right toogler-sec date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata24')"
-            >
-              <div class="fs-12">Period Ends</div>
-              <div class="date-fs" id="dateEnd4">10.15.18</div>
-            </div>
-            <div
-              id="mydata24"
-              style="display: none"
-              class="calendar toogled-border showAnim"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
-                >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="toogler-sec w-333 float-right performance"
-              onclick="ShowData('#performers4')"
-            >
-              <p>Top Performers</p>
-            </div>
-            <div
-              class="toogler-sec showAnim"
-              id="performers4"
-              style="display: none"
-            >
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Rayan Grubb</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Andrew LaPine</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Patrick Eberhard</p>
-                </div>
-              </div>
-              <div id="innerData4" class="showAnim" style="display: none">
-                <div class="flex-align-center">
                   <div>
                     <img
                       class="profile"
-                      src="./assets/images/profile.png"
+                      src="./assets/images/download.png"
                       alt="profile"
                     />
                   </div>
                   <div class="contact-wh">
-                    <p>Steven Lee Jr</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Sadain Hill</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Christopher Heffron</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark Trent</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark English</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Trevor Rrahan</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Alberto Marquex Villegas</p>
+                    <p>View All Top Performance</p>
                   </div>
                 </div>
               </div>
               <div
-                class="flex-align-center date-main"
-                onclick="showInnerData('#innerData4')"
+                class="toogler-sec performance"
+                onclick="listChart('#chart-view3')"
               >
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/download.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>View All Top Performance</p>
+                <p>Chart View</p>
+              </div>
+              <div
+                id="chart-view3"
+                class="toogler-sec background-togler showAnim"
+                style="display: none"
+              >
+                <div class="flex-between fs-20 align-bottom h-100">
+                  <div id="perBeg3"></div>
+                  <div id="perEnd3"></div>
                 </div>
               </div>
-            </div>
-            <div
-              class="toogler-sec w-333 float-right performance"
-              onclick="listChart('#chart-view4')"
-            >
-              <p>Chart View</p>
-            </div>
-            <div
-              id="chart-view4"
-              class="toogler-sec background-togler showAnim"
-              style="display: none"
-            >
-              <div class="flex-between fs-20 align-bottom h-100">
-                <div id="perBeg4"></div>
-                <div id="perEnd4"></div>
+
+              <div class="toogler-sec performance" onclick="folldAll()">
+                <p>Customize My Views</p>
               </div>
             </div>
 
             <div
-              class="toogler-sec w-333 float-right performance"
-              onclick="folldAll()"
-            >
-              <p>Customize My Views</p>
-            </div>
-          </div>
-
-          <div
-            id="orange-sec"
-            class="flowing-section w-20-5 bg-orange showAnim"
-            style="display: none"
-          >
-            <div
-              class="toogler-sec w-333 float-right displayFlex justify-content-between"
-            >
-              <div class="opc-7 fw-light fs-16">Course Fail Rate</div>
-              <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
-            </div>
-
-            <div
-              class="text-color9 toogler-sec w-333 float-right date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata15')"
-            >
-              <div class="fs-12">Period Bigins</div>
-              <div class="date-fs" id="dateBeg5">10.15.17</div>
-            </div>
-            <div
-              id="mydata15"
+              id="lightblue-sec"
+              class="flowing-section w-20-4 bg-lightBlue showAnim"
               style="display: none"
-              class="calendar toogled-border showAnim"
             >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
+              <div
+                class="toogler-sec w-333 float-right displayFlex justify-content-between"
+              >
+                <div class="opc-7 fw-light fs-16">Course Pass Rate</div>
+                <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
+              </div>
+
+              <div
+                class="text-color7 w-333 float-right toogler-sec date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata14')"
+              >
+                <div class="fs-12">Period Bigins</div>
+                <div class="date-fs" id="dateBeg4">10.15.17</div>
+              </div>
+
+              <div
+                id="mydata14"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="text-color8 w-333 float-right toogler-sec date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata24')"
+              >
+                <div class="fs-12">Period Ends</div>
+                <div class="date-fs" id="dateEnd4">10.15.18</div>
+              </div>
+              <div
+                id="mydata24"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="toogler-sec w-333 float-right performance"
+                onclick="ShowData('#performers4')"
+              >
+                <p>Top Performers</p>
+              </div>
+              <div
+                class="toogler-sec showAnim"
+                id="performers4"
+                style="display: none"
+              >
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Rayan Grubb</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Andrew LaPine</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Patrick Eberhard</p>
+                  </div>
+                </div>
+                <div id="innerData4" class="showAnim" style="display: none">
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Steven Lee Jr</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Sadain Hill</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Christopher Heffron</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark Trent</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark English</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Trevor Rrahan</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Alberto Marquex Villegas</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-align-center date-main"
+                  onclick="showInnerData('#innerData4')"
                 >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="text-color10 toogler-sec w-333 float-right date-main displayFlex align-items-center justify-content-between"
-              onclick="ShowData('#mydata25')"
-            >
-              <div class="fs-12">Period Ends</div>
-              <div class="date-fs" id="dateEnd5">10.15.18</div>
-            </div>
-            <div
-              id="mydata25"
-              style="display: none"
-              class="calendar toogled-border showAnim"
-            >
-              <div class="headline">
-                <span class="click-left"><p>&#9664;</p></span>
-                <span class="month">JANUARY</span>
-                <span class="divider"
-                  >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
-                  >&nbsp;&nbsp;</span
-                >
-                <span class="year">2022</span>
-                <span class="click-right"><p>&#9658;</p></span>
-              </div>
-              <div class="weekdays">
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
-                <div class="day">SUN</div>
-              </div>
-              <div class="days"></div>
-            </div>
-
-            <div
-              class="toogler-sec w-333 float-right performance"
-              onclick="ShowData('#performers5')"
-            >
-              <p>Top Performers</p>
-            </div>
-            <div
-              class="toogler-sec showAnim"
-              id="performers5"
-              style="display: none"
-            >
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Rayan Grubb</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Andrew LaPine</p>
-                </div>
-              </div>
-              <div class="flex-align-center">
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/profile.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>Patrick Eberhard</p>
-                </div>
-              </div>
-              <div id="innerData5" class="showAnim" style="display: none">
-                <div class="flex-align-center">
                   <div>
                     <img
                       class="profile"
-                      src="./assets/images/profile.png"
+                      src="./assets/images/download.png"
                       alt="profile"
                     />
                   </div>
                   <div class="contact-wh">
-                    <p>Steven Lee Jr</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Sadain Hill</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Christopher Heffron</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark Trent</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Mark English</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Trevor Rrahan</p>
-                  </div>
-                </div>
-                <div class="flex-align-center">
-                  <div>
-                    <img
-                      class="profile"
-                      src="./assets/images/profile.png"
-                      alt="profile"
-                    />
-                  </div>
-                  <div class="contact-wh">
-                    <p>Alberto Marquex Villegas</p>
+                    <p>View All Top Performance</p>
                   </div>
                 </div>
               </div>
               <div
-                class="flex-align-center date-main"
-                onclick="showInnerData('#innerData5')"
+                class="toogler-sec w-333 float-right performance"
+                onclick="listChart('#chart-view4')"
               >
-                <div>
-                  <img
-                    class="profile"
-                    src="./assets/images/download.png"
-                    alt="profile"
-                  />
-                </div>
-                <div class="contact-wh">
-                  <p>View All Top Performance</p>
+                <p>Chart View</p>
+              </div>
+              <div
+                id="chart-view4"
+                class="toogler-sec background-togler showAnim"
+                style="display: none"
+              >
+                <div class="flex-between fs-20 align-bottom h-100">
+                  <div id="perBeg4"></div>
+                  <div id="perEnd4"></div>
                 </div>
               </div>
-            </div>
-            <div
-              class="toogler-sec w-333 float-right sperformance"
-              onclick="listChart('#chart-view5')"
-            >
-              <p>Chart View</p>
-            </div>
-            <div
-              id="chart-view5"
-              style="display: none"
-              class="toogler-sec background-togler showAnim"
-            >
-              <div class="flex-between fs-20 align-bottom h-100">
-                <div id="perBeg5"></div>
-                <div id="perEnd5"></div>
+
+              <div
+                class="toogler-sec w-333 float-right performance"
+                onclick="folldAll()"
+              >
+                <p>Customize My Views</p>
               </div>
             </div>
 
             <div
-              class="toogler-sec w-333 float-right performance"
-              onclick="folldAll()"
+              id="orange-sec"
+              class="flowing-section w-20-5 bg-orange showAnim"
+              style="display: none"
             >
-              <p>Customize My Views</p>
+              <div
+                class="toogler-sec w-333 float-right displayFlex justify-content-between"
+              >
+                <div class="opc-7 fw-light fs-16">Course Fail Rate</div>
+                <p onclick="ShutDownAll()" class="cross-font fs-12">&#x2573;</p>
+              </div>
+
+              <div
+                class="text-color9 toogler-sec w-333 float-right date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata15')"
+              >
+                <div class="fs-12">Period Bigins</div>
+                <div class="date-fs" id="dateBeg5">10.15.17</div>
+              </div>
+              <div
+                id="mydata15"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="text-color10 toogler-sec w-333 float-right date-main displayFlex align-items-center justify-content-between"
+                onclick="ShowData('#mydata25')"
+              >
+                <div class="fs-12">Period Ends</div>
+                <div class="date-fs" id="dateEnd5">10.15.18</div>
+              </div>
+              <div
+                id="mydata25"
+                style="display: none"
+                class="calendar toogled-border showAnim"
+              >
+                <div class="headline">
+                  <span class="click-left"><p>&#9664;</p></span>
+                  <span class="month">JANUARY</span>
+                  <span class="divider"
+                    >&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i
+                    >&nbsp;&nbsp;</span
+                  >
+                  <span class="year">2022</span>
+                  <span class="click-right"><p>&#9658;</p></span>
+                </div>
+                <div class="weekdays">
+                  <div class="day">MON</div>
+                  <div class="day">TUE</div>
+                  <div class="day">WED</div>
+                  <div class="day">THU</div>
+                  <div class="day">FRI</div>
+                  <div class="day">SAT</div>
+                  <div class="day">SUN</div>
+                </div>
+                <div class="days"></div>
+              </div>
+
+              <div
+                class="toogler-sec w-333 float-right performance"
+                onclick="ShowData('#performers5')"
+              >
+                <p>Top Performers</p>
+              </div>
+              <div
+                class="toogler-sec showAnim"
+                id="performers5"
+                style="display: none"
+              >
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Rayan Grubb</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Andrew LaPine</p>
+                  </div>
+                </div>
+                <div class="flex-align-center">
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/profile.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>Patrick Eberhard</p>
+                  </div>
+                </div>
+                <div id="innerData5" class="showAnim" style="display: none">
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Steven Lee Jr</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Sadain Hill</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Christopher Heffron</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark Trent</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Mark English</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Trevor Rrahan</p>
+                    </div>
+                  </div>
+                  <div class="flex-align-center">
+                    <div>
+                      <img
+                        class="profile"
+                        src="./assets/images/profile.png"
+                        alt="profile"
+                      />
+                    </div>
+                    <div class="contact-wh">
+                      <p>Alberto Marquex Villegas</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-align-center date-main"
+                  onclick="showInnerData('#innerData5')"
+                >
+                  <div>
+                    <img
+                      class="profile"
+                      src="./assets/images/download.png"
+                      alt="profile"
+                    />
+                  </div>
+                  <div class="contact-wh">
+                    <p>View All Top Performance</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="toogler-sec w-333 float-right sperformance"
+                onclick="listChart('#chart-view5')"
+              >
+                <p>Chart View</p>
+              </div>
+              <div
+                id="chart-view5"
+                style="display: none"
+                class="toogler-sec background-togler showAnim"
+              >
+                <div class="flex-between fs-20 align-bottom h-100">
+                  <div id="perBeg5"></div>
+                  <div id="perEnd5"></div>
+                </div>
+              </div>
+
+              <div
+                class="toogler-sec w-333 float-right performance"
+                onclick="folldAll()"
+              >
+                <p>Customize My Views</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="utalization-main">
+      <section class="slider-cont mobileCharts">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide slider-m"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active h-100 pos-rel">
+              <div class="progress-chart">
+                <section class="section_utilization">
+                  <div class="col-sm-5 two_color_circle">
+                    <div class="inner_container alone_click">
+                      <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="popup_inner alone_popup slider-popup">
+                      <div>
+                        <div class="icon_close">
+                          <i
+                            class="fa fa-times-thin fa-2x"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
+                      </div>
+                      <div>
+                        <p>
+                          The number of individuals utilizing the metrics
+                          (except membership) being measured on the metrics
+                          items below.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="header_text">
+                      <h3>Utilization</h3>
+                    </div>
+
+                    <div class="progress_image">
+                      <div class="image_container comcast_section_u">
+                        <div class="first-circle-block">
+                          <!--<div class="primary_container_img">-->
+                          <!--<ul>-->
+                          <!--<li><span class="magenta_color"></span><p>Member</p> </li>-->
+                          <!--<li><span class="light_blue"></span><p>Non-member</p> </li>-->
+                          <!--</ul>-->
+                          <!--</div>-->
+                          <div class="animation-area">
+                            <div class="extra-bc"></div>
+                            <div
+                              class="first-circle percentage__numres1"
+                              data-percentage="73"
+                            >
+                              <svg viewBox="0 0 100 100">
+                                <circle
+                                  class="circle-inner"
+                                  cx="50"
+                                  cy="50"
+                                  r="45"
+                                  fill="none"
+                                  stroke-dasharray="2, 2"
+                                  transform="rotate(-90 50 50)"
+                                ></circle>
+                                <circle
+                                  class="circleres1"
+                                  cx="50"
+                                  cy="50"
+                                  r="45"
+                                  transform="rotate(-90 50 50)"
+                                ></circle>
+                              </svg>
+                            </div>
+                            <div
+                              class="second-circle percentage__numres11"
+                              data-percentage="27"
+                            >
+                              <svg viewBox="0 0 100 100">
+                                <circle
+                                  class="circle-inner"
+                                  cx="50"
+                                  cy="50"
+                                  r="45"
+                                  fill="none"
+                                  stroke-dasharray="2, 4"
+                                  transform="rotate(-90 50 50)"
+                                ></circle>
+                                <circle
+                                  class="circleres11"
+                                  cx="50"
+                                  cy="50"
+                                  r="45"
+                                  transform="rotate(-90 50 50)"
+                                ></circle>
+                              </svg>
+                              <div class="percentagearea">
+                                <div class="pink">
+                                  <h1>
+                                    <span
+                                      class="percentage__numres121"
+                                      data-percentage="12322"
+                                    ></span>
+                                  </h1>
+                                </div>
+                                <!--<div class="green">-->
+                                <!--<h1><span ></span><span>%</span></h1>-->
+                                <!--<p>Non-<br>member</p>-->
+                                <!--</div>-->
+                              </div>
+                            </div>
+                            <!--<div class="third-circle">-->
+                            <!--<svg viewBox="0 0 100 100">-->
+                            <!--<circle class="circle-inner" cx="50" cy="50" r="45"  fill="none" stroke-dasharray="2, 4" transform="rotate(-90 50 50)"></circle>-->
+                            <!--<circle class="circle111" cx="50" cy="50" r="45" transform="rotate(-90 50 50)"></circle>-->
+                            <!--</svg>-->
+                            <!--<div class="percentagearea">-->
+                            <!--<div class="pink">-->
+                            <!--<h1><span class="percentage__num111" data-percentage="71"></span></h1>-->
+                            <!--<p>SCORE</p>-->
+                            <!--</div>-->
+                            <!--<div class="green">-->
+                            <!--<h1><span class="percentage__num11" data-percentage="29"></span></h1>-->
+                            <!--<p>SCORE</p>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="carousel-item pos-rel">
+              <div class="zingchart-ab">
+                <div id="myChart" class="chart--container"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item pos-rel">
+              <section class="section_utilization">
+                <div class="progress_image prog_img_second">
+                  <div class="image_container ex_image_container">
+                    <div class="utilization_container">
+                      <div>
+                        <div class="inner_container ex_container graph_outer">
+                          <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="popup_graph_ex">
+                          <div>
+                            <div class="icon_close">
+                              <i
+                                class="fa fa-times-thin fa-2x"
+                                aria-hidden="true"
+                              ></i>
+                            </div>
+                          </div>
+                          <div>
+                            <p>Average time to complete a course.</p>
+                          </div>
+                        </div>
+
+                        <div class="header_text wea">
+                          <h3>
+                            Course Duration Average <br /><span>(in Days)</span>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="background">
+                        <div>
+                          <h1 class="percentage__numres3" data-percentage="51">
+                            51
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="carousel-item pos-rel">
+              <section class="section_utilization">
+                <div class="col-sm-5 two_color_circle">
+                  <div class="progress_image prog_img_second">
+                    <div class="image_container ex_image_container">
+                      <div class="skyblue_svg">
+                        <!--<div class="container_img second_img_div">-->
+                        <!--<p>75%</p>-->
+                        <!--</div>-->
+                        <div class="foot_text_svg">
+                          <div class="inner_container ex_container graph_outer">
+                            <div>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="popup_graph_ex">
+                            <div>
+                              <div class="icon_close">
+                                <i
+                                  class="fa fa-times-thin fa-2x"
+                                  aria-hidden="true"
+                                ></i>
+                              </div>
+                            </div>
+                            <div>
+                              <p>
+                                The aggregate of individuals engagement scores.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="header_text mobile-set">
+                            <h3>Single Engagement</h3>
+                          </div>
+                        </div>
+                        <div class="circle-block circle_2">
+                          <div class="utilization_container">
+                            <svg viewBox="0 0 100 100">
+                              <circle
+                                class="circle-inner2"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                fill="none"
+                                stroke-dasharray="2, 4"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                              <circle
+                                class="circleres2"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                transform="rotate(-90 50 50)"
+                                style="stroke-dashoffset: 183.486"
+                              ></circle>
+                            </svg>
+                            <div class="percentage percentage2">
+                              <h1>
+                                <span
+                                  class="percentage__numres2"
+                                  data-percentage="35"
+                                  >35</span
+                                >
+                              </h1>
+                              <p>OVERALL SCORE</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- <div class="pos-abs"> -->
+          <a
+            class="border border-1 carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <!-- </div> -->
+          <!-- <div class="pos-abs "> -->
+          <a
+            class="border border-1 carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <!-- <section class="Slider-container"> -->
+      <!-- <div id="myCarousel" class="h-100 carousel slide inner-cur" data-ride="carousel">
+      Wrapper for slides
+      <div class="carousel-inner h-100">
+      <div class="item active mx-auto h-100">
+      <h1 class="mx-auto">1</h1>
+      <div>
+                <div class="pos-rel">
+                  <p
+                    onclick="ShowData('#utilization-toggResp')"
+                    class="color-white date-main"
+                  >
+                    &#9679;&#9679;&#9679;
+                  </p>
+                  <div
+                    id="utilization-toggResp"
+                    class="showAnim"
+                    style="display: none"
+                  >
+                    <div class="utilization-togg-back">
+                      <p class="utilization-togg">
+                        The number of individuals utilizing the metrics (except
+                        membership) being measured on the metrics items below.
+                      </p>
+                      <p
+                        onclick="offToggler('#utilization-toggResp')"
+                        class="cross-togg fs-12"
+                      >
+                        &#x2573;
+                      </p>
+                    </div>
+                  </div>
+  
+                  <h3 class="utalization-h3">Utillization</h3>
+                </div> 
+                <div class="progress-chart">
+                  <div class="progress_image">
+                    <div class="image_container comcast_section_u">
+                      <div class="first-circle-block">
+                        <div class="animation-area">
+                          <div class="extra-bc"></div>
+                          <div
+                            class="first-circle percentage__num1"
+                            data-percentage="73"
+                          >
+                            <svg viewBox="0 0 100 100">
+                              <circle
+                                class="circle-inner"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                fill="none"
+                                stroke-dasharray="2, 2"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                              <circle
+                                class="circle1"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                            </svg>
+                          </div>
+                          <div
+                            class="second-circle percentage__num11"
+                            data-percentage="27"
+                          >
+                            <svg viewBox="0 0 100 100">
+                              <circle
+                                class="circle-inner"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                fill="none"
+                                stroke-dasharray="2, 4"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                              <circle
+                                class="circle11"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                transform="rotate(-90 50 50)"
+                              ></circle>
+                            </svg>
+                            <div class="percentagearea">
+                              <div class="pink">
+                                <h1>
+                                  <span
+                                    class="percentage__num121"
+                                    data-percentage="12322"
+                                  ></span>
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+      </div>
+            
+            <div class="item">
+              <h1>2</h1>
+            </div>
+          
+            <div class="item">
+              <h1>3</h1>
+            </div>
+            
+            <div class="item">
+              <h1>4</h1>
+            </div>
+          
+          </div>
+      
+      <div class="pos pos1">
+         <a class=" pos left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          </div>
+          <div class="pos pos2">
+          <a class="pos right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
+        </div> -->
+      <!-- </section> -->
+
+      <section class="utalization-main disktopCharts">
         <div class="utal-flex">
           <div class="utail-charts">
             <div class="utal-cha-wid">
@@ -3377,6 +3847,7 @@
                 <div class="zingchart-ab">
                   <div id="myChart" class="chart--container"></div>
                 </div>
+
                 <div class="set-pos-51chart">
                   <div class="progress_image prog_img_second">
                     <div class="image_container ex_image_container">
@@ -3390,6 +3861,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="skyblue_svg">
                         <div class="circle-block circle_2">
                           <div class="utilization_container">
@@ -3482,12 +3954,35 @@
             </div>
           </div>
 
-          <div class="res_area_prp">
+          <div id="professional-sec" style="display: none">
+            <div class="responsive-drop">
+              <i
+                onclick="ShowDataRespon('#professional-sec-main', '#professional-sec')"
+                class="fa fa-angle-down color-white fs-20 drop-btn"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            id="professional-sec-main"
+            class="showAnim res_area_prp"
+            style="display: block"
+          >
             <div class="line-chart-sec">
               <div class="line-chart-main pos-rel">
+                <div class="popupdres">
+                  <span onclick="ShowData('#proffessional-togg')"
+                    >&#9679;&#9679;&#9679;</span
+                  >
+                  <i
+                    onclick="offTogglerResp('#professional-sec-main','#professional-sec')"
+                    class="fa fa-angle-up first-arrow color-white fs-20 drop-btn"
+                  ></i>
+                </div>
+
                 <p
                   onclick="ShowData('#proffessional-togg')"
-                  class="color-white date-main"
+                  class="disktop-dots color-white date-main"
                 >
                   &#9679;&#9679;&#9679;
                 </p>
@@ -3565,7 +4060,14 @@
       </section>
 
       <section class="chat-section-main displayFlex">
-        <div class="w-40-1 text-start">
+        <div id="Insight-sec-main" class="w-40-1 text-start">
+          <div class="insHeadResp">
+            <h1>Insights</h1>
+            <i
+              onclick="offTogglerResp('#Insight-sec-main','#Insight-sec')"
+              class="fa fa-angle-up first-arrow color-white fs-20 drop-btn"
+            ></i>
+          </div>
           <div class="chat-heading">
             <h1>Insights</h1>
           </div>
@@ -3628,8 +4130,23 @@
             <img src="./assets/images/chat2.png" alt="" />
           </div>
         </div>
-        <div class="datalines">
+        <div id="Insight-sec" class="chat-dropd" style="display: none">
+          <div class="responsive-drop">
+            <i
+              onclick="ShowDataRespon('#Insight-sec-main', '#Insight-sec')"
+              class="fa fa-angle-down color-white fs-20 drop-btn"
+            ></i>
+          </div>
+        </div>
+        <div id="company-sec-main" class="datalines">
           <div class="pos-rel">
+            <div class="compHeadResp">
+              <h1>Company Competencies</h1>
+              <i
+                onclick="offTogglerResp('#company-sec-main','#company-sec')"
+                class="fa fa-angle-up first-arrow color-white fs-20 drop-btn"
+              ></i>
+            </div>
             <div class="compHead">
               <h1>Company Competencies</h1>
             </div>
@@ -4984,13 +5501,21 @@
             </div>
           </div>
         </div>
+        <div id="company-sec" style="display: none">
+          <div class="responsive-drop">
+            <i
+              onclick="ShowDataRespon('#company-sec-main', '#company-sec')"
+              class="fa fa-angle-down color-white fs-20 drop-btn"
+            ></i>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="h-100 flex-column-around">
-        <div class="Secondary-container displayFlex">
-          <div class="w-310">
+        <div class="Secondary-container">
+          <div class="ft-account w-310">
             <ul>
               <li class="bottom-padding">
                 <a class="fw-2" href="#">Account</a>
@@ -5001,7 +5526,7 @@
               <li><a href="#">More insights</a></li>
             </ul>
           </div>
-          <div class="w-310">
+          <div class="ft-learn w-310">
             <ul>
               <li class="bottom-padding">
                 <a class="fw-2" href="#">Learning</a>
@@ -5012,7 +5537,7 @@
               <li><a href="#">More dashboard</a></li>
             </ul>
           </div>
-          <div class="w-310">
+          <div class="ft-sup w-310">
             <ul>
               <li class="bottom-padding">
                 <a class="fw-2" href="#">Support</a>
@@ -5023,7 +5548,7 @@
               <li><a href="#">Email SCTE</a></li>
             </ul>
           </div>
-          <div class="w-310">
+          <div class="ft-quick w-310">
             <ul>
               <li class="bottom-padding">
                 <a class="fw-2" href="#">Quicklinks</a>
@@ -5034,7 +5559,7 @@
               <li><a href="#">SCTE website</a></li>
             </ul>
           </div>
-          <div class="social-width text-end">
+          <div class="social-width">
             <ul class="displayFlex justify-end">
               <li
                 class="rounded-circle border border-2 ms-2 border-blue px-1 py-1"
@@ -5331,9 +5856,11 @@
             </ul>
           </div>
         </div>
-        <div class="footer-end-container displayFlex justify-between">
+        <div class="footer-end-container">
           <div class="w-40">
-            <ul class="displayFlex justify-content-between">
+            <ul
+              class="footer-last-text-main displayFlex justify-content-between"
+            >
               <li>
                 <a class="footer-last-text" href="#"
                   >140 philips Road,Exton PA 19341</a

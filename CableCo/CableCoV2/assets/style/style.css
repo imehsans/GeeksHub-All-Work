@@ -8,7 +8,7 @@ body {
 
 footer {
   background-color: #2c3449;
-  height: 300px;
+  min-height: 300px;
   /* z-index: 1; */
 }
 
@@ -124,6 +124,8 @@ header .header-center .active {
 }
 
 .footer-end-container {
+  display: flex;
+  justify-content: space-between;
   width: 93%;
   margin: 0 0 0 2%;
 }
@@ -134,8 +136,9 @@ header .header-center .active {
 }
 
 .Secondary-container {
+  display: flex;
   width: 80%;
-  padding-top: 21px;
+  padding: 30px 0; 
   margin: unset !important;
   font-weight: 300;
 }
@@ -357,13 +360,12 @@ main {
   right: 0;
 }
 
-.w-img{
+.w-img {
   display: block;
 }
-.drop-btn{
+.drop-btn {
   display: none;
 }
-
 
 .hero-section {
   background-image: url("../images/polycable_header.png");
@@ -1565,13 +1567,38 @@ tspan {
   justify-content: end;
 }
 
+.resoon-perfo,
 .headerpos {
   display: none !important;
 }
 
+.disktopperf {
+  display: block !important;
+}
+
+.social-ul{
+  display: flex;
+  justify-content: end;
+}
+
+.footer-last-text-main{
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /* ===================================================== */
 
 @media (max-width: 1199px) and (min-width: 1024px) {
+  .footer-last-text-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-ul{
+    display: flex;
+    justify-content: end;
+  }
   main {
     margin: 0;
   }
@@ -1938,6 +1965,7 @@ tspan {
   }
 
   .Secondary-container {
+    display: flex;
     width: 90%;
     padding-top: 21px;
     margin: 0;
@@ -1965,6 +1993,8 @@ tspan {
   }
 
   .footer-end-container {
+    display: flex;
+    justify-content: space-between;
     width: 89%;
     margin: 0 0 0 1%;
   }
@@ -1980,6 +2010,15 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 1023px) and (min-width: 992px) {
+  .footer-last-text-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-ul{
+    display: flex;
+    justify-content: end;
+  }
   main {
     margin: 0;
   }
@@ -2342,6 +2381,7 @@ tspan {
   }
 
   .Secondary-container {
+    display: flex;
     width: 92%;
     padding-top: 21px;
     margin: 0;
@@ -2369,6 +2409,8 @@ tspan {
   }
 
   .footer-end-container {
+    display: flex;
+    justify-content: space-between;
     width: 91%;
     margin: 0 0 0 1%;
   }
@@ -2384,6 +2426,15 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 991px) and (min-width: 768px) {
+  .footer-last-text-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-ul{
+    display: flex;
+    justify-content: end;
+  }
   main {
     margin: 0;
   }
@@ -2767,6 +2818,7 @@ tspan {
   }
 
   .Secondary-container {
+    display: flex;
     width: 92%;
     padding-top: 21px;
     margin: 0;
@@ -2794,6 +2846,8 @@ tspan {
   }
 
   .footer-end-container {
+    display: flex;
+    justify-content: space-between;
     width: 88.5%;
     margin: 0 0 0 1%;
   }
@@ -2809,6 +2863,16 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 767px) and (min-width: 685px) {
+  .footer-last-text-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-ul{
+    display: flex;
+    justify-content: end;
+  }
+
   main {
     margin: 0;
   }
@@ -2938,6 +3002,8 @@ tspan {
   .respon-perfo {
     width: 100%;
     margin-top: 100px;
+    display: block;
+    margin-top: -200px;
   }
 
   .perform-respon {
@@ -2954,8 +3020,9 @@ tspan {
     justify-content: space-between;
     font-size: 20px;
     color: #f9f9f9;
+    z-index: -1;
   }
-  
+
   h6 {
     color: #f9f9f9;
     font-weight: 300;
@@ -2976,16 +3043,18 @@ tspan {
   .lightblue-bg {
     background-color: rgba(0, 117, 213, 1);
   }
-  
-  .orange-bg{
+
+  .orange-bg {
     background-color: rgba(252, 172, 42, 1);
   }
 
-  .w-img{
-    display: none;
+  .disktopperf,
+  .w-img {
+    display: none !important;
   }
-  .drop-btn{
-    display: block;
+
+  .drop-btn {
+    display: block !important;
   }
 
   .set-pos {
@@ -3024,14 +3093,340 @@ tspan {
     max-width: 19%;
     top: 220px;
   }
-  .company-sourse-main{
+  .company-sourse-main {
     padding: 20px 0;
   }
-  .course-sourse{
+
+  .course-sourse {
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     color: #fff;
   }
+
+  .calendar {
+    width: 320px;
+    margin: 0 auto !important;
+    min-height: 100px;
+  }
+
+  .headline {
+    padding: 5px 0;
+  }
+  .weekdays * {
+    width: 33px;
+    font-size: 12px;
+    margin: 3px 3px;
+  }
+  .date {
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 5px;
+    font-size: 12px;
+  }
+
+  /* .inner-cur{
+    position: relative;
+  }
+  .pos{
+    position: absolute;
+      top:10px;
+      
+  }
+  
+  .pos1{
+    right:50px;
+  }
+  .pos2{
+    right:20px;
+  }
+
+  .Slider-container{
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .zingchart-ab {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .progress-chart {
+    position: absolute;
+    top: 0px;
+  }
+  
+  .set-pos-51chart {
+    position: absolute;
+    top: 210px;
+  } */
+
+  .popupdres {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .res_area_prp {
+    background-image: url(../images/grp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: bottom;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: -30px;
+  }
+
+  .months ul {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* width: 100%; */
+    /* margin:unset !important; */
+    padding: unset !important;
+    margin-top: -60px;
+    font-size: 8px;
+  }
+
+  .line-chart-sec {
+    text-align: left;
+    width: 100%;
+  }
+
+  .line-chart-main {
+    margin-left: 40px;
+  }
+
+  .linechart-details {
+    justify-content: flex-start;
+  }
+
+  .linechart-details ul {
+    padding: unset !important;
+    max-width: 389px;
+  }
+
+  .linechart-details ul li span {
+    padding-left: unset;
+    padding-right: 30px;
+  }
+
+  .responsive-drop {
+    margin: 0 40px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .disktop-dots,
+  .respo-desp-none {
+    display: none;
+  }
+
+  .compHeadResp h1 {
+    font-size: 22px;
+    margin: unset;
+  }
+
+  .compHeadResp {
+    text-align: left;
+    margin: 0px 0 10px;
+    color: #727a8e;
+    font-family: Old Standard TT;
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 34px;
+  }
+
+  .compHead {
+    display: none;
+  }
+
+  .addMore {
+    margin-left: -5px;
+  }
+
+  .datalines {
+    width: 100%;
+    padding: 0 5px 0 30px;
+    margin-top: 0px;
+  }
+
+  .w-40-1 {
+    width: 100% !important;
+    padding: 28px 0 10px;
+  }
+
+  .chat-dropd {
+    margin: 28px 0 0 0;
+  }
+  .chat-section-main {
+    padding-top: 28px;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .chat-section-main .chat-heading {
+    display: none;
+  }
+
+  .chat-section-main .chat-cont {
+    padding: 0px 25px;
+    width: 70%;
+    min-height: 650px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .chat-box {
+    max-width: 100%;
+    min-height: 80px;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .left-box {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .right-box {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .chat-box p {
+    max-width: 100%;
+  }
+  .w-100 {
+    width: 100%;
+  }
+
+  .insHeadResp h1 {
+    font-size: 22px;
+    margin: unset;
+  }
+
+  .insHeadResp {
+    text-align: left;
+    margin: 0 0 10px 30px;
+    color: #727a8e;
+    font-family: Old Standard TT;
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 39px;
+  }
+
+  .ft-account,
+  .ft-learn,
+  .ft-quick {
+    display: none;
+  }
+
+  .Secondary-container {
+    display: block;
+    width: 100%;
+    padding-top: 21px;
+    margin: 0;
+    padding-left: 0;
+    font-weight: 300;
+    text-align: center;
+  }
+  .w-310 {
+    min-width: 100px;
+    margin: 0 auto;
+  }
+
+  .social-width {
+    width: 100px;
+    margin: 0 auto;
+  }
+  footer a {
+    font-weight: 300;
+  }
+
+  .w-310 ul {
+    padding-left: 0px;
+    padding-bottom: 30px;
+  }
+
+  .justify-end {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-end-container {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  .footer-end-container .w-40 {
+    width: 100% !important;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .footer-end-container .w-60 {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center !important;
+  }
+
+  .justify-end{
+    justify-content: center !important;
+  }
+
+  .social-width ul{
+    padding: unset;
+  }
+
+  .footer-last-text-main{
+    display: block;
+    justify-content: unset;
+    text-align: center;
+  }
+  
+  footer ul{
+    padding: unset;
+  }
+
+  .social-width ul li{
+    padding: unset;
+    margin: 5px;
+  }
+  
+  .slider-cont{
+    min-height: 340px;
+    position: relative;
+  }
+
+  .slider-m{
+    height: 100%;
+  }
+
+  .pos-abs{
+    position: absolute;
+    top: 3px;
+  } 
+
+  .mobileCharts{
+    display: block;
+  }
+
+  .disktopCharts{
+    display: none;
+  }
+
+  .carousel-item{
+      z-index: 999;
+  }
+
+  /* .btn1{
+
+  } */
   /* /////////////////////////////////////////////////// */
   /* /////////////////////////////////////////////////// */
   /* /////////////////////////////////////////////////// */
@@ -3075,9 +3470,8 @@ tspan {
     margin-top: -290px;
     max-width: 100%;
     min-height: 244px;
+    display: none;
   }
-
-  
 
   .overlay-padding {
     padding: 35px 6px 20px;
@@ -3168,7 +3562,6 @@ tspan {
     right: 0;
   }
 
-  
   .date-fs {
     font-size: 19px;
   }
@@ -3179,29 +3572,6 @@ tspan {
 
   .toogler-sec {
     padding: 8px 6px;
-  }
-
-  .calendar {
-    width: 98%;
-    margin: 0 auto !important;
-    min-height: 100px;
-  }
-
-  .headline {
-    padding: 5px 0;
-  }
-  .weekdays * {
-    width: 33px;
-    font-size: 12px;
-    margin: 3px 3px;
-  }
-  .date {
-    display: inline-block;
-    width: 32px;
-    height: 30px;
-    line-height: 30px;
-    margin: 2px 5px;
-    font-size: 12px;
   }
 
   .toogled-border {
@@ -3225,21 +3595,14 @@ tspan {
   .utalization-main {
     background-image: unset;
     background-color: #333b52;
-    min-height: 1000px !important;
+    max-height: 1000px;
+    margin: 0px;
+    padding-bottom: 5px;
   }
 
   .utalization-main .utail-charts {
     width: 100% !important;
-    height: 635px;
-  }
-
-  .res_area_prp {
-    background-image: url(../images/grp.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 73%;
-    background-position: bottom;
-    width: 100%;
-    padding: 30px 0;
+    max-height: 635px;
   }
 
   .utal-flex {
@@ -3257,125 +3620,6 @@ tspan {
   .utal-cha-wid {
     width: 500px;
     margin: 0 auto;
-  }
-
-  .line-chart-sec {
-    text-align: left;
-  }
-
-  .line-chart-main {
-    margin-left: 40px;
-  }
-
-  .linechart-details {
-    justify-content: flex-start;
-  }
-
-  .linechart-details ul {
-    padding: unset !important;
-    max-width: 389px;
-  }
-
-  .linechart-details ul li span {
-    padding-left: unset;
-    padding-right: 30px;
-  }
-
-  .w-40-1 {
-    width: 42% !important;
-  }
-
-  .chat-section-main {
-    padding-top: 20px;
-  }
-
-  .chat-section-main .chat-heading h1 {
-    margin-left: 0px;
-    padding: 20px 0 10px 14px;
-    font-size: 30px;
-  }
-
-  .chat-section-main .chat-cont {
-    padding: 0px 25px;
-    width: 100%;
-    min-height: 875px;
-    margin-left: 0x;
-  }
-
-  .chat-box {
-    max-width: 100%;
-    min-height: 80px;
-    font-size: 14px;
-    padding: 15px;
-  }
-
-  .left-box {
-    margin-left: 0px;
-    margin-right: 0;
-  }
-
-  .right-box {
-    margin-right: 0px;
-    margin-left: 30px;
-  }
-
-  .chat-box p {
-    max-width: 100%;
-  }
-
-  .compHead h1 {
-    font-size: 30px !important;
-    text-align: left;
-    margin-top: 20px 0 10px 14px;
-  }
-
-  .addMore {
-    margin-left: -5px;
-  }
-
-  .datalines {
-    width: 55%;
-    padding: 33px 5px;
-  }
-
-  .Secondary-container {
-    width: 92%;
-    padding-top: 21px;
-    margin: 0;
-    padding-left: 23px;
-    font-weight: 300;
-  }
-  .w-310 {
-    min-width: 17.5%;
-  }
-
-  .social-width {
-    width: 480px;
-  }
-  footer a {
-    font-weight: 300;
-  }
-
-  .w-310 ul {
-    padding-left: 0px;
-  }
-
-  .justify-end {
-    justify-content: start;
-    flex-wrap: wrap;
-  }
-
-  .footer-end-container {
-    width: 88.5%;
-    margin: 0 0 0 1%;
-  }
-
-  .footer-end-container .w-40 {
-    width: 85% !important;
-  }
-
-  .footer-end-container .w-60 {
-    width: 15% !important;
   }
 }
 

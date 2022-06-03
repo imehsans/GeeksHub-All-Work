@@ -54,6 +54,29 @@ var check_viewids = [
   "#chart-view5",
 ];
 
+var dispNoneResp = [
+  "#mydat1",
+  "#mydat11",
+  "#perf1",
+  "#chart-v1",
+  "#mydat2",
+  "#mydat22",
+  "#perf2",
+  "#chart-v2",
+  "#mydat3",
+  "#mydat33",
+  "#perf3",
+  "#chart-v3",
+  "#mydat4",
+  "#mydat44",
+  "#perf4",
+  "#chart-v4",
+  "#mydat5",
+  "#mydat55",
+  "#perf5",
+  "#chart-v5",
+];
+
 var disp_none = [
   "#mydata1",
   "#mydata2",
@@ -105,7 +128,7 @@ function ExpendAnimat(id) {
   }"
   );
   var mydiv = document.getElementById(id);
-  mydiv.style.animation = 'anim 3s linear forwords' 
+  mydiv.style.animation = "anim 3s linear forwords";
 }
 
 function sectionExplore(id) {
@@ -124,10 +147,22 @@ function onToggler(id) {
 function offToggler(id) {
   document.querySelector(id).style.display = "none";
 }
+
+function offTogglerResp(id,disp) {
+  document.querySelector(id).style.display = "none";
+  document.querySelector(disp).style.display = "block";
+}
+
+
+function ShowDataRespon(myid, disp) {
+  folldAll();
+  document.querySelector(myid).style.display = "block";
+  document.querySelector(disp).style.display = "none";
+}
+
 function ShowData(myid) {
   folldAll();
   document.querySelector(myid).style.display = "block";
-  ExpendAnimat(myid);
   for (var i = 0; i < tex_col.length; i++)
     if (myid == tex_colid[i])
       document.querySelector(tex_col[i]).style.color = "black";
@@ -160,13 +195,20 @@ function ShutDownAll() {
   for (var i = 0; i < sect_display.length; i++)
     document.querySelector(sect_display[i]).style.display = "none";
 }
+
 function DNone() {
   for (var i = 0; i < disp_none.length; i++)
     document.querySelector(disp_none[i]).style.display = "none";
 }
 
+function DNoneResp() {
+  for (var i = 0; i < dispNoneResp.length; i++)
+    document.querySelector(dispNoneResp[i]).style.display = "none";
+}
+
 function folldAll() {
   DNone();
+  DNoneResp();
   ConWidth();
   colorWhite();
 }
