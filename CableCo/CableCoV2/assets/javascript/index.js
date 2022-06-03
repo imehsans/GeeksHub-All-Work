@@ -708,3 +708,78 @@ function animationThird() {
       : clearInterval(counter);
   }, 1000 / percentageValue1);
 }
+
+
+var myConfigmobile = {
+  backgroundColor:'transparent',
+  type: "ring",
+  plot: {
+      slice:'55%',
+      borderWidth:0,
+      animation:{
+          effect:2,
+          sequence:3
+      },
+      "value-box":{
+          "placement":"out",
+          "offset-r":"-10"
+      }
+  },
+  series : [
+      {
+          text: "Courses",
+          values : [10497],
+          lineWidth: 1,
+          backgroundColor: '#FF325E',
+          fontWeight:'lighter',
+      },
+      {
+          text: "Chapter",
+          values : [4554],
+          lineWidth: 1,
+          backgroundColor: '#7FC2F9',
+      },
+      {
+          text: "Foundation",
+          values : [1],
+          lineWidth: 1,
+          backgroundColor: '#3D4760',
+      },
+      {
+          text: "Certifications",
+          values : [1306],
+          lineWidth: 1,
+          backgroundColor: '#079FCE',
+      },
+      {
+          text: "Volunteers",
+          values : [189],
+          lineWidth: 1,
+          backgroundColor: '#4EE2C0',
+      },
+      {
+          text: "Websites",
+          values : [1763],
+          lineWidth: 1,
+          backgroundColor: '#EF32FF',
+      },
+      {
+          text: "EXPO",
+          values : [75],
+          lineWidth: 1,
+          backgroundColor: '#DCB337',
+      }
+  ]
+};
+
+zingchart.render({
+  id : 'mymobileChart',
+  data: {
+      graphset: [myConfigmobile]
+  },
+  height: '300',
+  width: '300'
+});
+
+zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];

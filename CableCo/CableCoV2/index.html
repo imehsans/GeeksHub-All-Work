@@ -3319,181 +3319,236 @@
         </div>
       </section>
 
-      <section class="slider-cont mobileCharts">
+      <section class="slider-cont mobilecharts">
         <div
           id="carouselExampleControls"
-          class="carousel slide slider-m"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active h-100 pos-rel">
+        <div class="pos-arrow-main">
+          <div
+            class="carousel-control-prev"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="text-white">
+              <i class="fa fa-angle-left slider-arrow"></i
+            ></span>
+          </div>
+          <div
+            class="carousel-control-next"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="text-white">
+              <i class="fa fa-angle-right slider-arrow"></i>
+            </span>
+          </div>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="respon-slid-padd pos-rel">
+                <p
+                  onclick="ShowData('#utalization-line')"
+                  class="color-white date-main"
+                >
+                  &#9679;&#9679;&#9679;
+                </p>
+                <div
+                id="utalization-line"
+                class="showAnim"
+                  style="display: none"
+                >
+                  <div class="utilizationline-back">
+                    <p class="utilizationline">
+                      The number of individuals utilizing the metrics (except membership) being measured on the metrics items below.</p>
+                    <p
+                      onclick="offToggler('#utalization-line')"
+                      class="cross-togg fs-12"
+                    >
+                      &#x2573;
+                    </p>
+                  </div>
+                </div>
+
+                <h3 class="utalization-h3">Utillization</h3>
+              </div>
+
               <div class="progress-chart">
-                <section class="section_utilization">
-                  <div class="col-sm-5 two_color_circle">
-                    <div class="inner_container alone_click">
-                      <div>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
-                    </div>
-                    <div class="popup_inner alone_popup slider-popup">
-                      <div>
-                        <div class="icon_close">
-                          <i
-                            class="fa fa-times-thin fa-2x"
-                            aria-hidden="true"
-                          ></i>
-                        </div>
-                      </div>
-                      <div>
-                        <p>
-                          The number of individuals utilizing the metrics
-                          (except membership) being measured on the metrics
-                          items below.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="header_text">
-                      <h3>Utilization</h3>
-                    </div>
-
-                    <div class="progress_image">
-                      <div class="image_container comcast_section_u">
-                        <div class="first-circle-block">
-                          <!--<div class="primary_container_img">-->
-                          <!--<ul>-->
-                          <!--<li><span class="magenta_color"></span><p>Member</p> </li>-->
-                          <!--<li><span class="light_blue"></span><p>Non-member</p> </li>-->
-                          <!--</ul>-->
-                          <!--</div>-->
-                          <div class="animation-area">
-                            <div class="extra-bc"></div>
-                            <div
-                              class="first-circle percentage__numres1"
-                              data-percentage="73"
-                            >
-                              <svg viewBox="0 0 100 100">
-                                <circle
-                                  class="circle-inner"
-                                  cx="50"
-                                  cy="50"
-                                  r="45"
-                                  fill="none"
-                                  stroke-dasharray="2, 2"
-                                  transform="rotate(-90 50 50)"
-                                ></circle>
-                                <circle
-                                  class="circleres1"
-                                  cx="50"
-                                  cy="50"
-                                  r="45"
-                                  transform="rotate(-90 50 50)"
-                                ></circle>
-                              </svg>
-                            </div>
-                            <div
-                              class="second-circle percentage__numres11"
-                              data-percentage="27"
-                            >
-                              <svg viewBox="0 0 100 100">
-                                <circle
-                                  class="circle-inner"
-                                  cx="50"
-                                  cy="50"
-                                  r="45"
-                                  fill="none"
-                                  stroke-dasharray="2, 4"
-                                  transform="rotate(-90 50 50)"
-                                ></circle>
-                                <circle
-                                  class="circleres11"
-                                  cx="50"
-                                  cy="50"
-                                  r="45"
-                                  transform="rotate(-90 50 50)"
-                                ></circle>
-                              </svg>
-                              <div class="percentagearea">
-                                <div class="pink">
-                                  <h1>
-                                    <span
-                                      class="percentage__numres121"
-                                      data-percentage="12322"
-                                    ></span>
-                                  </h1>
+                    <div class="progress-chart">
+                      <div class="progress_image">
+                        <div class="image_container comcast_section_u">
+                          <div class="first-circle-block">
+                            <div class="animation-area">
+                              <div class="extra-bc"></div>
+                              <div
+                                class="first-circle percentage__num1"
+                                data-percentage="73"
+                              >
+                                <svg viewBox="0 0 100 100">
+                                  <circle
+                                    class="circle-inner"
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    fill="none"
+                                    stroke-dasharray="2, 2"
+                                    transform="rotate(-90 50 50)"
+                                  ></circle>
+                                  <circle
+                                    class="circle1"
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    transform="rotate(-90 50 50)"
+                                  ></circle>
+                                </svg>
+                              </div>
+                              <div
+                                class="second-circle percentage__num11"
+                                data-percentage="27"
+                              >
+                                <svg viewBox="0 0 100 100">
+                                  <circle
+                                    class="circle-inner"
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    fill="none"
+                                    stroke-dasharray="2, 4"
+                                    transform="rotate(-90 50 50)"
+                                  ></circle>
+                                  <circle
+                                    class="circle11"
+                                    cx="50"
+                                    cy="50"
+                                    r="45"
+                                    transform="rotate(-90 50 50)"
+                                  ></circle>
+                                </svg>
+                                <div class="percentagearea">
+                                  <div class="pink">
+                                    <h1>
+                                      <span
+                                        class="percentage__num121"
+                                        data-percentage="12322"
+                                      ></span>
+                                    </h1>
+                                  </div>
                                 </div>
-                                <!--<div class="green">-->
-                                <!--<h1><span ></span><span>%</span></h1>-->
-                                <!--<p>Non-<br>member</p>-->
-                                <!--</div>-->
                               </div>
                             </div>
-                            <!--<div class="third-circle">-->
-                            <!--<svg viewBox="0 0 100 100">-->
-                            <!--<circle class="circle-inner" cx="50" cy="50" r="45"  fill="none" stroke-dasharray="2, 4" transform="rotate(-90 50 50)"></circle>-->
-                            <!--<circle class="circle111" cx="50" cy="50" r="45" transform="rotate(-90 50 50)"></circle>-->
-                            <!--</svg>-->
-                            <!--<div class="percentagearea">-->
-                            <!--<div class="pink">-->
-                            <!--<h1><span class="percentage__num111" data-percentage="71"></span></h1>-->
-                            <!--<p>SCORE</p>-->
-                            <!--</div>-->
-                            <!--<div class="green">-->
-                            <!--<h1><span class="percentage__num11" data-percentage="29"></span></h1>-->
-                            <!--<p>SCORE</p>-->
-                            <!--</div>-->
-                            <!--</div>-->
-                            <!--</div>-->
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div>  
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="respon-slid-padd pos-rel">
+                <p
+                  onclick="ShowData('#utalization-zing')"
+                  class="color-white date-main"
+                >
+                  &#9679;&#9679;&#9679;
+                </p>
+                <div
+                id="utalization-zing"
+                class="showAnim"
+                  style="display: none"
+                >
+                  <div class="utilizationline-back">
+                    <p class="utilizationline">
+                      The number of individuals utilizing the metrics (except membership)
+                      being measured on the metrics items below.</p>
+                    <p
+                      onclick="offToggler('#utalization-zing')"
+                      class="cross-togg fs-12"
+                    >
+                      &#x2573;
+                    </p>
                   </div>
-                </section>
+                </div>
+
+                <h3 class="utalization-h3">Utillization</h3>
+              </div>
+
+              <div class="mobileChartposZing">
+                
+                <div id="mymobileChart"></div>
+              </div>
+
+              <div class="color-list">
+                <ul>
+                  <li>
+                    <span class="color-cour">&#9679;</span
+                    ><span class="li-text">COURSES</span>
+                  </li>
+                  <li>
+                    <span class="color-chap">&#9679;</span
+                    ><span class="li-text">CHAPTER</span>
+                  </li>
+                  <li>
+                    <span class="color-found">&#9679;</span
+                    ><span class="li-text">FOUNDATION</span>
+                  </li>
+                  <li>
+                    <span class="color-cert">&#9679;</span
+                    ><span class="li-text">CERTIFICATIONS</span>
+                  </li>
+                  <li>
+                    <span class="color-volt">&#9679;</span
+                    ><span class="li-text">VOLUNTEER</span>
+                  </li>
+                  <li>
+                    <span class="color-web">&#9679;</span
+                    ><span class="li-text">WEBSITE</span>
+                  </li>
+                  <li>
+                    <span class="color-orng">&#9679;</span
+                    ><span class="li-text">EXPO</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div class="carousel-item pos-rel">
-              <div class="zingchart-ab">
-                <div id="myChart" class="chart--container"></div>
-              </div>
-            </div>
+              <div class="respon-slid-padd pos-rel">
+                <p
+                  onclick="ShowData('#utalization-51')"
+                  class="color-white date-main"
+                >
+                  &#9679;&#9679;&#9679;
+                </p>
+                <div
+                id="utalization-51"
+                class="showAnim"
+                  style="display: none"
+                >
+                  <div class="utilizationline-back">
+                    <p class="utilizationline">
+                      The number of individuals utilizing the metrics (except
+                      membership) being measured on the metrics items below.
+                    </p>
+                    <p
+                      onclick="offToggler('#utalization-51')"
+                      class="cross-togg fs-12"
+                    >
+                      &#x2573;
+                    </p>
+                  </div>
+                </div>
 
-            <div class="carousel-item pos-rel">
-              <section class="section_utilization">
+
+                <h3 class="utalization-h3">Course Duration Average</h3>
+                <p class="text-white">(in Days)</p>
+              </div>
+
+              <div class="mobileChartpos">
                 <div class="progress_image prog_img_second">
                   <div class="image_container ex_image_container">
-                    <div class="utilization_container">
-                      <div>
-                        <div class="inner_container ex_container graph_outer">
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                        <div class="popup_graph_ex">
-                          <div>
-                            <div class="icon_close">
-                              <i
-                                class="fa fa-times-thin fa-2x"
-                                aria-hidden="true"
-                              ></i>
-                            </div>
-                          </div>
-                          <div>
-                            <p>Average time to complete a course.</p>
-                          </div>
-                        </div>
-
-                        <div class="header_text wea">
-                          <h3>
-                            Course Duration Average <br /><span>(in Days)</span>
-                          </h3>
-                        </div>
-                      </div>
                       <div class="background">
                         <div>
                           <h1 class="percentage__numres3" data-percentage="51">
@@ -3501,250 +3556,85 @@
                           </h1>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
 
-            <div class="carousel-item pos-rel">
-              <section class="section_utilization">
-                <div class="col-sm-5 two_color_circle">
-                  <div class="progress_image prog_img_second">
-                    <div class="image_container ex_image_container">
-                      <div class="skyblue_svg">
-                        <!--<div class="container_img second_img_div">-->
-                        <!--<p>75%</p>-->
-                        <!--</div>-->
-                        <div class="foot_text_svg">
-                          <div class="inner_container ex_container graph_outer">
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                          <div class="popup_graph_ex">
-                            <div>
-                              <div class="icon_close">
-                                <i
-                                  class="fa fa-times-thin fa-2x"
-                                  aria-hidden="true"
-                                ></i>
-                              </div>
-                            </div>
-                            <div>
-                              <p>
-                                The aggregate of individuals engagement scores.
-                              </p>
-                            </div>
-                          </div>
-                          <div class="header_text mobile-set">
-                            <h3>Single Engagement</h3>
-                          </div>
-                        </div>
-                        <div class="circle-block circle_2">
-                          <div class="utilization_container">
-                            <svg viewBox="0 0 100 100">
-                              <circle
-                                class="circle-inner2"
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                fill="none"
-                                stroke-dasharray="2, 4"
-                                transform="rotate(-90 50 50)"
-                              ></circle>
-                              <circle
-                                class="circleres2"
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                transform="rotate(-90 50 50)"
-                                style="stroke-dashoffset: 183.486"
-                              ></circle>
-                            </svg>
-                            <div class="percentage percentage2">
-                              <h1>
-                                <span
-                                  class="percentage__numres2"
-                                  data-percentage="35"
-                                  >35</span
-                                >
-                              </h1>
-                              <p>OVERALL SCORE</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="carousel-item">
+              <div class="respon-slid-padd pos-rel">
+                <p
+                  onclick="ShowData('#utalization-35')"
+                  class="color-white date-main"
+                >
+                  &#9679;&#9679;&#9679;
+                </p>
+                <div
+                id="utalization-35"
+                class="showAnim"
+                  style="display: none"
+                >
+                  <div class="utilizationline-back">
+                    <p class="utilizationline">
+                    The Agragateof indivaduals<br> engagment scores.
+                    </p>
+                    <p
+                      onclick="offToggler('#utalization-35')"
+                      class="cross-togg fs-12"
+                    >
+                      &#x2573;
+                    </p>
                   </div>
                 </div>
-              </section>
+
+
+                <h3 class="utalization-h3">Single Engagment</h3>
+              </div>
+
+              <div class="mobileChartpos">
+              <div class="circle-block circle_2">
+                <div class="utilization_container">
+                  <svg viewBox="0 0 100 100">
+                    <circle
+                      class="circle-inner2"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      fill="none"
+                      stroke-dasharray="2, 4"
+                      transform="rotate(-90 50 50)"
+                    ></circle>
+                    <circle
+                      class="circleres2"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      transform="rotate(-90 50 50)"
+                      style="stroke-dashoffset: 183.486"
+                    ></circle>
+                  </svg>
+                  <div class="percentage percentage2">
+                    <h1>
+                      <span
+                        class="percentage__numres2"
+                        data-percentage="35"
+                        >35</span
+                      >
+                    </h1>
+                    <p>OVERALL SCORE</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- <div class="pos-abs"> -->
-          <a
-            class="border border-1 carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <!-- </div> -->
-          <!-- <div class="pos-abs "> -->
-          <a
-            class="border border-1 carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-          <!-- </div> -->
+          </div>
+          
         </div>
       </section>
 
-      <!-- <section class="Slider-container"> -->
-      <!-- <div id="myCarousel" class="h-100 carousel slide inner-cur" data-ride="carousel">
-      Wrapper for slides
-      <div class="carousel-inner h-100">
-      <div class="item active mx-auto h-100">
-      <h1 class="mx-auto">1</h1>
-      <div>
-                <div class="pos-rel">
-                  <p
-                    onclick="ShowData('#utilization-toggResp')"
-                    class="color-white date-main"
-                  >
-                    &#9679;&#9679;&#9679;
-                  </p>
-                  <div
-                    id="utilization-toggResp"
-                    class="showAnim"
-                    style="display: none"
-                  >
-                    <div class="utilization-togg-back">
-                      <p class="utilization-togg">
-                        The number of individuals utilizing the metrics (except
-                        membership) being measured on the metrics items below.
-                      </p>
-                      <p
-                        onclick="offToggler('#utilization-toggResp')"
-                        class="cross-togg fs-12"
-                      >
-                        &#x2573;
-                      </p>
-                    </div>
-                  </div>
-  
-                  <h3 class="utalization-h3">Utillization</h3>
-                </div> 
-                <div class="progress-chart">
-                  <div class="progress_image">
-                    <div class="image_container comcast_section_u">
-                      <div class="first-circle-block">
-                        <div class="animation-area">
-                          <div class="extra-bc"></div>
-                          <div
-                            class="first-circle percentage__num1"
-                            data-percentage="73"
-                          >
-                            <svg viewBox="0 0 100 100">
-                              <circle
-                                class="circle-inner"
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                fill="none"
-                                stroke-dasharray="2, 2"
-                                transform="rotate(-90 50 50)"
-                              ></circle>
-                              <circle
-                                class="circle1"
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                transform="rotate(-90 50 50)"
-                              ></circle>
-                            </svg>
-                          </div>
-                          <div
-                            class="second-circle percentage__num11"
-                            data-percentage="27"
-                          >
-                            <svg viewBox="0 0 100 100">
-                              <circle
-                                class="circle-inner"
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                fill="none"
-                                stroke-dasharray="2, 4"
-                                transform="rotate(-90 50 50)"
-                              ></circle>
-                              <circle
-                                class="circle11"
-                                cx="50"
-                                cy="50"
-                                r="45"
-                                transform="rotate(-90 50 50)"
-                              ></circle>
-                            </svg>
-                            <div class="percentagearea">
-                              <div class="pink">
-                                <h1>
-                                  <span
-                                    class="percentage__num121"
-                                    data-percentage="12322"
-                                  ></span>
-                                </h1>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-      </div>
-            
-            <div class="item">
-              <h1>2</h1>
-            </div>
-          
-            <div class="item">
-              <h1>3</h1>
-            </div>
-            
-            <div class="item">
-              <h1>4</h1>
-            </div>
-          
-          </div>
-      
-      <div class="pos pos1">
-         <a class=" pos left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          </div>
-          <div class="pos pos2">
-          <a class="pos right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          </div>
-        </div> -->
-      <!-- </section> -->
-
-      <section class="utalization-main disktopCharts">
+      <section class="utalization-main">
         <div class="utal-flex">
-          <div class="utail-charts">
+          <div class="utail-charts disktopCharts">
             <div class="utal-cha-wid">
               <div class="pos-rel">
                 <p
@@ -3958,7 +3848,7 @@
             <div class="responsive-drop">
               <i
                 onclick="ShowDataRespon('#professional-sec-main', '#professional-sec')"
-                class="fa fa-angle-down color-white fs-20 drop-btn"
+                class="fa fa-angle-down color-white fs-20 drop-btn-1"
               ></i>
             </div>
           </div>
