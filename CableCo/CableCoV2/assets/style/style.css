@@ -1568,13 +1568,17 @@ tspan {
   justify-content: end;
 }
 
-.resoon-perfo,
+.popupdres,
+.compHeadResp,
+.insHeadResp,
+.mobilecharts,
+.respon-perfo,
 .headerpos {
   display: none !important;
 }
 
 .disktopperf {
-  display: block !important;
+  display: flex !important;
 }
 
 .social-ul {
@@ -2779,7 +2783,6 @@ tspan {
     min-height: 875px;
     margin-left: 0x;
     overflow: hidden;
-  
   }
 
   .chat-box {
@@ -2865,6 +2868,17 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 767px) and (min-width: 685px) {
+  .mobilecharts,
+  .respon-perfo,
+  .headerpos {
+    display: block !important;
+  }
+
+  .popupdres,
+  .compHeadResp,
+  .insHeadResp {
+    display: flex !important;
+  }
   .footer-last-text-main {
     display: flex;
     justify-content: space-between;
@@ -3376,6 +3390,7 @@ tspan {
 
   .mobileCharts {
     display: block;
+    overflow: hidden;
   }
 
   .slider-cont {
@@ -3534,6 +3549,18 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 684px) and (min-width: 568px) {
+  .mobilecharts,
+  .respon-perfo,
+  .headerpos {
+    display: block !important;
+  }
+
+  .popupdres,
+  .compHeadResp,
+  .insHeadResp {
+    display: flex !important;
+  }
+  
   .footer-last-text-main {
     display: flex;
     justify-content: space-between;
@@ -3638,7 +3665,7 @@ tspan {
 
   header .top-list-main {
     padding: 20px 0 10px;
-    max-width: 45% !important;
+    max-width: 60% !important;
     margin: 0 auto;
   }
 
@@ -3910,7 +3937,6 @@ tspan {
     margin: 0 auto;
     padding-bottom: 40px;
     overflow: hidden;
-  
   }
 
   .chat-box {
@@ -4047,6 +4073,7 @@ tspan {
 
   .mobileCharts {
     display: block;
+    overflow: hidden;
   }
 
   .slider-cont {
@@ -4145,13 +4172,13 @@ tspan {
   .progress-chart {
     position: absolute;
     top: 30px;
-    left: 35%;
+    left: 30%;
   }
 
   .mobileChartpos {
     position: absolute;
     top: 100px;
-    left: 35%;
+    left: 30%;
   }
 
   .mobileChartposZing {
@@ -4162,7 +4189,7 @@ tspan {
 
   .color-list {
     top: 100px;
-    right: 31%;
+    right: 20%;
   }
 
   .respon-slid-padd {
@@ -4209,6 +4236,18 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 567px) and (min-width: 480px) {
+  .mobilecharts,
+  .respon-perfo,
+  .headerpos {
+    display: block !important;
+  }
+
+  .popupdres,
+  .compHeadResp,
+  .insHeadResp {
+    display: flex !important;
+  }
+  
   .footer-last-text-main {
     display: flex;
     justify-content: space-between;
@@ -4313,7 +4352,7 @@ tspan {
 
   header .top-list-main {
     padding: 20px 0 10px;
-    max-width: 45% !important;
+    max-width: 80% !important;
     margin: 0 auto;
   }
 
@@ -4721,6 +4760,7 @@ tspan {
 
   .mobileCharts {
     display: block;
+    overflow: hidden;
   }
 
   .slider-cont {
@@ -4819,24 +4859,24 @@ tspan {
   .progress-chart {
     position: absolute;
     top: 30px;
-    left: 35%;
+    left: 27%;
   }
 
   .mobileChartpos {
     position: absolute;
     top: 100px;
-    left: 35%;
+    left: 27%;
   }
 
   .mobileChartposZing {
     position: absolute;
     top: 20px;
-    left: 20%;
+    left: 10%;
   }
 
   .color-list {
     top: 100px;
-    right: 31%;
+    right: 18%;
   }
 
   .respon-slid-padd {
@@ -4883,4 +4923,741 @@ tspan {
 
 /* ========================================================= */
 @media (max-width: 479px) and (min-width: 320px) {
+  .mobilecharts,
+  .respon-perfo,
+  .headerpos {
+    display: block !important;
+  }
+
+  .popupdres,
+  .compHeadResp,
+  .insHeadResp {
+    display: flex !important;
+  }
+  
+  .footer-last-text-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-ul {
+    display: flex;
+    justify-content: end;
+  }
+
+  main {
+    margin: 0;
+  }
+  nav {
+    display: none !important;
+  }
+
+  header {
+    margin: 0;
+    min-height: 40px;
+  }
+
+  .responsive-nav {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    margin: auto 20px;
+    height: 100%;
+    padding: 10px 0;
+  }
+  .respon-header {
+    background-color: #39425a;
+  }
+
+  .headerpos {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .brand-top h1 {
+    font-size: 19px;
+    font-family: "Old Standard TT";
+    color: white;
+    height: 100%;
+    margin-top: 10px;
+  }
+  .logo-img {
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .image-click1 {
+    padding: 0px 4px 0;
+    background-color: #4680d8;
+  }
+
+  .scte_dropdown {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  .scte_dropdown .scte-drop-cont {
+    position: absolute;
+    top: 56%;
+    left: 80px;
+    background-color: rgba(57, 66, 90, 0.8);
+    z-index: 1;
+    font-size: 18px;
+    width: 150px;
+    text-align: end;
+    padding: 20px 13px 10px;
+  }
+
+  .scte-drop-cont .home {
+    color: #e8a12b;
+    font-weight: 400;
+    font-size: 18px;
+    margin: unset;
+    padding: unset;
+  }
+
+  .hum-drop-cont {
+    position: absolute;
+    top: 56%;
+    right: 5px;
+    background-color: rgba(57, 66, 90, 0.8);
+    z-index: 1;
+    font-size: 11px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .hum-drop-cont p {
+    color: #b3a9a9 !important;
+  }
+
+  .headerpos .headerpos .top-list li .header-element-padding a {
+    padding: 2px 0 !important;
+    margin-left: 0 1px;
+    font-size: 12px !important;
+  }
+
+  .header-element-padding {
+    padding: 3px 10px;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+
+  header .top-list-main {
+    padding: 20px 0 10px;
+    max-width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .top-list-main .top-list .home {
+    border-top: 2px solid #e8a12b;
+    border-bottom: 2px solid #e8a12b;
+  }
+
+  .top-list-main .top-list .certification-hov {
+    border-top: 2px solid rgba(209, 12, 249, 0);
+    border-bottom: 2px solid rgba(209, 12, 249, 0);
+    transition: all 0.1s;
+  }
+
+  .top-list-main .top-list .certification-hov:hover {
+    border-top-color: rgba(209, 12, 249, 1);
+    border-bottom-color: rgba(209, 12, 249, 1);
+    transition: all 1s;
+  }
+
+  .coursework-hov {
+    border-top: 2px solid rgba(49, 214, 196, 0);
+    border-bottom: 2x solid rgba(49, 214, 196, 0);
+  }
+
+  .coursework-hov:hover {
+    border-top-color: rgba(49, 214, 196, 1);
+    border-bottom-color: rgba(49, 214, 196, 1);
+    transition: all 1s;
+  }
+
+  .respon-perfo {
+    width: 100%;
+    margin-top: 100px;
+    display: block;
+    margin-top: -200px;
+  }
+
+  .perform-respon {
+    width: 100%;
+    min-height: 30px;
+  }
+
+  .perform-respon .perform-header {
+    width: 95%;
+    min-height: 65px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #f9f9f9;
+    z-index: -1;
+  }
+
+  h6 {
+    color: #f9f9f9;
+    font-weight: 300;
+    font-size: 20px !important;
+  }
+
+  .green-bg {
+    background-color: rgba(45, 191, 22, 1);
+  }
+
+  .pink-bg {
+    background-color: rgba(247, 0, 101, 1);
+  }
+  .blue-bg {
+    background-color: rgba(84, 78, 159, 1);
+  }
+
+  .lightblue-bg {
+    background-color: rgba(0, 117, 213, 1);
+  }
+
+  .orange-bg {
+    background-color: rgba(252, 172, 42, 1);
+  }
+
+  .disktopperf,
+  .w-img {
+    display: none !important;
+  }
+
+  .drop-btn {
+    display: block !important;
+  }
+
+  .set-pos {
+    padding-top: 0px;
+  }
+
+  .card-percentage {
+    font-size: 76px;
+    color: #ffffff;
+  }
+
+  .card-percentage .sign {
+    font-size: 38px;
+    top: -40px;
+  }
+  .card-percentage .mod {
+    right: 16px;
+    font-size: 33px;
+    top: -45px;
+  }
+
+  .down-text {
+    font-size: 12px;
+    vertical-align: bottom;
+    padding-top: 6px;
+    color: White;
+  }
+
+  .arrow-img {
+    width: 23px;
+    height: 25px;
+    margin-top: 0px;
+  }
+
+  .Togg-back {
+    max-width: 19%;
+    top: 220px;
+  }
+  .company-sourse-main {
+    padding: 20px 0;
+  }
+
+  .course-sourse {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  .calendar {
+    width: 280px;
+    margin: 0 auto !important;
+    min-height: 100px;
+  }
+
+  .headline {
+    padding: 5px 0;
+  }
+  .weekdays * {
+    width: 30px;
+    font-size: 12px;
+    margin: 3px 3px;
+  }
+  .date {
+    display: inline-block;
+    width: 28px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 5px;
+    font-size: 12px;
+  }
+
+  .popupdres {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .res_area_prp {
+    background-image: url(../images/grp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 43%;
+    background-position: bottom;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: -25px;
+    max-height: 370px !important;
+  }
+
+  .months ul {
+    padding: unset !important;
+    margin-top: -60px;
+    font-size: 8px;
+  }
+
+  .line-chart-sec {
+    text-align: left;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .line-chart-main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .linechart-details {
+    justify-content: flex-start;
+  }
+
+  .linechart-details ul {
+    padding: unset !important;
+    max-width: 389px;
+  }
+
+  .linechart-details ul li span {
+    padding-left: unset;
+    padding-right: 20px;
+  }
+
+  .responsive-drop {
+    margin: 20px 10px 0;
+    display: flex;
+    justify-content: end;
+  }
+
+  .disktop-dots,
+  .respo-desp-none {
+    display: none;
+  }
+
+  .compHeadResp h1 {
+    font-size: 22px;
+    margin: unset;
+  }
+
+  .compHeadResp {
+    text-align: left;
+    margin: 0px 0 10px;
+    color: #727a8e;
+    font-family: Old Standard TT;
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 10px;
+  }
+
+  .compHead {
+    display: none;
+  }
+
+  .addMore {
+    margin-left: -5px;
+  }
+
+  .datalines {
+    width: 100%;
+    padding: 10px 5px 0 10px;
+    margin-top: 0px;
+  }
+
+  .w-40-1 {
+    width: 100% !important;
+    padding: 28px 0 10px;
+  }
+
+  .chat-dropd {
+    margin: 28px 0 0 0;
+  }
+
+  .chat-section-main {
+    padding-top: 28px;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .chat-section-main .chat-heading {
+    display: none;
+  }
+
+  .chat-section-main .chat-cont {
+    padding: 0px 25px;
+    width: 95%;
+    min-height: 650px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .chat-box {
+    max-width: 100%;
+    min-height: 100px;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .left-box {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .right-box {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .chat-box p {
+    max-width: 100%;
+  }
+  .w-100 {
+    width: 100%;
+  }
+
+  .insHeadResp h1 {
+    font-size: 22px;
+    margin: unset;
+  }
+
+  .insHeadResp {
+    padding-top: 20px !important;
+    text-align: left;
+    margin: 0 0 10px 10px;
+    color: #727a8e;
+    font-family: Old Standard TT;
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 10px;
+  }
+
+  .ft-account,
+  .ft-learn,
+  .ft-quick {
+    display: none;
+  }
+
+  .Secondary-container {
+    display: block;
+    width: 100%;
+    padding-top: 21px;
+    margin: 0;
+    padding-left: 0;
+    font-weight: 300;
+    text-align: center;
+  }
+  .w-310 {
+    min-width: 100px;
+    margin: 0 auto;
+  }
+
+  .social-width {
+    width: 200px;
+    margin: 0 auto;
+  }
+  footer a {
+    font-weight: 300;
+  }
+
+  .w-310 ul {
+    padding-left: 0px;
+    padding-bottom: 30px;
+  }
+
+  .justify-end {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer-end-container {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .footer-end-container .w-40 {
+    width: 100% !important;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .footer-end-container .w-60 {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center !important;
+  }
+
+  .justify-end {
+    justify-content: center !important;
+  }
+
+  .social-width ul {
+    padding: unset;
+  }
+
+  .footer-last-text-main {
+    display: block;
+    justify-content: unset;
+    text-align: center;
+  }
+
+  footer ul {
+    padding: unset;
+  }
+
+  .social-width ul li {
+    padding: unset;
+    margin: 5px;
+  }
+
+  .slider-cont {
+    min-height: 340px;
+    position: relative;
+  }
+
+  .pos-abs {
+    height: 20px !important;
+    max-width: 10px !important;
+  }
+
+  .mobileCharts {
+    display: block;
+    overflow: hidden;
+  }
+
+  .slider-cont {
+    background-color: #39425a;
+  }
+
+  .disktopCharts {
+    display: none;
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+  }
+
+  #mymobileChart-tools {
+    display: none;
+  }
+
+  .slider-arrow {
+    font-size: 30px !important;
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 0 10px;
+  }
+
+  .pos-arrow-main {
+    position: relative;
+    top: 10px;
+  }
+
+  .carousel-control-prev {
+    left: 75% !important;
+  }
+
+  .carousel-control-next {
+    right: 2% !important;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: unset !important;
+    z-index: 1;
+    display: unset !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+    width: unset !important;
+    padding: unset !important;
+    color: #fff;
+    text-align: unset !important;
+    background: unset !important;
+    border: unset !important;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+  }
+
+  .scte-logo {
+    width: 100px;
+  }
+  .overlay-data {
+    background-image: unset;
+    margin-top: -290px;
+    max-width: 100%;
+    min-height: 244px;
+    display: none;
+  }
+
+  .hero-section {
+    height: 330px;
+  }
+
+  .profile {
+    width: 30px;
+  }
+
+  .toogler-sec {
+    padding: 8px 6px;
+  }
+
+  .toogled-border {
+    margin: 0px;
+  }
+
+  .contact-wh {
+    min-width: 75%;
+    padding-top: 19px;
+    font-size: 12px;
+  }
+
+  .cont-width {
+    width: 100%;
+  }
+
+  .progress-chart {
+    position: absolute;
+    top: 30px;
+    left: 20%;
+  }
+
+  .mobileChartpos {
+    position: absolute;
+    top: 100px;
+    left: 18%;
+  }
+
+  .mobileChartposZing {
+    position: absolute;
+    top: 20px;
+    left: -10%;
+  }
+
+  .color-list {
+    top: 100px;
+    right: 5%;
+  }
+
+  .respon-slid-padd {
+    padding: 20px 0 0 20px;
+  }
+
+  .utalization-main {
+    background-image: unset;
+    background-color: #333b52;
+    max-height: 500px !important;
+    margin: unset;
+    padding-bottom: unset;
+  }
+
+  #professional-sec {
+    width: 100%;
+  }
+
+  .utilizationline-back {
+    background-color: rgba(37, 45, 62, 0.9);
+    font-size: 14px;
+    padding: 10px 8px 0;
+    max-width: 90%;
+    min-height: 50px;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+  }
+
+  .utilizationline {
+    line-height: 1.5;
+    font-weight: 300;
+    padding: 5px 0 !important;
+    cursor: unset;
+    color: white;
+    padding-right: 10px !important;
+  }
+
+  .footer-end-container .w-60 img {
+    width: 140px;
+  }
+
+  .text-deco {
+    font-size: 18px;
+    margin-top: 31.5px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .showing-Data {
+    margin-right: 10px;
+  }
+  .datalines h4 {
+    font-size: 10px;
+  }
+
+  .showing-Data span {
+    display: none;
+  }
+  .showing-Data div {
+    font-size: 10px;
+  }
+
+  .sugges {
+    color: #476076;
+    font-weight: 500;
+    width: 60px;
+  }
+
+  .progress {
+    background: #252c3e;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 10px;
+    width: 100%;
+  }
+
+  .progress-value {
+    border-radius: 100px;
+    height: 10px;
+    width: 0;
+  }
 }
