@@ -334,7 +334,7 @@ let chartConfig = {
           sequence: "ANIMATION_BY_PLOT_AND_NODE",
         },
         borderWidth: "0px",
-        slice: "55%",
+        slice: "54%",
       },
       plotarea: {
         margin: "70px 0px 10px 0px",
@@ -343,7 +343,7 @@ let chartConfig = {
         borderWidth: "0px",
       },
       scaleR: {
-        refAngle: 300,
+        refAngle: 295,
       },
       series: [
         {
@@ -389,8 +389,8 @@ let chartConfig = {
 zingchart.render({
   id: "myChart",
   data: chartConfig,
-  height: "340px",
-  width: "340px",
+  height: "318px",
+  width: "318px",
 });
 
 function rotateArrow(myid) {
@@ -708,6 +708,10 @@ function animationThird() {
   }, 1000 / percentageValue1);
 }
 
+/**
+ * Responsive zingchart for mobile screen without any parameter
+ */
+
 var myConfigmobile = {
   backgroundColor: "transparent",
   type: "ring",
@@ -784,5 +788,3 @@ ZC.LICENSE = [
   "569d52cefae586f634c54f86dc99e6a9",
   "ee6b7db5b51705a13dc2339db3edaf6d",
 ];
-
-
