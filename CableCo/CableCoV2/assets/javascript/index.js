@@ -175,6 +175,28 @@ function showInnerData(myid) {
     showInner.style.display = "block";
   }
 }
+
+function rotateArrow(arrow1, arrow2) {
+  document.querySelector(arrow1).style.transform = "rotateX(180deg)";
+  document.querySelector(arrow2).style.transform = "rotateX(180deg)";
+}
+
+function Neg_rotateArrow(arrow1, arrow2) {
+  document.querySelector(arrow1).style.transform = "rotateX(360deg)";
+  document.querySelector(arrow2).style.transform = "rotateX(360deg)";
+}
+
+function showDataWIcon(myid, Arrow1, Arrow2) {
+  var showInner = document.querySelector(myid);
+  if (showInner.style.display == "block") {
+    Neg_rotateArrow(Arrow1, Arrow2);
+    showInner.style.display = "none";
+  } else {
+    rotateArrow(Arrow1, Arrow2);
+    showInner.style.display = "block";
+  }
+}
+
 function listChart(myid) {
   folldAll();
   document.querySelector(myid).style.display = "block";
@@ -334,7 +356,7 @@ let chartConfig = {
           sequence: "ANIMATION_BY_PLOT_AND_NODE",
         },
         borderWidth: "0px",
-        slice: "54%",
+        slice: "55%",
       },
       plotarea: {
         margin: "70px 0px 10px 0px",
@@ -389,14 +411,9 @@ let chartConfig = {
 zingchart.render({
   id: "myChart",
   data: chartConfig,
-  height: "318px",
-  width: "318px",
+  height: "344px",
+  width: "344px",
 });
-
-function rotateArrow(myid) {
-  document.querySelector("<i>").style.transform = "rotateX(180deg)";
-  document.querySelector(".arrow-r2").style.transform = "rotateX(180deg)";
-}
 
 function showProg(myid) {
   var showInner = document.querySelector(myid);
