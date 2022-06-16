@@ -7,13 +7,30 @@ body {
   background: #34495e;
 }
 
-header nav ul {
-  min-width: 40%;
-  display: flex ; 
+header nav .navbar-nav {
+  min-width: 20%;
+  text-align: end;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.box {
+.modal-body input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid brown;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.modal-body div {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.container .box {
   width: 30%;
   padding: 40px;
   position: absolute;
@@ -26,12 +43,12 @@ header nav ul {
   box-shadow: -5px 10px #2e2e2e;
 }
 
-.box:hover {
+.container .box:hover {
   box-shadow: -10px 15px #2e2e2e;
 }
 
-.box input[type="text"],
-.box input[type="password"] {
+.container .box input[type="text"],
+.container .box input[type="password"] {
   border: 0;
   background: none;
   display: block;
@@ -46,13 +63,13 @@ header nav ul {
   transition: 0.5s;
 }
 
-.box input[type="text"]:focus,
-.box input[type="password"]:focus {
+.container .box input[type="text"]:focus,
+.container .box input[type="password"]:focus {
   width: 280px;
   border-color: #2ecc71;
 }
 
-.box input[type="submit"] {
+.container .box input[type="submit"] {
   border: 0;
   background: none;
   display: block;
@@ -67,7 +84,6 @@ header nav ul {
   cursor: pointer;
 }
 
-.box input[type="submit"]:hover {
+.container .box input[type="submit"]:hover {
   background: #2ecc71;
 }
-

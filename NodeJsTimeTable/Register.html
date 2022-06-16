@@ -20,7 +20,7 @@
   <body>
     <header class="navbar navbar-dark bg-dark">
       <nav class="container">
-        <a class="h1 text-white" href="./login.html">LOGIN</a>
+        <a class="h1 text-white" href="./login.html">Register</a>
         <div class="navbar-nav flex-row justify-content-between">
           <div class="navbar-item">
             <a class="nav-link" href="./login.html">STUDENT</a>
@@ -34,10 +34,11 @@
 
     <main class="container">
       <form class="box">
-        <h1 class="h1 text-white py-5">Login</h1>
-        <input type="text" id="userName" name="" placeholder="Email" />
+        <h1 class="h1 text-white py-5">Registration Form</h1>
+        <input type="text" id="email" name="" placeholder="Email" />
         <input type="password" id="password" name="" placeholder="Password" />
-        <input type="submit" id="signIn" name="" value="Login" />
+        <!-- <input type="text" id="type" name="" placeholder="admin/student" /> -->
+        <input type="submit" id="register" name="" value="Sign Up" />
       </form>
     </main>
 
@@ -47,47 +48,42 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
+    <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
       import {
-        getDatabase,
-        set,
-        ref,
-      } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
-
-      import {
         getAuth,
-        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
       } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
 
+      import { getDatabase } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
+
       const firebaseConfig = {
-        apiKey: "AIzaSyBWm_DO9aQpzqEavnZoD6lfNIwXPg3FRds",
-        authDomain: "nodetimetable.firebaseapp.com",
-        databaseURL: "https://nodetimetable-default-rtdb.firebaseio.com",
-        projectId: "nodetimetable",
-        storageBucket: "nodetimetable.appspot.com",
-        messagingSenderId: "1053650691976",
-        appId: "1:1053650691976:web:d7d87950a1bb0497a1bc3d",
+        apiKey: "AIzaSyCJjDW4iOa_KVuXCKarAyo3KA3xKRPCD2U",
+        authDomain: "nodejstimetable.firebaseapp.com",
+        databaseURL: "https://nodejstimetable-default-rtdb.firebaseio.com",
+        projectId: "nodejstimetable",
+        storageBucket: "nodejstimetable.appspot.com",
+        messagingSenderId: "436595016505",
+        appId: "1:436595016505:web:a6fe3e33f526766c6d9ee8",
       };
 
       const app = initializeApp(firebaseConfig);
-      const database = getDatabase(app);
       const auth = getAuth();
+      const database = getDatabase();
 
-      signIn.addEventListener("click", (e) => {
-        var userName = document.getElementById("userName").value;
-        var password = document.getElementById("password").value;
+      register.addEventListener("click", (e) => {
+        var email = document.querySelector("#email").value;
+        var password = document.querySelector("#password").value;
 
-        signInWithEmailAndPassword(auth, userName, password)
+        createUserWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
+            alert("user With Type ", email, " Is Created Successfully");
             const user = userCredential.user;
-            alert("Welcome", userName);
-            // console.log("Email", userName, "Password", password);
           })
           .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            alert(errorMessage);
+            alert("Error Message: ", errorMessage);
           });
       });
     </script>
