@@ -21,7 +21,7 @@
     <header class="navbar navbar-dark bg-dark">
       <nav class="container">
         <a class="h1 text-white" href=".#">Dashboard</a>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav text-end">
           <li class="nav-item">
             <a
               class="nav-link"
@@ -29,16 +29,6 @@
               href="#exampleModalToggle"
               role="button"
               >Add Course</a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="modal"
-              href="#del_Model"
-              role="button"
-              >Delete Course</a
             >
           </li>
         </ul>
@@ -49,54 +39,6 @@
       <div class="display-4 text-center text-secondary">Welcome Admin!</div>
     </div>
 
-    <div
-      class="modal fade"
-      id="del_Model"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">
-              Delete Course
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div>
-                <label for="delcourseId">Course ID</label>
-                <input id="delcourseId" type="Number" placeholder="Course ID" required />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer d-flex justify-content-between">
-            <button
-              class="btn btn-secondary"
-              data-bs-toggle="modal"
-              aria-label="Close"
-            >
-              Cancel
-            </button>
-            <button
-              id="delData"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              type="submit"
-            >
-              Delete
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div
       class="modal fade"
@@ -136,17 +78,47 @@
                   />
               </div>
               <div>
-                <label for="firstClass">First Class Start</label>
-                <input type="datetime-local" id="firstClass" name="ClassTime" required  />
+                <label class="timelabel" for="fweekandtime">First Class Start</label>
+                <div class="Week-time" id="fweekandtime">
+                  <select id="firstSelct" class="selectopt">
+                    <option value="MON">MON</option>
+                    <option value="TUE">TUE</option>
+                    <option value="WED">WED</option>
+                    <option value="THR">THR</option>
+                    <option value="FRI">FRI</option>
+                  </select>
+                  <input
+                  class=""
+                  type="time"
+                  id="firstClass"
+                  name="FirstClassTime"
+                  required 
+                  />
+                </div>
+                
+                
+                
+                <!-- <label for="firstClass">First Class Start</label> -->
+                <!-- <input type="datetime-local" id="firstClass" name="ClassTime" required  /> -->
               </div>
               <div>
-                <label for="secondClass">Second Class Start</label>
-                <input
-                  type="datetime-local"
+                <label class="timelabel" for="sweekandtime">Second Class Start</label>
+                <div class="Week-time" id="sweekandtime">
+                  <select id="secondSelect" class="selectopt">
+                    <option value="MON">MON</option>
+                    <option value="TUE">TUE</option>
+                    <option value="WED">WED</option>
+                    <option value="THR">THR</option>
+                    <option value="FRI">FRI</option>
+                  </select>
+                  <input
+                  class=""
+                  type="time"
                   id="secondClass"
                   name="SecondClassTime"
                   required 
                   />
+                </div>
               </div>
             </form>
           </div>
@@ -171,10 +143,7 @@
         </div>
       </div>
     </div>
-    <!-- ////////////////////// -->
-
-    <!-- <h1 class="d-flex h-100 justify-content-center">Admin DashBoard</h1> -->
-
+    
     <main class="container">
       <table
         class="w-75 mx-auto my-5 table table-success table-striped table-hover"
@@ -214,7 +183,7 @@
         remove,
         get,
       } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
-            
+ 
       const firebaseConfig = {
         apiKey: "AIzaSyCJjDW4iOa_KVuXCKarAyo3KA3xKRPCD2U",
         authDomain: "nodejstimetable.firebaseapp.com",
@@ -224,17 +193,17 @@
         messagingSenderId: "436595016505",
         appId: "1:436595016505:web:a6fe3e33f526766c6d9ee8",
       };
-
       const app = initializeApp(firebaseConfig);
       const db = getDatabase();
+      const dbRef = ref(getDatabase());
+
 
       var c_id = document.querySelector("#courseId");
       var c_name = document.querySelector("#courseName");
       var i_name = document.querySelector("#instructorName");
       var f_class = document.querySelector("#firstClass");
       var s_class = document.querySelector("#secondClass");
-      // var insData = document.querySelector("insData");
-
+      
       // Insert Data
       function InsertData() {
         set(ref(db, "Courses/" + c_id.value), {
@@ -256,34 +225,27 @@
       insData.addEventListener("click", InsertData);
       
       
-      const dbRef = ref(getDatabase());
       // List data in Table
       function SelectAllData() {
-      
-      get(child(dbRef, 'Courses/')).then((snapshot) =>{
-        if (snapshot.exists()){
-          snapshot.forEach(
-          function(snap){
-             
-            var cid= snap.val().CourseId;
-            var cN = snap.val().CourseName;
-            var INs = snap.val().InstructorName;
-            var FC = snap.val().FirstClass;
-            var Sc = snap.val().SecondClass;
-            AddItemsToTable(cid, cN, INs, FC, Sc ); 
+        get(child(dbRef, 'Courses/')).then((snapshot) =>{
+          if (snapshot.exists()){
+            snapshot.forEach(
+              function(snap){
+                var cid= snap.val().CourseId;
+                var cN = snap.val().CourseName;
+                var INs = snap.val().InstructorName;
+                var FC = snap.val().FirstClass;
+                var Sc = snap.val().SecondClass;
+                AddItemsToTable(cid, cN, INs, FC, Sc ); 
+              });
+            }
+          }).catch((e)=>{
+            alert(error.message);
           });
         }
-      }).catch((e)=>{
-        alert(error.message);
-      });
-    }
-    
-      
-    
-      // fill data from Firebase
 
+     // fill data from Firebase
       function AddItemsToTable(Cid, CName, IName, FClass, SClass) {
-        // alert("pakistan");
         var tbody = document.querySelector("#t_body1");
         var trow = document.createElement("tr");
         var td1 = document.createElement("td");
