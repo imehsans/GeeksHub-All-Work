@@ -48,7 +48,82 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="module"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+        child,
+        get,
+      } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCJjDW4iOa_KVuXCKarAyo3KA3xKRPCD2U",
+        authDomain: "nodejstimetable.firebaseapp.com",
+        databaseURL: "https://nodejstimetable-default-rtdb.firebaseio.com",
+        projectId: "nodejstimetable",
+        storageBucket: "nodejstimetable.appspot.com",
+        messagingSenderId: "436595016505",
+        appId: "1:436595016505:web:a6fe3e33f526766c6d9ee8",
+      };
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase();
+      const dbRef = ref(getDatabase());
+
+      function signInFun() {
+        var myemail = document.querySelector("#userName");
+        var myPass = document.querySelector("#password");
+        var type = document.querySelector("#type");
+        if (type.value == "admin") {
+          get(child(dbRef, "Admin/"))
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                snapshot.forEach(function (snap) {
+                  var Cemail = snap.val().AdminEmail;
+                  var Cpassword = snap.val().AdminPassword;
+                  if (myemail.value == Cemail) {
+                    if (myPass.value == Cpassword) {
+                      window.open(
+                        "http://127.0.0.1:5501/NodeJsTimeTable/admin_dashboard.html",
+                        "_self"
+                      );
+                    }
+                  }
+                });
+              }
+            })
+            .catch((e) => {
+              alert(error.message);
+            });
+        } else if (type.value == "student") {
+          get(child(dbRef, "User/"))
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                snapshot.forEach(function (snap) {
+                  var Cemail = snap.val().StudentEmail;
+                  var Cpassword = snap.val().StudentPassword;
+                  if (myemail.value == Cemail) {
+                    if (myPass.value == Cpassword) {
+                      window.open(
+                        "http://127.0.0.1:5501/NodeJsTimeTable/student_dashboard.html",
+                        "_self"
+                      );
+                    }
+                  }
+                });
+              }
+            })
+            .catch((e) => {
+              alert(error.message);
+            });
+        } else {
+          alert("User Not Found");
+        }
+      }
+
+      signIn.addEventListener("click", signInFun);
+    </script>
 
     <script src="./assets/javascript/index.js"></script>
   </body>
