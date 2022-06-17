@@ -38,7 +38,6 @@
         </ul>
       </nav>
     </header>
-    <!-- //////////////// -->
     <div class="container-fluied bg-light bg-gradient">
       <div class="display-4 text-center text-secondary">Welcome Student!</div>
     </div>
@@ -141,8 +140,6 @@
         ref,
         set,
         child,
-        update,
-        remove,
         get,
       } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
 
@@ -181,7 +178,7 @@
             alert(error.message);
           });
       }
-      
+
       function SelfCompare(coursid, coursN, insN, firstC, secondC) {
         get(child(dbRef, "Student/"))
           .then((snapshot) => {

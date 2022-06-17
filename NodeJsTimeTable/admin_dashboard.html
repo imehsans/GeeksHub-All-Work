@@ -13,6 +13,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
     <title>Welcome Admin</title>
 
     <link rel="stylesheet" href="./assets/style/style.css" />
@@ -28,8 +29,7 @@
               data-bs-toggle="modal"
               href="#exampleModalToggle"
               role="button"
-              >Add Course</a
-            >
+              >Add Course</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./login.html">Logout</a>
@@ -37,7 +37,7 @@
         </ul>
       </nav>
     </header>
-    <!-- //////////////// -->
+    
     <div class="container-fluied bg-light">
       <div class="display-4 text-center text-secondary">Welcome Admin!</div>
     </div>
@@ -91,7 +91,6 @@
                     <option value="FRI">FRI</option>
                   </select>
                   <input
-                  class=""
                   type="time"
                   id="firstClass"
                   name="FirstClassTime"
@@ -110,7 +109,6 @@
                     <option value="FRI">FRI</option>
                   </select>
                   <input
-                  class=""
                   type="time"
                   id="secondClass"
                   name="SecondClassTime"
@@ -155,7 +153,7 @@
         </thead>
 
         <tbody id="t_body1">
-      
+
         </tbody>
       </table>
     </main>
@@ -177,8 +175,6 @@
         ref,
         set,
         child,
-        update,
-        remove,
         get,
       } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
  
@@ -191,6 +187,7 @@
         messagingSenderId: "436595016505",
         appId: "1:436595016505:web:a6fe3e33f526766c6d9ee8",
       };
+      
       const app = initializeApp(firebaseConfig);
       const db = getDatabase();
       const dbRef = ref(getDatabase());
@@ -266,6 +263,7 @@
 
         tbody.appendChild(trow);
       }
+      
       window.onload(SelectAllData());
     </script>
   </body>

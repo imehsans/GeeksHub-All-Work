@@ -87,7 +87,7 @@ header nav .navbar-nav {
   border-color: #2ecc71;
 }
 
-.container .box input[type="submit"] {
+.container .box input[type="button"] {
   border: 0;
   background: none;
   display: block;
@@ -102,6 +102,6 @@ header nav .navbar-nav {
   cursor: pointer;
 }
 
-.container .box input[type="submit"]:hover {
+.container .box input[type="button"]:hover {
   background: #2ecc71;
 }

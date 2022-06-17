@@ -13,8 +13,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Login</title>
-
+    <title>Register User</title>
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
   <body>
@@ -33,13 +32,13 @@
     </header>
 
     <main class="container">
-      <form class="box">
+      <div class="box">
         <h1 class="h1 text-white py-5">Registration Form</h1>
         <input type="text" id="email" name="" placeholder="Email" />
         <input type="password" id="password" name="" placeholder="Password" />
         <input type="text" id="type" name="" placeholder="admin/student" />
-        <input type="submit" id="register" name="" value="Sign Up" />
-      </form>
+        <input type="button" id="register" name="" value="Sign Up" />
+      </div>
     </main>
 
     <script
@@ -48,7 +47,87 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="module"></script>
+    <script type="module">
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+        child,
+        get,
+      } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCJjDW4iOa_KVuXCKarAyo3KA3xKRPCD2U",
+        authDomain: "nodejstimetable.firebaseapp.com",
+        databaseURL: "https://nodejstimetable-default-rtdb.firebaseio.com",
+        projectId: "nodejstimetable",
+        storageBucket: "nodejstimetable.appspot.com",
+        messagingSenderId: "436595016505",
+        appId: "1:436595016505:web:a6fe3e33f526766c6d9ee8",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase();
+      const dbRef = ref(getDatabase());
+      const auth = getAuth();
+
+      function registerUser() {
+        var email = document.querySelector("#email");
+        var password = document.querySelector("#password");
+        var type = document.querySelector("#type");
+
+        alert("function Calling");
+        if (type.value == "admin") {
+          set(ref(db, "Admin/" + type.value), {
+            AdminEmail: email.value,
+            AdminPassword: password.value,
+            type: type.value,
+          })
+            .then(() => {
+              alert("Admin Added SuccessFully");
+              console.log("Admin Added SuccessFully");
+              AuthUser(email.value, password.value);
+            })
+            .catch((error) => {
+              alert("Something Wrong ", error.message);
+            });
+        } else if (type.value == "student") {
+          set(ref(db, "User/" + type.value), {
+            StudentEmail: email.value,
+            StudentPassword: password.value,
+            type: type.value,
+          })
+            .then(() => {
+              alert("Student Added SuccessFully");
+              console.log("Student Added SuccessFully");
+              AuthUser(email.value, password.value);
+            })
+            .catch((error) => {
+              alert("Something Wrong ", error.message);
+            });
+        } else {
+          // alert("Not Registered Because Type is not Correct ");
+        }
+      }
+
+      function AuthUser(email, password) {
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+          });
+      }
+
+      register.addEventListener("click", registerUser);
+    </script>
 
     <script src="./assets/javascript/index.js"></script>
   </body>
