@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
   <body>
-    <header class="navbar navbar-dark bg-dark">
+    <header class="navbar navbar-dark bg-dark bg-gradient">
       <nav class="container">
         <a class="h1 text-white" href=".#">Dashboard</a>
         <ul class="navbar-nav text-end">
@@ -30,6 +30,9 @@
               role="button"
               >Add Course</a
             >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Logout</a>
           </li>
         </ul>
       </nav>
@@ -95,11 +98,6 @@
                   required 
                   />
                 </div>
-                
-                
-                
-                <!-- <label for="firstClass">First Class Start</label> -->
-                <!-- <input type="datetime-local" id="firstClass" name="ClassTime" required  /> -->
               </div>
               <div>
                 <label class="timelabel" for="sweekandtime">Second Class Start</label>
@@ -214,7 +212,7 @@
           SecondClass: s_class.value,
         })
           .then(() => {
-            window.onload = SelectAllData;
+            location.reload();
           })
           .catch((error) => {
             alert("Something Wrong ", error.message);
@@ -268,9 +266,7 @@
 
         tbody.appendChild(trow);
       }
-
-      SelectAllData();
-
+      window.onload(SelectAllData());
     </script>
   </body>
 </html>

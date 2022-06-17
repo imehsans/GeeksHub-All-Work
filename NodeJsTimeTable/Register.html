@@ -37,7 +37,7 @@
         <h1 class="h1 text-white py-5">Registration Form</h1>
         <input type="text" id="email" name="" placeholder="Email" />
         <input type="password" id="password" name="" placeholder="Password" />
-        <!-- <input type="text" id="type" name="" placeholder="admin/student" /> -->
+        <input type="text" id="type" name="" placeholder="admin/student" />
         <input type="submit" id="register" name="" value="Sign Up" />
       </form>
     </main>
@@ -48,45 +48,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
-      import {
-        getAuth,
-        createUserWithEmailAndPassword,
-      } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
-
-      import { getDatabase } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyCJjDW4iOa_KVuXCKarAyo3KA3xKRPCD2U",
-        authDomain: "nodejstimetable.firebaseapp.com",
-        databaseURL: "https://nodejstimetable-default-rtdb.firebaseio.com",
-        projectId: "nodejstimetable",
-        storageBucket: "nodejstimetable.appspot.com",
-        messagingSenderId: "436595016505",
-        appId: "1:436595016505:web:a6fe3e33f526766c6d9ee8",
-      };
-
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth();
-      const database = getDatabase();
-
-      register.addEventListener("click", (e) => {
-        var email = document.querySelector("#email").value;
-        var password = document.querySelector("#password").value;
-
-        createUserWithEmailAndPassword(auth, email, password)
-          .then((userCredential) => {
-            alert("user With Type ", email, " Is Created Successfully");
-            const user = userCredential.user;
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            alert("Error Message: ", errorMessage);
-          });
-      });
-    </script>
+    <script type="module"></script>
 
     <script src="./assets/javascript/index.js"></script>
   </body>
