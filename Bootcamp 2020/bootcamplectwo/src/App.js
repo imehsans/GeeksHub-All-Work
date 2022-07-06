@@ -1,7 +1,11 @@
 import "./App.css";
 
 function App() {
-  return <div className="App">Hello pakistan</div>;
+  return (
+    <div>
+      <h1>I am ehsan</h1>
+    </div>
+  );
 }
 
 export default App;
