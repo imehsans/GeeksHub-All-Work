@@ -1,9 +1,10 @@
+import React from "react";
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>I am ehsan and i am Developer</h1>
+    <div className="App">
+      <h1>Hello World! from Ehsan</h1>
     </div>
   );
 }

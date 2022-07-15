@@ -1,0 +1,325 @@
+@import url("http://fonts.cdnfonts.com/css/proxima-nova-2");
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+}
+
+.btn {
+  padding: 16px 41px 14px 42px !important;
+}
+
+.btn-hover:hover {
+  background-color: #81c442;
+}
+
+.btn-cursor {
+  cursor: pointer;
+}
+.border-0 {
+  border: none;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fw-1 {
+  font-weight: normal;
+}
+
+.fw-2 {
+  font-weight: 600;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-dark {
+  color: #333;
+}
+
+.text-hover-dark:hover {
+  color: #333;
+}
+
+.text-green {
+  color: #81c442;
+}
+
+.text-primary {
+  color: #0383c9;
+}
+
+.text-secondary {
+  color: #ababab;
+}
+
+.bg-primary {
+  background-color: #0383c9;
+}
+
+.bg-secondary {
+  background-color: #ababab;
+}
+
+.bg-green {
+  background-color: #81c442;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-light {
+  background-color: #e7f4fd;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.py-btn-sec {
+  padding: 35px 0;
+}
+
+.pe-20 {
+  padding-right: 20px;
+}
+
+.rounded-1 {
+  border-radius: 6px;
+}
+
+.rounded-2 {
+  border-radius: 10px;
+}
+
+.rounded-3 {
+  border-radius: 20px;
+}
+
+.outline-green {
+  outline: 1px solid #81c442;
+}
+
+.active-circle {
+  border: white 7px solid;
+}
+
+.pt-active {
+  padding-top: 17px;
+}
+
+.pt-circle {
+  padding-top: 24px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-arround {
+  justify-content: space-around !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.lh-2 {
+  line-height: 2;
+}
+
+.lh-3 {
+  line-height: 3;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.bx-shadow {
+  box-shadow: 0 0 18px 0 rgba(9, 2, 45, 0.09);
+}
+
+.w-1 {
+  width: 150px;
+}
+
+.w-2 {
+  width: 250px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-440{
+    width: 440px;
+    margin: 0 auto;
+}   
+
+.w-65 {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+.h-100 {
+  height: 100%;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.container {
+  max-width: 90%;
+  padding: 24px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+.h-login {
+  height: 700px;
+}
+
+.input-field {
+  min-width: 440px;
+  padding: 16px 14px;
+  border: solid 2px #c9c9c9;
+}
+
+.input-field::placeholder {
+  color: #333;
+}
+
+.loginback {
+  min-width: 600px;
+  background-image: url("../images/backgroundimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-data form {
+  height: 80%;
+  padding-top: 63px;
+}
+
+.position-reletive {
+  position: relative;
+}
+
+.line-top {
+  position: absolute;
+  top: 63%;
+}
+
+.first-line {
+  left: 19%;
+  width: 224px;
+}
+
+.second-line {
+  left: 39%;
+  width: 240px;
+}
+
+.border-top {
+  border-top: 1px solid #e6e6e6;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.third-line {
+  left: 60%;
+  width: 240px;
+}
+
+.line-secondary {
+  border-bottom: 2px solid #b2b2b2;
+}
+
+.line-green {
+  border-bottom: 2px solid #81c442;
+}
+
+.line-ms {
+  margin-left: 14px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  background-clip: content-box;
+  border: 2px solid #0383c9;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: #0383c9;   
+}
